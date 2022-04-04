@@ -17,7 +17,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Open source, free forever. Coming soon. Consider <a href="https://github.com/CodeEditApp/CodeEdit">contributing</a>.
+          Open source, free forever. Coming soon.
         </p>
       </main>
 
