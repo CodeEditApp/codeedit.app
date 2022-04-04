@@ -12,6 +12,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <img src="https://raw.githubusercontent.com/CodeEditApp/CodeEdit/main/CodeEdit/Assets.xcassets/AppIcon.appiconset/CodeEdit-128%402x.png" width="128" />
+          
         <h1 className={styles.title}>
           Elevate your editing experience.
         </h1>
