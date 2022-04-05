@@ -18,3 +18,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.bg-gradient {
+  background-image: url("/bg-gradient.jpg");
+}
