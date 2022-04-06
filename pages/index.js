@@ -47,14 +47,14 @@ export default function Home() {
             <a href="#" className="bg-blue-500 py-2 px-4 rounded-3xl mt-10 flex"><span>Download</span><FontAwesomeIcon icon={faChevronDown} className="ml-2 w-3"/></a>
 
             <div className="mt-6 text-gray-400 flex divide-x divide-gray-400 text-sm">
-              <span className="px-3">v1.31.0</span>
+              <span className="px-3">v1.0.0</span>
               <span className="px-3">macOS 12.0+</span>
               <span className="px-3">Install via Homebrew</span>
             </div>
 
             <div className="mt-10 flex"><span className="text-xl lg:text-2xl">Watch the film</span><FontAwesomeIcon icon={faCirclePlay} className="ml-2 w-6"/></div>
             
-            <Image src="/codeedit-screen.png" alt="CodeEdit Screen" width={1100} height={714} className="m-auto"/>
+            <Image src="/codeedit-screen.png" alt="CodeEdit Screen" width={1100} height={714} className="m-auto screen"/>
         </section>
       </main>
     </div>

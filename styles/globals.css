@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: black;
 }
 
 a {
@@ -21,4 +22,20 @@ a {
 
 .bg-gradient {
   background-image: url("/bg-gradient.jpg");
+}
+
+.screen {
+  transition: opacity 1.3s linear .8s,transform .7s cubic-bezier(.24,.77,.48,.94) .8s;
+  animation: animationScreen 5s;
+}
+
+@keyframes animationScreen {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px)
+  }
 }
