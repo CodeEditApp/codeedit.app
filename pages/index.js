@@ -38,9 +38,9 @@ export default function Home() {
         <section className="min-h-full w-full bg-gradient bg-top bg-cover bg-no-repeat flex flex-col items-center mt-16">
             <Image src="/codeedit-icon.png" alt="CodeEdit Icon" width={100} height={100} />
 
-            <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold mt-3">Elevate your editing experience!</h1>
+            <h1 className="text-2xl md:text-3xl lg:text-5xl font-semibold mt-3">Elevate your editing experience.</h1>
             
-            <p className="text-gray-400 text-xl lg:text-2xl mt-4">
+            <p className="text-gray-400 font-light text-xl lg:text-2xl mt-4">
               Open source, free forever.
             </p>
             
@@ -52,9 +52,10 @@ export default function Home() {
               <span className="px-3">Install via Homebrew</span>
             </div>
 
-            <div className="mt-10 flex"><span className="text-xl lg:text-2xl">Watch the film</span><FontAwesomeIcon icon={faCirclePlay} className="ml-2 w-6"/></div>
+            <div className="mt-10 flex mb-32"><span className="text-xl lg:text-2xl">Watch the film</span><FontAwesomeIcon icon={faCirclePlay} className="ml-2 w-6"/></div>
             
-            <Image src="/codeedit-screen.png" alt="CodeEdit Screen" width={1100} height={714} className="m-auto"/>
+            <Image src="/codeedit-screen-transparent.png" alt="CodeEdit Screen" width={1100} height={714} className="mt-10"/>
+
         </section>
       </main>
     </div>
