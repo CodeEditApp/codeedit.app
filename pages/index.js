@@ -16,6 +16,8 @@ import {faChevronDown} from "@fortawesome/free-solid-svg-icons";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import { Typewriter } from 'react-simple-typewriter';
+
 const useDeviceMode = () => {
     const [darkMode, setDarkMode] = useState(false);
     useEffect(() => {
@@ -112,8 +114,14 @@ export default function Home() {
                     <h1 className="text-2xl md:text-3xl lg:text-5xl font-semibold mt-3">
                         Elevate your editing experience.
                     </h1>
+
                     <p className="text-gray-400 font-light text-xl lg:text-2xl mt-4">
-                        Open source, free forever.
+                        <Typewriter
+                            words={['Open source, free forever.']}
+                            typeSpeed={70}
+                            deleteSpeed={50}
+                            delaySpeed={10000}
+                        />
                     </p>
                     <a
                         href="#"
@@ -151,39 +159,29 @@ export default function Home() {
                 <section
                     className={`text-center-webkit-left relative min-h-full w-full ${bg} bg-[center_bottom_-16rem] sm:bg-[center_bottom_-20rem] md:bg-[center_bottom_-25rem] lg:bg-[center_bottom_-25rem] bg-no-repeat bg-135% lg:bg-115% flex flex-col items-center`}
                 >
-                    <div data-aos="fade-right">
+                    <div className="inline-flex" data-aos="fade-right">
                         <img
                             src={`/codeedit-screen-split.png`}
-                            className="w-5/6"
+                            className="w-3/6"
                             alt={"Screen"}
                         />
-                        <div
-                            className={`absolute bg-gradient-to-t ${
-                                darkMode ? "from-black" : "from-white"
-                            } w-full bottom-16 lg:bottom-32 h-16 lg:h-32`}
-                        />
-                        <div
-                            className={`absolute ${bg} w-full bottom-0 h-16 lg:h-32`}
-                        />
+                        <div className="text-gray-400 font-light text-xl lg:text-2xl mt-4 flex-auto">
+                            Elevate your editing experience.
+                        </div>
                     </div>
                 </section>
 
                 <section
                     className={`text-center-webkit-right relative min-h-full w-full ${bg} bg-[center_bottom_-16rem] sm:bg-[center_bottom_-20rem] md:bg-[center_bottom_-25rem] lg:bg-[center_bottom_-25rem] bg-no-repeat bg-135% lg:bg-115% flex flex-col items-center`}
                 >
-                    <div data-aos="fade-left">
+                    <div className="inline-flex" data-aos="fade-left">
+                        <div className="text-gray-400 font-light text-xl lg:text-2xl mt-4 flex-auto">
+                            Elevate your editing experience.
+                        </div>
                         <img
                             src={`/codeedit-screen-find.png`}
-                            className="w-5/6"
+                            className="w-3/6"
                             alt={"Screen"}
-                        />
-                        <div
-                            className={`absolute bg-gradient-to-t ${
-                                darkMode ? "from-black" : "from-white"
-                            } w-full bottom-16 lg:bottom-32 h-16 lg:h-32`}
-                        />
-                        <div
-                            className={`absolute ${bg} w-full bottom-0 h-16 lg:h-32`}
                         />
                     </div>
                 </section>

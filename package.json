@@ -15,7 +15,8 @@
     "aos": "^3.0.0-beta.6",
     "next": "12.1.4",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-simple-typewriter": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
