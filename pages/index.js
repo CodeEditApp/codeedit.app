@@ -149,7 +149,7 @@ export default function Home() {
                 </section>
 
                 <section
-                    className={`text-center-webkit relative min-h-full w-full ${bg} bg-[center_bottom_-16rem] sm:bg-[center_bottom_-20rem] md:bg-[center_bottom_-25rem] lg:bg-[center_bottom_-25rem] bg-no-repeat bg-135% lg:bg-115% flex flex-col items-center`}
+                    className={`text-center-webkit-left relative min-h-full w-full ${bg} bg-[center_bottom_-16rem] sm:bg-[center_bottom_-20rem] md:bg-[center_bottom_-25rem] lg:bg-[center_bottom_-25rem] bg-no-repeat bg-135% lg:bg-115% flex flex-col items-center`}
                 >
                     <div data-aos="fade-right">
                         <img
@@ -169,7 +169,7 @@ export default function Home() {
                 </section>
 
                 <section
-                    className={`text-center-webkit relative min-h-full w-full ${bg} bg-[center_bottom_-16rem] sm:bg-[center_bottom_-20rem] md:bg-[center_bottom_-25rem] lg:bg-[center_bottom_-25rem] bg-no-repeat bg-135% lg:bg-115% flex flex-col items-center`}
+                    className={`text-center-webkit-right relative min-h-full w-full ${bg} bg-[center_bottom_-16rem] sm:bg-[center_bottom_-20rem] md:bg-[center_bottom_-25rem] lg:bg-[center_bottom_-25rem] bg-no-repeat bg-135% lg:bg-115% flex flex-col items-center`}
                 >
                     <div data-aos="fade-left">
                         <img
