@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  overscroll-behavior-y: none;
 }
 
 a {
@@ -25,10 +26,8 @@ a {
 
 .rd-gradient {
   position: absolute;
-  width: 936px;
-  height: 936px;
-  left: 252px;
-  top: 259px;
+  width: 100%;
+  height: 100%;
 
   background: conic-gradient(from 180deg at 50% 50%, #00FFC2 0deg, #00F0FF 120.07deg, #0077FF 179.52deg, #FF0099 241.65deg, #0470E5 299.6deg, #00FFC2 360deg);
   opacity: 0.3;

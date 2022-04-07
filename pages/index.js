@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -9,10 +9,19 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
 
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const type = darkMode ? "dark" : "light";
   const bg = darkMode ? "bg-black" : "bg-white";
   const text = darkMode ? "text-white" : "text-black";
+
+  useEffect(() => {
+    setDarkMode(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    const modeMe = (e) => {
+      setDarkMode(!!e.matches);
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', modeMe);
+    return window.matchMedia('(prefers-color-scheme: dark)').removeListener(modeMe);
+  }, []);
 
   return (
       <div className={`${bg} ${text}`}>
@@ -64,10 +73,10 @@ export default function Home() {
 
             <div className="mt-10 flex mb-5"><span className="text-xl lg:text-2xl">Watch the film</span><FontAwesomeIcon icon={faCirclePlay} className="ml-2 w-6" /></div>
 
-            <img src={`/codeedit-screen-${type}.png`} className="w-5/6 screen"></img>
+            <img src={`/codeedit-screen-${type}.png`} className="w-5/6 screen" alt={"Screen"} />
 
-            <div className={`absolute bg-gradient-to-t from-${darkMode ? "black" : "white"} w-full bottom-16 lg:bottom-32 h-16 lg:h-32`}></div>
-            <div className={`absolute ${bg} w-full bottom-0 h-16 lg:h-32`}></div>
+            <div className={`absolute bg-gradient-to-t ${darkMode ? "from-black" : "from-white"} w-full bottom-16 lg:bottom-32 h-16 lg:h-32`} />
+            <div className={`absolute ${bg} w-full bottom-0 h-16 lg:h-32`} />
           </section>
         </main>
       </div>
