@@ -20,24 +20,41 @@ a {
   box-sizing: border-box;
 }
 
-.bg-gradient {
-  background-color: #000;
-}
-
 .rd-gradient {
   position: absolute;
   width: 100%;
   height: 100%;
-
-  background: conic-gradient(from 180deg at 50% 50%, #00FFC2 0deg, #00F0FF 120.07deg, #0077FF 179.52deg, #FF0099 241.65deg, #0470E5 299.6deg, #00FFC2 360deg);
   opacity: 0.3;
-  filter: blur(320px);
+  filter: blur(80px);
   border-radius: 50%;
+  animation: gradient 5s ease;
+  background: conic-gradient(from 180deg at 50% 50%, #00FFC2 0deg, #00F0FF 120.07deg, #0077FF 179.52deg, #FF0099 241.65deg, #0470E5 299.6deg, #00FFC2 360deg);
+}
+
+@keyframes gradient {
+  0% {
+    background: conic-gradient(from 180deg at 50% 50%, #00FFC2 0deg, #00F0FF 120.07deg, #0077FF 179.52deg, #FF0099 241.65deg, #0470E5 299.6deg, #00FFC2 360deg);
+  }
+  20% {
+    background: conic-gradient(from 160deg at 50% 50%, #00FFC2 0deg, #00F0FF 100.07deg, #0077FF 159.52deg, #FF0099 221.65deg, #0470E5 279.6deg, #00FFC2 340deg);
+  }
+  40% {
+    background: conic-gradient(from 180deg at 50% 50%, #00FFC2 0deg, #00F0FF 120.07deg, #0077FF 179.52deg, #FF0099 241.65deg, #0470E5 299.6deg, #00FFC2 360deg);
+  }
+  60% {
+    background: conic-gradient(from 160deg at 50% 50%, #00FFC2 0deg, #00F0FF 100.07deg, #0077FF 159.52deg, #FF0099 221.65deg, #0470E5 279.6deg, #00FFC2 340deg);
+  }
+  80% {
+    background: conic-gradient(from 180deg at 50% 50%, #00FFC2 0deg, #00F0FF 120.07deg, #0077FF 179.52deg, #FF0099 241.65deg, #0470E5 299.6deg, #00FFC2 360deg);
+  }
+  100% {
+    background: conic-gradient(from 160deg at 50% 50%, #00FFC2 0deg, #00F0FF 100.07deg, #0077FF 159.52deg, #FF0099 221.65deg, #0470E5 279.6deg, #00FFC2 340deg);
+  }
 }
 
 .screen {
   transition: opacity 1.3s linear .8s,transform .7s cubic-bezier(.24,.77,.48,.94) .8s;
-  animation: animationScreen 5s;
+  animation: animationScreen 5s ease;
   z-index: 0;
 }
 
@@ -50,4 +67,25 @@ a {
     opacity: 1;
     transform: translateY(0px)
   }
+}
+
+.screen2 {
+  transition: opacity 1.3s linear .8s,transform .7s cubic-bezier(.24,.77,.48,.94) .8s;
+  animation: animationScreen2 5s ease;
+  z-index: 0;
+}
+
+@keyframes animationScreen2 {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px)
+  }
+}
+
+.text-center-webkit {
+  text-align: -webkit-center;
 }
