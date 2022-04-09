@@ -1,9 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Colors */
+  /* --black-color: #131313;
+  --white-color: #ffffff;
+  --grey-text: #999797; */
+
+  /* Fonts */
+  --font-principal: apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.theme-dark {
+  --black-color: #131313;
+  --white-color: #ffffff;
+  --grey-text: #999797;
+}
+
+.theme-light {
+  --black-color: #ffffff;
+  --white-color: #131313;
+  --grey-text: #999797;
+}
+
+.toggle-theme {
+  cursor: pointer;
+  background-color: var(--black-color);
+  height: 50px;
+  width: 50px;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: var(--font-principal);
 }
 
 a {
@@ -11,6 +44,341 @@ a {
   text-decoration: none;
 }
 
+*::after,
+*::before,
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  outline: none;
+}
+
+.conic-circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  filter: brightness(1.5);
+  animation: fadeIn 1s ease-in-out;
+  z-index: -1;
+}
+
+.conic-circle-center {
+  height: 80vh;
+  width: 80vh;
+  border-radius: 100%;
+  background: conic-gradient(#006867, #62265d, #16446c 50%, #006867);
+  filter: blur(100px);
+}
+
+.conic-circle-1 {
+  position: absolute;
+  height: 60vh;
+  width: 60vh;
+  border-radius: 100%;
+  background: conic-gradient(
+    #62265d,
+    rgba(0, 255, 0, 0.5),
+    rgba(0, 0, 255, 0.5)
+  );
+  filter: blur(110px);
+}
+
+.container {
+  background: var(--black-color);
+  height: 100%;
+  padding-top: 15vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 2560px;
+}
+
+.section {
+  height: 100%;
+  width: 100vw;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  color: var(--white-color);
+  position: fixed;
+  width: 100%;
+  height: 9vh;
+  justify-content: space-between;
+  z-index: 4;
+}
+
+.navbar-center > a,
+.navbar-right > a,
+.navbar-left {
+  padding: 15px;
+}
+
+.navbar-right > a,
+.navbar-right > button {
+  border: 1px solid var(--white-color);
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right > a > svg {
+  font-size: 1.25rem;
+}
+
+.home-first-section {
+  z-index: 2;
+  position: relative;
+}
+
+.home-first-section > div {
+  padding: 20px;
+}
+
+.center-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-first-section-presentation > h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.home-first-section-presentation > p {
+  font-size: 1.5rem;
+  color: var(--grey-text);
+}
+
+.home-second-section-presentation > p {
+  font-size: 1rem;
+  color: var(--grey-text);
+  padding: 20px;
+  max-width: 45%;
+  text-align: center;
+}
+
+.home-first-section-presentation > img {
+  width: 120px;
+}
+
+.home-second-section-presentation > button {
+  background: #4d81ee;
+  color: var(--white-color);
+  border: none;
+  border-radius: 50px;
+  padding: 7px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.error > div > hr {
+  width: 0px;
+  height: 205px;
+  border: 1px solid #000000;
+}
+
+.error {
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+.error > div {
+  align-items: normal;
+}
+
+.error > div.center-flex.flex-row {
+  align-items: center;
+}
+
+.error > div > img {
+  padding-right: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.error > div > img:hover {
+  transform: scale(1.01);
+}
+
+.error > div > p {
+  font-family: "Apple SD Gothic Neo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  padding: 0px 0px 20px 50px;
+  color: #000000;
+}
+
+.error > div > h1 {
+  font-family: "Apple SD Gothic Neo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 108px;
+  padding: 35px 0px 0px 50px;
+  color: #000000;
+}
+
+.home-second-section-presentation > h2 {
+  font-size: 1.8rem;
+  color: var(--white-color);
+}
+
+.margin-left-15 {
+  margin-left: 15px;
+}
+
+.home-second-section-presentation > img {
+  width: 80%;
+  animation: fadeIn-translateY 1s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+  .navbar-center,
+  .navbar-title {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .conic-circle-center {
+    height: 60vh;
+    width: 60vh;
+  }
+
+  .conic-circle-1 {
+    height: 40vh;
+    width: 40vh;
+  }
+
+  .conic-circles {
+    filter: brightness(1.9);
+  }
+
+  .error > div > hr {
+    margin-top: 50px;
+    width: 205px;
+    height: 0px;
+  }
+
+  .error > div > p, .error > div > h1 {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .error > div.flex-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .conic-circle-center {
+    height: 40vh;
+    width: 40vh;
+  }
+
+  .conic-circle-1 {
+    height: 30vh;
+    width: 30vh;
+  }
+}
+
+@media (min-width: 2000px) {
+  .container {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .conic-circles {
+    filter: brightness(1);
+  }
+
+  .home-first-section {
+    padding-top: 15vh;
+  }
+}
+
+@keyframes fadeIn-translateY {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home-second-section-presentation h1 {
+  font-size: 2.5rem;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.home-second-oblong {
+  margin: 50px;
+  width: 70%;
+  height: 500px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    107.56deg,
+    #ff7a7a 2.2%,
+    #a30cb5 29.17%,
+    #a30cb5 45.31%,
+    #00173a 95.31%
+  );
+}
+
+.navbar-title {
+  margin-left: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+#svg-toggle-theme {
+  font-size: 1.25rem;
+}
+
+#invert,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  transition: all 0.3s ease-in-out;
 }
