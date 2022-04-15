@@ -18,7 +18,7 @@ export default function Home() {
       <header className="w-full flex justify-between p-5 border-b border-gray-800">
         <a href="#"><Image src="/codeedit-logo.png" alt="CodeEdit Logo" width={128} height={21} /></a>
 
-        <nav className="self-center flex space-x-4">
+        <nav className="hidden md:block self-center flex space-x-4">
           <a href="#">Extensions</a>
           <a href="#">Documentation</a>
           <a href="#">Changelog</a>
@@ -35,26 +35,29 @@ export default function Home() {
       </header>
 
       <main className={styles.main}>
-        <section className="min-h-full w-full bg-gradient bg-top bg-cover bg-no-repeat flex flex-col items-center mt-16">
+        <section className="relative min-h-full w-full bg-gradient bg-[center_bottom_-16rem] sm:bg-[center_bottom_-20rem] md:bg-[center_bottom_-25rem] lg:bg-[center_bottom_-25rem] bg-no-repeat bg-135% lg:bg-115% flex flex-col items-center">
+          <div className="mt-16">
             <Image src="/codeedit-icon.png" alt="CodeEdit Icon" width={100} height={100} />
+          </div>
 
-            <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold mt-3">Elevate your editing experience!</h1>
-            
-            <p className="text-gray-400 text-xl lg:text-2xl mt-4">
-              Open source, free forever.
-            </p>
-            
-            <a href="#" className="bg-blue-500 py-2 px-4 rounded-3xl mt-10 flex"><span>Download</span><FontAwesomeIcon icon={faChevronDown} className="ml-2 w-3"/></a>
+          <h1 className="text-2xl md:text-3xl lg:text-5xl font-semibold mt-3">Elevate your editing experience.</h1>
 
-            <div className="mt-6 text-gray-400 flex divide-x divide-gray-400 text-sm">
-              <span className="px-3">v1.31.0</span>
-              <span className="px-3">macOS 12.0+</span>
-              <span className="px-3">Install via Homebrew</span>
-            </div>
+          <p className="text-gray-400 font-light text-xl lg:text-2xl mt-4">Open source, free forever.</p>
 
-            <div className="mt-10 flex"><span className="text-xl lg:text-2xl">Watch the film</span><FontAwesomeIcon icon={faCirclePlay} className="ml-2 w-6"/></div>
-            
-            <Image src="/codeedit-screen.png" alt="CodeEdit Screen" width={1100} height={714} className="m-auto"/>
+          <a href="#" className="bg-blue-500 py-2 px-4 rounded-3xl mt-10 flex"><span>Download</span><FontAwesomeIcon icon={faChevronDown} className="ml-2 w-3"/></a>
+
+          <div className="mt-6 text-gray-400 flex divide-x divide-gray-400 text-sm">
+            <span className="px-3">v1.31.0</span>
+            <span className="px-3">macOS 12.0+</span>
+            <span className="px-3">Install via Homebrew</span>
+          </div>
+
+          <div className="mt-10 flex mb-5"><span className="text-xl lg:text-2xl">Watch the film</span><FontAwesomeIcon icon={faCirclePlay} className="ml-2 w-6"/></div>
+
+          <img src="/codeedit-screen-transparent.png" className="w-5/6"></img>
+
+          <div className="absolute bg-gradient-to-t from-black w-full bottom-16 lg:bottom-32 h-16 lg:h-32"></div>
+          <div className="absolute bg-black w-full bottom-0 h-16 lg:h-32"></div>
         </section>
       </main>
     </div>
