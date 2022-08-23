@@ -10,6 +10,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url('/bg.svg');
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.83);
+  background-size: 100%;
+  background-position: center;
 }
 
 .footer {
@@ -42,7 +47,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .title,
@@ -51,13 +56,13 @@
 }
 
 .description {
-  margin: 4rem 0;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  opacity: 0.8;
 }
 
 .code {
-  background: #fafafa;
+  background: white;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
@@ -113,4 +118,41 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.demoImg {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.downloadbutton {
+  background-color: #0070f3;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 30px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.downloadbutton:hover {
+  opacity: 0.9;
+}
+
+.buttondownload {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+}
+
+.demoImgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
