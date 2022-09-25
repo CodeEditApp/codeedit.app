@@ -51,7 +51,7 @@ function ColorSchemeToggle() {
   const { setColorScheme } = useSite();
 
   useEffect(() => {
-    const theme = window.localStorage.getItem('themeColor');
+    const theme = window.localStorage.getItem('colorScheme');
 
     if (theme) setToggleValue(theme)
   }, []);
