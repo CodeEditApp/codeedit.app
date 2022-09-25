@@ -1,21 +1,10 @@
 import { useEffect, useState } from 'react';
 
+const getColorScheme = () =>
+  window.localStorage.getItem('colorScheme') ?? 'auto';
+
 const useColorScheme = () => {
   const [colorScheme, setColorSchemeState] = useState();
-
-  const getColorScheme = () => {
-    const storedColorScheme = window.localStorage.getItem('colorScheme');
-    let colorScheme = !storedColorScheme ? 'auto' : 'light';
-
-    if (
-      storedColorScheme !== 'undefined' &&
-      ['dark', 'light'].includes(storedColorScheme)
-    ) {
-      colorScheme = storedColorScheme;
-    }
-
-    return colorScheme;
-  };
 
   const setColorScheme = (colorScheme) => {
     if (['light', 'dark'].includes(colorScheme)) {
