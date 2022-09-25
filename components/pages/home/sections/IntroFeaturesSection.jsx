@@ -45,7 +45,7 @@ const IntroFeaturesSection = () => {
               Extensible & customizable
             </Typography>
             <Typography variant="body-reduced">
-              We aren't going to guess. Make CodeEdit your own, tailored to
+              We aren&apos;t going to guess. Make CodeEdit your own, tailored to
               your needs.
             </Typography>
           </Stack>
