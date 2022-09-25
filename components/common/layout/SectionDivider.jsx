@@ -1,4 +1,4 @@
-import Section from "@/components/common/Section"
+import Section from "./Section"
 import styled from 'styled-components';
 
 const Divider = styled.hr`
