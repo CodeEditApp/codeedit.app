@@ -7,11 +7,10 @@ import {
   Column,
   Section,
   Stack,
+  Container,
 } from '@/components/common/layout';
 
-export default function DevPage() {
-  const message = 'The quick brown fox jumped over the lazy dog.';
-
+export default function GridPage() {
   return (
     <>
       <Section contained gutterY>
