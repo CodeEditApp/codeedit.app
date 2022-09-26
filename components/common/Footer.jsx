@@ -2,6 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import styled from 'styled-components'
 import ColorSchemeToggle from './ColorSchemeToggle';
+import { mediaQueries } from '@/styles/breakpoints';
 
 const FooterWrap = styled.footer`
   font-size: 12px;
@@ -38,13 +39,17 @@ const MiniFooterTop = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  
   border-color: var(--separator-color);
   a {
     color: var(--glyph-blue);
     :hover {
       text-decoration: underline;
     }
+  }
+  @media ${mediaQueries.sm} {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
   }
 }
 `
@@ -59,10 +64,8 @@ const LegalLinks = styled.div`
     display: inline-block;
     margin-top: 5px;
     white-space: nowrap;
-
     color: var(--glyph-gray-secondary-alt);
     border-color: var(--fill-gray-tertiary);
-
     :last-child {
       border: 0;
       margin-right: 0;
@@ -80,6 +83,9 @@ const MiniFooterBottom = styled.div`
     :hover {
       text-decoration: underline;
     }
+  }
+  @media ${mediaQueries.sm} {
+    flex-direction: column;
   }
 `
 
