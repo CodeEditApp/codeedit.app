@@ -57,6 +57,7 @@ const LegalCopyright = styled.div`
 `
 const LegalLinks = styled.div`
   display: flex;
+  flex-wrap: wrap;
   a {
     border-right: 1px solid #d2d2d7;
     margin-right: 7px;
