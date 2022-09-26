@@ -43,10 +43,19 @@ h6 {
 
 html,
 body {
+  width: 100%;
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
 }
 
 a {
@@ -79,10 +88,6 @@ html[data-color-scheme='light'] {
 html[data-color-scheme='dark'] {
   background-color: black;
   color: white;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 :root {
