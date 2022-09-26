@@ -14,6 +14,7 @@ const Column = styled.div`
     max-width: ${Number(val ?? 1)/12*100}%;
   `) : `
     flex: 1;
+    max-width: 100%;
   `}
   ${({ offset }) => getResponsivePropStyles(offset, (val) => `
     margin-left: ${Number(val ?? 1)/12*100}%;

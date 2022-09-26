@@ -1,4 +1,4 @@
-import { Sliders } from 'react-feather';
+import { Feather, GitHub, Sliders, Zap } from 'react-feather';
 import Tile from '@/components/common/Tile';
 import Typography from '@/components/common/Typography';
 import { Grid, GridItem, Section, Stack } from '@/components/common/layout';
@@ -9,7 +9,7 @@ const IntroFeaturesSection = () => {
       <Grid columns={{ xs: 1, md: 2, lg: 4 }} gap>
         <GridItem as={Tile}>
           <Stack gap={2}>
-            <Sliders />
+            <Zap />
             <Typography variant="eyebrow-reduced">macOS Native</Typography>
             <Typography variant="body-reduced">
               Harness the full power of your Mac.
@@ -18,7 +18,7 @@ const IntroFeaturesSection = () => {
         </GridItem>
         <GridItem as={Tile}>
           <Stack gap={2}>
-            <Sliders />
+            <Feather />
             <Typography variant="eyebrow-reduced">
               Lightweight Yet Powerful
             </Typography>
@@ -29,7 +29,7 @@ const IntroFeaturesSection = () => {
         </GridItem>
         <GridItem as={Tile}>
           <Stack gap={2}>
-            <Sliders />
+            <GitHub />
             <Typography variant="eyebrow-reduced">
               Completely Open Source
             </Typography>
