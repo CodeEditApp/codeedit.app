@@ -18,10 +18,7 @@ const HeroSection = () => {
       style={{ overflow: 'visible' }}
       renderLayer={(percentage) => {
         return (
-          <Section contained gutterY>
-            <Row align="center">
-              <Column></Column>
-            </Row>
+          <Section contained gutterTop>
             <Row align="center">
               <Column width={{ md: 12, lg: 8 }}>
                 <Stack gap={2}>
@@ -50,7 +47,7 @@ const HeroSection = () => {
               </Column>
             </Row>
             <Row align="center">
-              <Column>
+              <Column style={{ width: '100%'}}>
                 <HeroImage percentage={percentage} />
               </Column>
             </Row>

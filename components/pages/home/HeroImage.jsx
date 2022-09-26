@@ -1,8 +1,8 @@
 import styled, { css, keyframes } from "styled-components"
 import Image from "next/image";
-import { Parallax } from 'react-parallax';
 import HardwareLockup from "./HardwareLockup";
-
+import { useSite } from '@/components/common/Site';
+import { mediaQueries } from '@/styles/breakpoints';
 
 const slideIn = keyframes`
   from {
@@ -42,9 +42,12 @@ const SceneWrap = styled.div`
 `;
 const ImageWrap = styled.div`
   position: relative;
-  width: 988px;
+  max-width: 988px;
   margin: 0 auto;
   z-index: 1;
+  @media ${mediaQueries.md} {
+    width: 82%;
+  }
 `;
 const BlurBackground = styled.div`
   backdrop-filter: blur(15px);
@@ -55,7 +58,6 @@ const BlurBackground = styled.div`
   left: 3%;
   border-radius: 1%;
 `;
-
 const colorFlairPiece = css`
   position: absolute;
   top: 0;
@@ -111,8 +113,19 @@ const ColorFlair3 = styled(ColorFlair)`
     animation-duration: 5000ms;
   }
 `;
+const StyledHardwareLockup = styled(HardwareLockup)`
+  margin-top: -45%;
+  margin-left: -100px;
+  margin-right: -100px;
+  @media ${mediaQueries.md} {
+    margin-top: -37%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+`
 
 const HeroImage = ({ percentage }) => {
+  const { colorScheme = "light" } = useSite();
   const adjustedPercentage = (Math.min(Math.max(percentage, 1), 1.2) - 1) * 5;
 
   return (
@@ -120,16 +133,16 @@ const HeroImage = ({ percentage }) => {
       <ColorFlair1 />
       <ColorFlair2 />
       <ColorFlair3 />
-      <ImageWrap style={{ transform: `translateY(${adjustedPercentage * 20}%) scale(${1 + (1 - adjustedPercentage) * .1})` }}>
+      <ImageWrap style={{ transform: `translateY(${adjustedPercentage * 12.5}%) scale(${1 + (1 - adjustedPercentage) * .1})` }}>
         <BlurBackground />
         <Image
           width={987.275}
           height={580.75}
-          src="/codeedit-window.png"
+          src={`/codeedit-window-${colorScheme}.png`}
           alt="CodeEdit screenshot"
         /> 
       </ImageWrap>
-      <HardwareLockup style={{ transform: `translateY(-${adjustedPercentage * 15}%)  scale(${1 + (1 - adjustedPercentage) * -.1})`, marginTop: '-33.33%' }} />
+      <StyledHardwareLockup style={{ transform: `translateY(-${adjustedPercentage * 15}%)  scale(${1 + (1 - adjustedPercentage) * -.1})` }} />
     </SceneWrap>
   )
 }

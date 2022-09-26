@@ -13,11 +13,24 @@ export const useSite = () => useContext(SiteContext);
 
 
 const Site = ({ children }) => {
-  const { colorScheme, setColorScheme } = useColorScheme();
+  const {
+    colorSchemeSetting,
+    colorScheme,
+    getColorSchemeSetting,
+    setColorScheme,
+    getSystemColorScheme
+  } = useColorScheme();
   const windowDimensions = useWindowDimensions();
 
   return (
-    <SiteContextProvider value={{ colorScheme, setColorScheme, windowDimensions }}>
+    <SiteContextProvider value={{
+      colorSchemeSetting,
+      colorScheme,
+      getColorSchemeSetting,
+      setColorScheme,
+      getSystemColorScheme,
+      windowDimensions
+    }}>
       <ThemeProvider theme={theme}>
         {children}
       </ThemeProvider>

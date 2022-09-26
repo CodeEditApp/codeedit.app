@@ -81,30 +81,34 @@ html[data-color-scheme='dark'] {
   color: white;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --black: #000000;
   --white: #ffffff;
-  --violet: #8876fe;
+  --orange: #e66702;
+  --tomato: #f63e54;
   --magenta: #d71bce;
   --plum: #8d1287;
-  --indigo: #622aff;
   --grape: #6529f8;
+  --indigo: #622aff;
+  --violet: #8876fe;
+  --sapphire: #3d44c3;
+  --midnight: #1b23b3;
   --azure: #027fff;
-  --tomato: #f63e54;
-  --orange: #e66702;
+  --moonstone: #2294b1;
+  --teal: #049cb7;
+  --sea-green: #099b9d;
+  --aqua: #039e8f;
   --green: #0c9d46;
   --forest: #0c8346;
-  --sea-green: #099b9d;
-  --teal: #049cb7;
-  --aqua: #039e8f;
-  --moonstone: #2294b1;
-  --midnight: #1b23b3;
-  --sapphire: #3d44c3;
 
   --color-fill-blue: #0071e3;
   --color-figure-blue: #06c;
   --color-button-background-active: var(--color-fill-blue);
-  --color-button-background-hover: rgb(0, 119, 237);
+  --color-button-background-hover: #0077ed;
 }
 
 /* --system-primary: #fffffff9;

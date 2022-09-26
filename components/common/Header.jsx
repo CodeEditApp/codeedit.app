@@ -96,9 +96,7 @@ const MenuItem = styled.li`
     ${({ $current }) => $current ? `
       && a {
         color: var(--foreground-color) !important;
-        opacity: 0.5;import { Container } from '@/components/common/Container';
-import { mediaQueries } from '../../styles/mediaQueries';
-
+        opacity: 0.5;
       }
     ` : ``}
 `;
@@ -135,6 +133,7 @@ function Header() {
               <MenuItems>
                 {navigation.map(item => {
                   const isExternal = item.href.match(/(https?:\/\/[\w\d.-]+)/gi);
+                  console.log(asPath === item.href, asPath, item.href)
 
                   return (
                     <MenuItem key={item.href} $current={asPath === item.href} {...(isExternal ? { target: "_blank" } : {})}>

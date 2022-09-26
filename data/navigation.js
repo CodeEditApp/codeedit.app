@@ -4,19 +4,19 @@ const navigation = [
     label: 'CodeEdit',
   },
   {
-    href: 'whats-new',
+    href: '/whats-new',
     label: 'What’s Included',
   },
+  // {
+  //   href: '/resources',
+  //   label: 'Resources',
+  // },
   {
-    href: 'resources',
-    label: 'Resources',
-  },
-  {
-    href: 'developer',
+    href: '/developer',
     label: 'Developer',
   },
   {
-    href: 'extensions',
+    href: '/extensions',
     label: 'Extensions',
   },
   {
