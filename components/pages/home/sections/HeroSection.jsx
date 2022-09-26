@@ -5,6 +5,7 @@ import { Parallax } from 'react-parallax';
 import Typography from '@/components/common/Typography';
 import { Row, Column, Section, Stack } from '@/components/common/layout';
 import HeroImage from '../HeroImage';
+import Button from '../../../common/Button';
 
 const ProductIconWrap = styled.div`
   width: 128px;
@@ -19,9 +20,9 @@ const HeroSection = () => {
       renderLayer={(percentage) => {
         return (
           <Section contained gutterTop>
-            <Row align="center">
+            <Row align="center" style={{ position: 'relative', zIndex: 1 }}>
               <Column width={{ md: 12, lg: 8 }}>
-                <Stack gap={2}>
+                <Stack gap={2} align="center">
                   <ProductIconWrap>
                     <Image
                       width={128}
@@ -38,16 +39,18 @@ const HeroSection = () => {
                     entirely and unapologetically for macOS. Open-source, free
                     forever.
                   </Typography>
-                  <Typography variant="body" color="tertiary">
+                  <Typography variant="body" color="tertiary" gutterBottom>
                     Features include syntax highlighting, code completion, project
                     find and replace, snippets, terminal, task running, debugging,
                     git integration, code review, extensions, and more.
                   </Typography>
+                  <Button>Download Preview</Button>
+                  <Typography variant="body-reduced" color="tertiary">v0.0.1 | macOS 13+</Typography>
                 </Stack>
               </Column>
             </Row>
             <Row align="center">
-              <Column style={{ width: '100%'}}>
+              <Column>
                 <HeroImage percentage={percentage} />
               </Column>
             </Row>
