@@ -12,8 +12,8 @@ const MoreFeaturesSection = () => {
           This is a description of the features section.
         </Typography>
       </Stack>
-      <Grid columns={3} gap>
-        <GridItem as={Tile} width={3} color="pink" gradient>
+      <Grid columns={{ xs: 1, md: 2, lg: 3 }} gap>
+        <GridItem as={Tile} width={{ xs: 1, md: 2, lg: 3 }} color="pink" gradient>
           <Stack gap={2}>
             <Sliders />
             <Typography variant="eyebrow">Feature Title 1</Typography>
@@ -22,7 +22,7 @@ const MoreFeaturesSection = () => {
             </Typography>
           </Stack>
         </GridItem>
-        <GridItem as={Tile} height={2}>
+        <GridItem as={Tile} height={{ xs: 1, lg: 2 }}>
           <Stack gap={2}>
             <Sliders />
             <Typography variant="eyebrow">Feature Title 4</Typography>
@@ -31,7 +31,7 @@ const MoreFeaturesSection = () => {
             </Typography>
           </Stack>
         </GridItem>
-        <GridItem as={Tile} start="1/3" end="1/3">
+        <GridItem as={Tile}>
           <Stack gap={2}>
             <Sliders />
             <Typography variant="eyebrow">Feature Title 2</Typography>
@@ -40,7 +40,7 @@ const MoreFeaturesSection = () => {
             </Typography>
           </Stack>
         </GridItem>
-        <GridItem as={Tile} start="2/3" end="2/3">
+        <GridItem as={Tile}>
           <Stack gap={2}>
             <Sliders />
             <Typography variant="eyebrow">Feature Title 3</Typography>
@@ -49,7 +49,7 @@ const MoreFeaturesSection = () => {
             </Typography>
           </Stack>
         </GridItem>
-        <GridItem as={Tile} width={2}>
+        <GridItem as={Tile} width={{ xs: 1, lg: 2 }}>
           <Stack gap={2}>
             <Sliders />
             <Typography variant="eyebrow">Feature Title 2</Typography>

@@ -12,12 +12,12 @@ const WhyUsSection = () => {
           This is a description of the why CodeEdit section.
         </Typography>
       </Stack>
-      <Grid columns={{ md: 2, lg: 3 }} gap>
+      <Grid columns={{ xs: 1, md: 2, lg: 3 }} gap>
         <GridItem
           as={Tile}
           color="blue"
           gradient
-          width={{ md: 2, lg: 3 }}
+          width={{ xs: 1, md: 2, lg: 3 }}
           data-color-scheme="dark"
         >
           <Stack gap={2}>

@@ -1,4 +1,4 @@
-import mediaQueries from './mediaQueries';
+import { mediaQueries } from './breakpoints';
 import getResponsivePropStyles from './getResponsivePropStyles';
 
 const theme = {

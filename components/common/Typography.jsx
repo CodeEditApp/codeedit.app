@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import getTypographyStyles from '../../styles/getTypographyStyles';
+import getTypographyStyles from '@/styles/getTypographyStyles';
 
 const TypographyWrap = styled.p`
   ${({ variant }) => getTypographyStyles(variant)}

@@ -7,7 +7,6 @@ const Grid = styled.div`
   ${({ columns }) => getResponsivePropStyles(columns, (val) => `grid-template-columns: repeat(${val}, 1fr);`)}
   ${({ rowHeight }) => getResponsivePropStyles(rowHeight, (val) => `grid-auto-rows: ${getSpacing(val)};`)}
   ${({ gap }) => getResponsivePropStyles(gap, (val) => `gap: ${getSpacing(val)};`)}
-  
 `;
 
 export default Grid;

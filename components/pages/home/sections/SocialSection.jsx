@@ -6,7 +6,7 @@ import { Grid, GridItem, Section, Stack } from '@/components/common/layout';
 const SocialSection = () => {
   return (
     <Section contained gutterY>
-      <Grid columns={2} gap>
+      <Grid columns={{ xs: 1, lg: 2}} gap>
         <GridItem as={Tile} start="1/1" end="1/1">
           <Stack gap={2} align="start">
             <Image

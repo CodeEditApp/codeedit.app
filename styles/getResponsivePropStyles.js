@@ -1,4 +1,4 @@
-import mediaQueries from './mediaQueries';
+import { mediaQueries } from './breakpoints';
 
 const getMediaQueryStyle = (size, val, getStyle) =>
   Object.keys(val).includes(size)

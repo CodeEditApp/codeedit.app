@@ -1,4 +1,4 @@
-import mediaQueries from './mediaQueries';
+import { mediaQueries } from './breakpoints';
 
 const getTypographyStyles = (variant) => {
   switch (variant) {

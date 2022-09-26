@@ -2,6 +2,7 @@ import styled from "styled-components";
 import RestrictedContainer from "./Container"
 import getSpacing from '@/styles/spacing';
 import getResponsivePropStyles from '@/styles/getResponsivePropStyles';
+import useVisibilityProps from "@/hooks/useVisibilityProps";
 
 const SectionWrap = styled.section`
   ${({ gutter, gutterTop, gutterY }) => getResponsivePropStyles((gutterTop ?? gutterY ?? gutter ?? 8), (val) => `
@@ -24,6 +25,9 @@ const FullWidthContainer = styled.div`
 export default function Section (props) {
   let { children, className, contained, gutter, gutterTop, gutterBottom, gutterLeft, gutterRight, gutterX = true, gutterY } = props;
   const Container = contained ? RestrictedContainer : FullWidthContainer;
+  const isVisible = useVisibilityProps(props);
+
+  if (!isVisible) return null;
   
   const defaultGutterX = 3;
   const defaultGutterY = 8;

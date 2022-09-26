@@ -5,6 +5,8 @@ import styled from 'styled-components'
 import { ExternalLink } from "react-feather"
 import Button from '@/components/common/Button';
 import { Container } from '@/components/common/layout';
+import { mediaQueries } from '@/styles/breakpoints';
+import navigation from '@/data/navigation';
 
 const Nav = styled.nav`
   position: relative;
@@ -69,6 +71,9 @@ const MenuTray = styled.div`
   display: flex;
   align-items: center;
   gap: 24px;
+  @media ${mediaQueries.sm} {
+    display: none;
+  }
 `;
 const MenuItems = styled.ul``;
 const MenuItem = styled.li`
@@ -92,6 +97,7 @@ const MenuItem = styled.li`
       && a {
         color: var(--foreground-color) !important;
         opacity: 0.5;import { Container } from '@/components/common/Container';
+import { mediaQueries } from '../../styles/mediaQueries';
 
       }
     ` : ``}
@@ -127,40 +133,18 @@ function Header() {
             </MenuCtaAnchor>
             <MenuTray>
               <MenuItems>
-                <MenuItem $current={asPath === "/"}>
-                  <MenuLink href="/">
-                    CodeEdit
-                  </MenuLink>
-                </MenuItem>
-                <MenuItem $current={asPath === "/whats-new"}>
-                  <MenuLink href="/whats-new">
-                    What’s included 
-                  </MenuLink>
-                </MenuItem>
-                <MenuItem $current={asPath === "/resources"}>
-                  <MenuLink href="/resources">
-                    Resources
-                  </MenuLink>
-                </MenuItem>
-                <MenuItem $current={asPath === "/developer"}>
-                  <MenuLink href="/developer">
-                    Developer
-                  </MenuLink>
-                </MenuItem>
-                <MenuItem $current={asPath === "/extensions"}>
-                  <MenuLink href="/extensions">
-                    Extensions
-                  </MenuLink>
-                </MenuItem>
-                <MenuItem>
-                  <MenuLink
-                    href="https://github.com/CodeEditApp/CodeEdit"
-                    target="_blank"
-                  >
-                    GitHub
-                  </MenuLink>
-                  <StyledExternalLink size={11} />
-                </MenuItem>
+                {navigation.map(item => {
+                  const isExternal = item.href.match(/(https?:\/\/[\w\d.-]+)/gi);
+
+                  return (
+                    <MenuItem key={item.href} $current={asPath === item.href} {...(isExternal ? { target: "_blank" } : {})}>
+                      <MenuLink href={item.href}>
+                        {item.label}
+                      </MenuLink>
+                      {isExternal && <StyledExternalLink size={11} />}
+                    </MenuItem>
+                  );
+                })}
               </MenuItems>
             </MenuTray>
             <Actions>

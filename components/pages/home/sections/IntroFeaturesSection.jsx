@@ -6,7 +6,7 @@ import { Grid, GridItem, Section, Stack } from '@/components/common/layout';
 const IntroFeaturesSection = () => {
   return (
     <Section contained gutterBottom>
-      <Grid columns={{ md: 2, lg: 4 }} gap>
+      <Grid columns={{ xs: 1, md: 2, lg: 4 }} gap>
         <GridItem as={Tile}>
           <Stack gap={2}>
             <Sliders />

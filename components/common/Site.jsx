@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from "react";
 import theme from "@/styles/theme";
 import { ThemeProvider } from "styled-components";
 import useColorScheme from "@/hooks/useColorScheme";
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 
 export const SiteContext = React.createContext({});
 
@@ -13,11 +14,10 @@ export const useSite = () => useContext(SiteContext);
 
 const Site = ({ children }) => {
   const { colorScheme, setColorScheme } = useColorScheme();
-
-  console.log({ colorScheme })
+  const windowDimensions = useWindowDimensions();
 
   return (
-    <SiteContextProvider value={{ colorScheme, setColorScheme }}>
+    <SiteContextProvider value={{ colorScheme, setColorScheme, windowDimensions }}>
       <ThemeProvider theme={theme}>
         {children}
       </ThemeProvider>

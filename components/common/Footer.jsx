@@ -9,7 +9,6 @@ const FooterWrap = styled.footer`
   font-weight: 400;
   letter-spacing: -.01em;
   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-  min-width: 1024px;
   overflow: hidden;
   position: relative;
   z-index: 1;
