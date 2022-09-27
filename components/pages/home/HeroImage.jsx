@@ -38,7 +38,7 @@ const SceneWrap = styled.div`
   animation: ${scaleBlurIn} 500ms 750ms cubic-bezier(0.0, 0.0, 0.2, 1);
   animation-fill-mode: both;
   transform-origin: bottom center;
-  margin-top: 64px;
+  margin-top: 6%;
 `;
 const ImageWrap = styled.div`
   position: relative;
@@ -64,8 +64,15 @@ const colorFlairPiece = css`
   left: 0;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   filter: blur(100px);
+
+  @media ${mediaQueries.md} {
+    width: 20vw;
+    height: 20vw;
+    filter: blur(10vw);
+  }
+
+  border-radius: 50%;
   background: #4F95FF;
   transform-origin: bottom center;
 `;
@@ -125,8 +132,8 @@ const StyledHardwareLockup = styled(HardwareLockup)`
 `
 
 const HeroImage = ({ percentage }) => {
-  const { colorScheme = "light" } = useSite();
-  const adjustedPercentage = (Math.min(Math.max(percentage, 1), 1.2) - 1) * 5;
+  const { colorScheme = "light", breakpoint } = useSite();
+  const adjustedPercentage = (Math.min(Math.max(percentage - ( breakpoint === 'xs' ? .2 : 0), 1), 1.2) - 1) * 5;
 
   return (
     <SceneWrap>

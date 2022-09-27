@@ -5,7 +5,7 @@ import spacing from "@/styles/spacing";
 const StackWrap = styled.div`
   display: flex;
   flex-direction: ${({ $direction }) => ($direction === "vertical" ? `column` : `row`)}${({ $reverse }) => ($reverse ? `-reverse` : ``)};
-  ${({ $gap, theme }) =>
+  ${({ $gap }) =>
     $gap !== undefined && $gap !== null && $gap !== false
       ? `gap: ${Array.isArray($gap) ? spacing(...$gap) : spacing($gap)};`
       : ``}

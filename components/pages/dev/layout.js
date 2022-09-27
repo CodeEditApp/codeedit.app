@@ -74,7 +74,6 @@ export default function DevPage() {
           </Column>
         </Row>
       </Section>
-
       <Section contained gutterBottom>
         <Row gap>
           <Column>
@@ -143,7 +142,7 @@ export default function DevPage() {
         </Row>
       </Section>
 
-      <Section>
+      <Section contained gutterBottom>
         <Row gap>
           <Column>
             <Typography variant="headline-reduced">Offsets</Typography>
@@ -213,7 +212,7 @@ export default function DevPage() {
         </Row>
       </Section>
 
-      <Section>
+      <Section contained gutterBottom>
         <Row gap>
           <Column>
             <Typography variant="headline-reduced">Auto Width</Typography>
@@ -248,7 +247,7 @@ export default function DevPage() {
         </Row>
       </Section>
 
-      <Section>
+      <Section contained>
         <Row gap>
           <Column>
             <Typography variant="headline-reduced">Align</Typography>
@@ -279,7 +278,7 @@ export default function DevPage() {
         </Row>
       </Section>
 
-      <Section>
+      <Section contained gutterBottom>
         <Row gap>
           <Column>
             <Typography variant="headline-reduced">Distribute</Typography>

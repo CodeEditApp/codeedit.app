@@ -29,7 +29,8 @@ const Site = ({ children }) => {
       getColorSchemeSetting,
       setColorScheme,
       getSystemColorScheme,
-      windowDimensions
+      windowDimensions,
+      breakpoint: windowDimensions.breakpoint
     }}>
       <ThemeProvider theme={theme}>
         {children}
