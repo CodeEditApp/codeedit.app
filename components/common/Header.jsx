@@ -140,7 +140,6 @@ function Header() {
               <MenuItems>
                 {navigation.map(item => {
                   const isExternal = item.href.match(/(https?:\/\/[\w\d.-]+)/gi);
-                  console.log(asPath === item.href, asPath, item.href)
 
                   return (
                     <MenuItem key={item.href} $current={asPath === item.href} {...(isExternal ? { target: "_blank" } : {})}>
