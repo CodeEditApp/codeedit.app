@@ -75,7 +75,14 @@ const MenuTray = styled.div`
     display: none;
   }
 `;
-const MenuItems = styled.ul``;
+const MenuItems = styled.ul`
+  @media only screen and (max-width: 767px) {
+    opacity: 0;
+    padding: 4px 24px 24px;
+    transform: translate3d(0, -150px, 0);
+    transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1) 0.5s,opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1) 0.2s;
+  }
+`;
 const MenuItem = styled.li`
     margin-left: 24px;
     float: left;
@@ -133,7 +140,6 @@ function Header() {
               <MenuItems>
                 {navigation.map(item => {
                   const isExternal = item.href.match(/(https?:\/\/[\w\d.-]+)/gi);
-                  console.log(asPath === item.href, asPath, item.href)
 
                   return (
                     <MenuItem key={item.href} $current={asPath === item.href} {...(isExternal ? { target: "_blank" } : {})}>
