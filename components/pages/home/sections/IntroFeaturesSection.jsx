@@ -40,7 +40,7 @@ const IntroFeaturesSection = () => {
               Completely Open Source
             </Typography>
             <Typography variant="intro" style={{ opacity: .5 }}>
-              CodeEdit is developed for you by developers like you. Don't like something? Want a new feature? Just create an issue or submit a PR.
+              CodeEdit is developed for you by developers like you. Don&apos;t like something? Want a new feature? Just create an issue or submit a PR.
             </Typography>
           </Stack>
         </GridItem>
