@@ -60,7 +60,7 @@ const SocialSection = () => {
             <Heart size={48} />
             <Typography variant="headline-body">Become a Sponsor</Typography>
             <Typography variant="body-reduced">
-              Don&apos;t have time to contribute? You can show your support by becaoming a sponsor.
+              Don&apos;t have time to contribute? You can show your support by becoming a sponsor.
             </Typography>
             <Typography variant="body-reduced"><a href={links.githubSponsor}>Sponsor the Project</a></Typography>
           </Stack>

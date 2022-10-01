@@ -18,7 +18,7 @@ const IntroFeaturesSection = () => {
             <Zap size={gap} />
             <Typography variant="intro" gutterTop>macOS Native</Typography>
             <Typography variant="intro" style={{ opacity: .5 }}>
-              Harness the full power of your Mac, something only possible with our completely native archetecture developed in Swift.
+              Harness the full power of your Mac, something only possible with our completely native architecture developed in Swift.
             </Typography>
           </Stack>
         </GridItem>
