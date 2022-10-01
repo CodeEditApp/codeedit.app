@@ -40,20 +40,20 @@ export default class MyDocument extends Document {
           ></meta>
           <meta
             property="og:image"
-            content="https://codeedit.app/social-preview.jpg"
+            content="https://www.codeedit.app/social-preview.jpg"
           ></meta>
           <meta
             property="og:description"
             content="I design and develop beautiful yet functional interactive user experiences that provide both customer value and product success."
           ></meta>
-          <meta property="og:url" content="http://codeedit.app"></meta>
+          <meta property="og:url" content="https://www.codeedit.app"></meta>
           <meta
             name="twitter:image"
-            content="https://codeedit.app/social-preview.jpg"
+            content="https://www.codeedit.app/social-preview.jpg"
           ></meta>
           <meta
             name="twitter:image:src"
-            content="https://codeedit.app/social-preview.jpg"
+            content="https://www.codeedit.app/social-preview.jpg"
           ></meta>
           <meta name="twitter:card" content="summary_large_image"></meta>
           <meta name="twitter:site" content="@CodeEditApp"></meta>
