@@ -1,4 +1,4 @@
-import { links } from '@/data/links';
+import links from '@/data/links';
 
 const navigation = [
   {

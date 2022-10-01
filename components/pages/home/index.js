@@ -10,7 +10,7 @@ import FeaturesSection from './sections/FeaturesSection';
 import CtaSection from './sections/CtaSection';
 
 import SampleStorySection from './sections/SampleStorySection';
-import { links } from '@/data/links';
+import links from '@/data/links';
 
 export default function HomePage() {
   return (
