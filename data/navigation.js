@@ -1,3 +1,5 @@
+import { links } from '@/data/links';
+
 const navigation = [
   {
     href: '/',
@@ -20,7 +22,7 @@ const navigation = [
   //   label: 'Extensions',
   // },
   {
-    href: 'https://github.com/CodeEditApp/CodeEdit',
+    href: links.githubRepo,
     label: 'GitHub',
   },
 ];

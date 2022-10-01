@@ -10,15 +10,12 @@ import FeaturesSection from './sections/FeaturesSection';
 import CtaSection from './sections/CtaSection';
 
 import SampleStorySection from './sections/SampleStorySection';
+import { links } from '@/data/links';
 
 export default function HomePage() {
   return (
     <div>
-      <Ribbon
-        onClick={() => {
-          window.open('https://github.com/orgs/CodeEditApp/projects/3');
-        }}
-      >
+      <Ribbon onClick={() => window.open(links.githubProject)}>
         CodeEdit is currently in development. Check out the roadmap.
       </Ribbon>
       <HeroSection />
