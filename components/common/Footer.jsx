@@ -112,7 +112,7 @@ function Footer() {
           <MiniFooterBottom>
             <LegalCopyright>
               Copyright &copy; {currentYear}{' '}
-              <a href="https://codeedit.app">CodeEdit.</a> All rights reserved.
+              <a href="https://codeedit.app">CodeEdit</a>. All rights reserved.
             </LegalCopyright>
             <LegalLinks>
               {/* <LegalLink href="/legal/tos">
@@ -122,7 +122,7 @@ function Footer() {
                 Privacy Policy
               </LegalLink> */}
               <LegalLink href={links.license}>
-                Lincense
+                License
               </LegalLink>
             </LegalLinks>
           </MiniFooterBottom>
