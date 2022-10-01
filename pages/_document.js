@@ -40,7 +40,7 @@ export default class MyDocument extends Document {
           ></meta>
           <meta
             property="og:image"
-            content="http://codeedit.app/social-preview.jpg"
+            content="https://codeedit.app/social-preview.jpg"
           ></meta>
           <meta
             property="og:description"
