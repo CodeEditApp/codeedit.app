@@ -162,8 +162,8 @@ function Header() {
                 </label>
               </Action>
               <Action>
-                <a href="https://nightly.link/CodeEditApp/CodeEdit/workflows/nightly/main/CodeEdit_Nightly.dmg">
-                  <Button compact>Download Preview</Button>
+                <a>
+                  <Button disabled compact>Download Coming Soon</Button>
                 </a>
               </Action>
             </Actions>

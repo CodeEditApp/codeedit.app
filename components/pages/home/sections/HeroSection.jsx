@@ -21,7 +21,7 @@ const HeroSection = () => {
         return (
           <Section contained gutterTop>
             <Row align="center" style={{ position: 'relative', zIndex: 1 }}>
-              <Column width={{ md: 12, lg: 8 }}>
+              <Column width={{ md: 12, lg: 12 }}>
                 <Stack gap={2} align="center">
                   <ProductIconWrap>
                     <Image
@@ -31,21 +31,18 @@ const HeroSection = () => {
                       alt="CodeEdit product icon"
                     />
                   </ProductIconWrap>
-                  <Typography variant="headline" as="h1">
-                    CodeEdit
+                  <Typography variant="eyebrow-elevated" as="h1">
+                    CodeEdit for macOS
                   </Typography>
-                  <Typography variant="intro">
-                    A code editor built by the community, for the community, written
-                    entirely and unapologetically for macOS. Open-source, free
-                    forever.
+                  <Typography variant="headline-elevated">
+                    A lightweight, natively built editor.
+                    Open source. Free forever.
                   </Typography>
-                  <Typography variant="body" color="tertiary" gutterBottom>
-                    Features include syntax highlighting, code completion, project
-                    find and replace, snippets, terminal, task running, debugging,
-                    git integration, code review, extensions, and more.
+                  <Typography variant="intro-elevated" color="tertiary" gutterBottom>
+                    CodeEdit is an exciting new code editor written entirely and unapologetically for macOS. Develop at speeds like never before with increased efficiency and reliability in an editor that feels right at home on your Mac.
                   </Typography>
-                  <Button>Download Preview</Button>
-                  <Typography variant="body-reduced" color="tertiary">v0.0.1 | macOS 13+</Typography>
+                  <Button disabled>Download Coming Soon</Button>
+                  <Typography variant="body-reduced" color="tertiary">v0.0.1 | macOS 12+</Typography>
                 </Stack>
               </Column>
             </Row>

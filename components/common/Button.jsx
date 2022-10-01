@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Button = styled.button`
-  cursor: pointer;
+  cursor: ${({ disabled }) => disabled ? `default` : `pointer`};
   display: inline-block;
   text-align: center;
   white-space: nowrap;
@@ -16,7 +16,7 @@ const Button = styled.button`
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 18px;
-  background: #0071e3;
+  background: var(${({ disabled }) => disabled ? `--glyph-gray-tertiary` : `--fill-blue`});
   color: #fff;
   border: 0;
   outline: 0;

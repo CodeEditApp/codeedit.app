@@ -9,11 +9,17 @@ const StyledSection = styled(Section)`
   /* color: #1d1d1f; */
   background-color: var(--background-tertiary-color);
   /* color: var(--glyph-gray-tertiary); */
+  a {
+    color: var(--glyph-blue);
+    :hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 export default function CtaSection() {
   return (
-    <StyledSection contained gutterY>
+    <StyledSection contained gutterTop>
       <Stack gap align="center">
         <Image
           width={104}
@@ -23,7 +29,7 @@ export default function CtaSection() {
         />
         <Stack align="center" gap={1}>
           <Typography variant="eyebrow-super">Get started</Typography>
-          <Typography variant="body">Download CodeEdit and start see for yourself!</Typography>
+          <Typography variant="body">Download CodeEdit and see for yourself!</Typography>
           <Typography variant="body" as="a" href="#">Download CodeEdit <ArrowDownCircle size="1em" style={{ verticalAlign: "middle"}} /></Typography>
         </Stack>
       </Stack>

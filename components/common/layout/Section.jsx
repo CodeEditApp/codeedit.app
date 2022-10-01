@@ -5,6 +5,7 @@ import getResponsivePropStyles from '@/styles/getResponsivePropStyles';
 import useVisibilityProps from "@/hooks/useVisibilityProps";
 
 const SectionWrap = styled.section`
+  --section-accent-color: ${({ accentColor }) => `var(--${accentColor})`};
   ${({ gutter, gutterTop, gutterY }) => getResponsivePropStyles((gutterTop ?? gutterY ?? gutter ?? 8), (val) => `
     padding-top: ${getSpacing(val)};
   `)}
@@ -23,7 +24,7 @@ const FullWidthContainer = styled.div`
 `;
 
 export default function Section (props) {
-  let { children, className, contained, gutter, gutterTop, gutterBottom, gutterLeft, gutterRight, gutterX = true, gutterY } = props;
+  let { children, className, contained, gutter, gutterTop, gutterBottom, gutterLeft, gutterRight, gutterX = true, gutterY, accentColor = "azure", ...rest } = props;
   const Container = contained ? RestrictedContainer : FullWidthContainer;
   const isVisible = useVisibilityProps(props);
 
@@ -60,8 +61,10 @@ export default function Section (props) {
       gutterBottom={gutterBottom}
       gutterX={gutterX}
       gutterY={gutterY}
+      accentColor={accentColor}
+      {...rest}
     >
-      <Container gutter={gutterX}>
+      <Container gutter={gutterX} width={contained}>
         {children}
       </Container>
     </SectionWrap>

@@ -3,6 +3,8 @@ import React from 'react';
 import styled from 'styled-components'
 import ColorSchemeToggle from './ColorSchemeToggle';
 import { mediaQueries } from '@/styles/breakpoints';
+import SocialSection from './SocialSection';
+import links from '@/data/links';
 
 const FooterWrap = styled.footer`
   font-size: 12px;
@@ -16,6 +18,12 @@ const FooterWrap = styled.footer`
   background-color: var(--background-tertiary-color);
   color: var(--label-tertiary-color);
   box-sizing: content-box;
+  a {
+    color: var(--glyph-blue);
+    :hover {
+      text-decoration: underline;
+    }
+  }
 `
 
 const FooterContent = styled.div`
@@ -40,12 +48,6 @@ const MiniFooterTop = styled.div`
   align-items: flex-end;
   justify-content: space-between;
   border-color: var(--separator-color);
-  a {
-    color: var(--glyph-blue);
-    :hover {
-      text-decoration: underline;
-    }
-  }
   @media ${mediaQueries.sm} {
     align-items: flex-start;
     flex-direction: column;
@@ -101,9 +103,10 @@ function Footer() {
       aria-labelledby="footer-label"
     >
       <FooterContent>
+        <SocialSection />
         <FooterMini>
           <MiniFooterTop>
-            <div>To view the latest CodeEdit developments, visit <a href="https://github.com/CodeEditApp/CodeEdit">our GitHub repo</a>.</div>
+            <div>To view the latest CodeEdit developments, visit <a href={links.githubProject}>our roadmap</a>.</div>
             <ColorSchemeToggle />
           </MiniFooterTop>
           <MiniFooterBottom>
@@ -112,14 +115,14 @@ function Footer() {
               <a href="https://codeedit.app">CodeEdit.</a> All rights reserved.
             </LegalCopyright>
             <LegalLinks>
-              <LegalLink href="/legal/tos">
+              {/* <LegalLink href="/legal/tos">
                 Terms of Use
               </LegalLink>
               <LegalLink href="/legal/privacy">
                 Privacy Policy
-              </LegalLink>
-              <LegalLink href="/legal/terms">
-                Agreements and Open Source Licenses
+              </LegalLink> */}
+              <LegalLink href={links.license}>
+                Lincense
               </LegalLink>
             </LegalLinks>
           </MiniFooterBottom>

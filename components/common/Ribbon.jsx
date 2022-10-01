@@ -15,6 +15,7 @@ const RibbonWrap = styled.div`
   --ribbon-link-color: #fff;
   --ribbon-focus-color: rgba(255,255,255,0.6);
   overflow: hidden;
+  ${({ onClick }) => onClick ? `cursor: pointer;` : ``}
 `;
 const RibbonDrop = styled.div`
   animation: ${ribbonDrop} 0.8s cubic-bezier(0.42, 0, 0.58, 1) forwards;
@@ -34,20 +35,18 @@ const RibbonContent = styled.div`
   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 `;
 
-function Ribbon({ children }) {
-    return (
-        <RibbonWrap>
-          <RibbonDrop>
-            <RibbonContentWrapper>
-                <RibbonContent>
-                    <div className="column large-12 large-centered">
-                        {children}
-                    </div>
-                </RibbonContent>
-            </RibbonContentWrapper>
-          </RibbonDrop>
-        </RibbonWrap>
-    )
+function Ribbon({ children, onClick, ...props }) {
+  return (
+    <RibbonWrap onClick={onClick} {...props}>
+      <RibbonDrop>
+        <RibbonContentWrapper>
+          <RibbonContent>
+            {children}
+          </RibbonContent>
+        </RibbonContentWrapper>
+      </RibbonDrop>
+    </RibbonWrap>
+  )
 }
 
 export default Ribbon;

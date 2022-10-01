@@ -149,7 +149,7 @@ const HeroImage = ({ percentage }) => {
           alt="CodeEdit screenshot"
         /> 
       </ImageWrap>
-      <StyledHardwareLockup style={{ transform: `translateY(-${adjustedPercentage * 15}%)  scale(${1 + (1 - adjustedPercentage) * -.1})` }} />
+      <StyledHardwareLockup style={{ opacity: adjustedPercentage, transform: `translateY(-${adjustedPercentage * 15}%)  scale(${1 + (1 - adjustedPercentage) * -.1})` }} />
     </SceneWrap>
   )
 }
