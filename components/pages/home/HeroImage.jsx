@@ -122,8 +122,8 @@ const ColorFlair3 = styled(ColorFlair)`
 `;
 const StyledHardwareLockup = styled(HardwareLockup)`
   margin-top: -45%;
-  margin-left: -100px;
-  margin-right: -100px;
+  margin-left: -112px;
+  margin-right: -112px;
   @media ${mediaQueries.md} {
     margin-top: -37%;
     margin-left: 0;
