@@ -9,6 +9,7 @@ const IntroFeaturesSection = () => {
   const { breakpoint } = useSite();
 
   const gap = useMemo(() => breakpoint === 'xs' ? 24 : 40, [breakpoint])
+  const blueColor = "#0071e3"
   
   return (
     <Section contained gutterBottom={20} variant="secondary">
@@ -25,7 +26,7 @@ const IntroFeaturesSection = () => {
         </GridItem>
         <GridItem>
           <Stack>
-            <Zap size={gap} />
+            <Zap size={gap} color={blueColor}/>
             <Typography variant="intro" gutterTop>macOS Native</Typography>
             <Typography variant="intro" style={{ opacity: .5 }}>
               Harness the full power of your Mac, something only possible with our completely native architecture developed in Swift.
@@ -34,7 +35,7 @@ const IntroFeaturesSection = () => {
         </GridItem>
         <GridItem>
           <Stack>
-            <Feather size={gap} />
+            <Feather size={gap} color={blueColor} />
             <Typography variant="intro" gutterTop>
               Lightweight Yet Powerful
             </Typography>
@@ -45,7 +46,7 @@ const IntroFeaturesSection = () => {
         </GridItem>
         <GridItem>
           <Stack>
-            <GitHub size={gap} />
+            <GitHub size={gap} color={blueColor} />
             <Typography variant="intro" gutterTop>
               Completely Open Source
             </Typography>
@@ -56,7 +57,7 @@ const IntroFeaturesSection = () => {
         </GridItem>
         <GridItem>
           <Stack>
-            <Sliders size={gap} />
+            <Sliders size={gap} color={blueColor} />
             <Typography variant="intro" gutterTop>
               Extensible & customizable
             </Typography>
@@ -68,7 +69,7 @@ const IntroFeaturesSection = () => {
         </GridItem>
         <GridItem>
           <Stack>
-            <Layout size={gap} />
+            <Layout size={gap} color={blueColor} />
             <Typography variant="intro" gutterTop>
               Familiar &amp; Intuitive User Interface
             </Typography>
@@ -79,7 +80,7 @@ const IntroFeaturesSection = () => {
         </GridItem>
         <GridItem>
           <Stack>
-            <Tool size={gap} />
+            <Tool size={gap} color={blueColor} />
             <Typography variant="intro" gutterTop>
               Better tools to get the job done
             </Typography>
