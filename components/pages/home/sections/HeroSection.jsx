@@ -39,7 +39,7 @@ const HeroSection = () => {
                     Open source. Free forever.
                   </Typography>
                   <Typography variant="intro-elevated" color="tertiary" gutterBottom>
-                    CodeEdit is an exciting new code editor written entirely and unapologetically for macOS. Develop at speeds like never before with increased efficiency and reliability in an editor that feels right at home on your Mac.
+                    CodeEdit is an exciting new code editor written entirely and unapologetically for macOS. Develop any project using any language at speeds like never before with increased efficiency and reliability in an editor that feels right at home on your Mac.
                   </Typography>
                   <Button disabled>Download Coming Soon</Button>
                   <Typography variant="body-reduced" color="tertiary">v0.0.1 | macOS 12+</Typography>
