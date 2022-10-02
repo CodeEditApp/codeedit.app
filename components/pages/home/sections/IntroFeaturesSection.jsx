@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { Feather, GitHub, Layout, Sliders, Tool, Zap } from 'react-feather';
+import { Feather, GitHub, Info, Layout, Sliders, Tool, Zap } from 'react-feather';
 import Tile from '@/components/common/Tile';
 import Typography from '@/components/common/Typography';
 import { Grid, GridItem, Section, Stack } from '@/components/common/layout';
@@ -13,6 +13,16 @@ const IntroFeaturesSection = () => {
   return (
     <Section contained gutterBottom={20} variant="secondary">
       <Grid columns={{ xs: 1, lg: 2 }} gap={{ xs: 6, lg: 12 }}>
+        <GridItem as={Tile} width={{ xs: 1, lg: 2 }}>
+          <Stack direction={breakpoint === 'xs' ? "vertical" : "horizontal"} gap={3.5} >
+            <div>
+              <Info size={28} /> 
+            </div>
+            <Typography variant="intro">
+              CodeEdit is not meant to replace Xcode but rather supplement it for projects not intended for Apple platforms. We believe every type of developer deserves a great experience and excellent performance.
+            </Typography>
+          </Stack>
+        </GridItem>
         <GridItem>
           <Stack>
             <Zap size={gap} />
