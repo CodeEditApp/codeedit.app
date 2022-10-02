@@ -64,6 +64,8 @@ export default class MyDocument extends Document {
             content="CodeEdit, a lightweight, natively built editor for macOS. Open source. Free forever."
           ></meta>
           <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a71e1" />
         </Head>
         <body>
           <Main />
