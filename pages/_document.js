@@ -36,7 +36,7 @@ export default class MyDocument extends Document {
           <meta name="apple-mobile-web-app-capable" content="yes"></meta>
           <meta
             property="og:title"
-            content="The Portfolio of Austin Condiff - UX/UI Designer & Developer"
+            content="CodeEdit – A native code editor for macOS"
           ></meta>
           <meta
             property="og:image"
@@ -44,7 +44,7 @@ export default class MyDocument extends Document {
           ></meta>
           <meta
             property="og:description"
-            content="I design and develop beautiful yet functional interactive user experiences that provide both customer value and product success."
+            content="A lightweight, natively built editor. Open source. Free forever."
           ></meta>
           <meta property="og:url" content="https://www.codeedit.app"></meta>
           <meta
