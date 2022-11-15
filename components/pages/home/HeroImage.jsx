@@ -64,7 +64,6 @@ const colorFlairPiece = css`
   left: 0;
   width: 200px;
   height: 200px;
-  filter: blur(100px);
 
   @media ${mediaQueries.md} {
     width: 20vw;
@@ -79,6 +78,7 @@ const colorFlairPiece = css`
 const ColorFlair = styled.div`
   ${colorFlairPiece}
   animation: ${rotate} 5000ms linear infinite;
+  filter: blur(100px);
   &:before {
     content: "";
     display: block;
