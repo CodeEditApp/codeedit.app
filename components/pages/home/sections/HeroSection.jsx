@@ -41,8 +41,8 @@ const HeroSection = () => {
                   <Typography variant="intro-elevated" color="tertiary" gutterBottom>
                     CodeEdit is an exciting new code editor written entirely and unapologetically for macOS. Develop any project using any language at speeds like never before with increased efficiency and reliability in an editor that feels right at home on your Mac.
                   </Typography>
-                  <Button disabled>Download Coming Soon</Button>
-                  <Typography variant="body-reduced" color="tertiary">v0.0.1 | macOS 12+</Typography>
+                  <Button href="https://github.com/CodeEditApp/CodeEdit/releases/latest" target="_blank">Download Alpha</Button>
+                  <Typography variant="body-reduced" color="tertiary">0.0.1-alpha | macOS 12+</Typography>
                 </Stack>
               </Column>
             </Row>
