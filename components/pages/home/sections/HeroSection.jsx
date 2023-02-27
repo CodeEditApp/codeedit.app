@@ -17,16 +17,13 @@ const ProductIconWrap = styled.div`
 const HeroSection = () => {
 
   const [data, setData] = useState(null)
-  const [isLoading, setLoading] = useState(false)
   const versionNumber = data?.name ?? 'Loading...'
 
   useEffect(() => {
-    setLoading(true)
     fetch('https://api.github.com/repos/CodeEditApp/CodeEdit/releases/latest')
       .then((res) => res.json())
       .then((data) => {
         setData(data)
-        setLoading(false)
       })
   }, [])
 
