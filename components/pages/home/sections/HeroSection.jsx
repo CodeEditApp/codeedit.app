@@ -6,6 +6,7 @@ import Typography from '@/components/common/Typography';
 import { Row, Column, Section, Stack } from '@/components/common/layout';
 import HeroImage from '../HeroImage';
 import Button from '../../../common/Button';
+import { useState, useEffect } from 'react';
 
 const ProductIconWrap = styled.div`
   width: 128px;
@@ -14,6 +15,22 @@ const ProductIconWrap = styled.div`
 `;
 
 const HeroSection = () => {
+
+  const [data, setData] = useState(null)
+  const [isLoading, setLoading] = useState(false)
+  const versionNumber = data?.name ?? 'Loading...'
+
+  useEffect(() => {
+    setLoading(true)
+    fetch('https://api.github.com/repos/CodeEditApp/CodeEdit/releases/latest')
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data)
+        setLoading(false)
+      })
+  }, [])
+
+
   return (
     <Parallax
       style={{ overflow: 'visible' }}
@@ -42,7 +59,7 @@ const HeroSection = () => {
                     CodeEdit is an exciting new code editor written entirely and unapologetically for macOS. Develop any project using any language at speeds like never before with increased efficiency and reliability in an editor that feels right at home on your Mac.
                   </Typography>
                   <Button href="https://github.com/CodeEditApp/CodeEdit/releases/latest" target="_blank">Download Alpha</Button>
-                  <Typography variant="body-reduced" color="tertiary">0.0.1-alpha | macOS 12+</Typography>
+                  <Typography variant="body-reduced" color="tertiary">{ versionNumber } | macOS 13+</Typography>
                 </Stack>
               </Column>
             </Row>
