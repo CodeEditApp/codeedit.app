@@ -27,7 +27,6 @@ const HeroSection = () => {
       })
   }, [])
 
-
   return (
     <Parallax
       style={{ overflow: 'visible' }}
