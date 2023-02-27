@@ -6,7 +6,7 @@ import Typography from '@/components/common/Typography';
 import { Row, Column, Section, Stack } from '@/components/common/layout';
 import HeroImage from '../HeroImage';
 import Button from '../../../common/Button';
-import { useState, useEffect } from 'react';
+import useLatestVersionNumber from '@/hooks/useLatestVersionNumber';
 
 const ProductIconWrap = styled.div`
   width: 128px;
@@ -16,16 +16,7 @@ const ProductIconWrap = styled.div`
 
 const HeroSection = () => {
 
-  const [data, setData] = useState(null)
-  const versionNumber = data?.name ?? 'Loading...'
-
-  useEffect(() => {
-    fetch('https://api.github.com/repos/CodeEditApp/CodeEdit/releases/latest')
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data)
-      })
-  }, [])
+  const versionNumber = useLatestVersionNumber();
 
   return (
     <Parallax
