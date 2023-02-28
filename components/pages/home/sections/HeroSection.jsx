@@ -6,7 +6,6 @@ import Typography from '@/components/common/Typography';
 import { Row, Column, Section, Stack } from '@/components/common/layout';
 import HeroImage from '../HeroImage';
 import Button from '../../../common/Button';
-import useLatestVersionNumber from '@/hooks/useLatestVersionNumber';
 
 const ProductIconWrap = styled.div`
   width: 128px;
@@ -14,9 +13,7 @@ const ProductIconWrap = styled.div`
   margin-right: auto;
 `;
 
-const HeroSection = () => {
-
-  const versionNumber = useLatestVersionNumber();
+const HeroSection = ({versionNumber}) => {
 
   return (
     <Parallax

@@ -12,13 +12,13 @@ import CtaSection from './sections/CtaSection';
 import SampleStorySection from './sections/SampleStorySection';
 import links from '@/data/links';
 
-export default function HomePage() {
+export default function HomePage({ versionNumber }) {
   return (
     <div>
       <Ribbon onClick={() => window.open(links.githubProject)}>
         CodeEdit is currently in development. Check out the roadmap.
       </Ribbon>
-      <HeroSection />
+      <HeroSection versionNumber={versionNumber}/>
       <IntroFeaturesSection />
       {/* <SampleStorySection /> */}
       {/* <SampleStorySection /> */}
