@@ -13,7 +13,8 @@ const ProductIconWrap = styled.div`
   margin-right: auto;
 `;
 
-const HeroSection = () => {
+const HeroSection = ({versionNumber}) => {
+
   return (
     <Parallax
       style={{ overflow: 'visible' }}
@@ -42,7 +43,7 @@ const HeroSection = () => {
                     CodeEdit is an exciting new code editor written entirely and unapologetically for macOS. Develop any project using any language at speeds like never before with increased efficiency and reliability in an editor that feels right at home on your Mac.
                   </Typography>
                   <Button href="https://github.com/CodeEditApp/CodeEdit/releases/latest" target="_blank">Download Alpha</Button>
-                  <Typography variant="body-reduced" color="tertiary">0.0.1-alpha | macOS 12+</Typography>
+                  <Typography variant="body-reduced" color="tertiary">{ versionNumber } | macOS 13+</Typography>
                 </Stack>
               </Column>
             </Row>
