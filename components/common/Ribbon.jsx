@@ -32,7 +32,7 @@ const RibbonContent = styled.div`
   line-height: 1.42859;
   font-weight: 400;
   letter-spacing: -.016em;
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "Inter","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 `;
 
 function Ribbon({ children, onClick, ...props }) {

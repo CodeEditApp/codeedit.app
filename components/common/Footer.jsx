@@ -11,7 +11,7 @@ const FooterWrap = styled.footer`
   line-height: 1.33337;
   font-weight: 400;
   letter-spacing: -.01em;
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "Inter","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   overflow: hidden;
   position: relative;
   z-index: 1;

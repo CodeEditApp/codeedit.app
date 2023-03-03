@@ -38,7 +38,7 @@ const Title = styled.h2`
   line-height: 1.14286;
   font-weight: 600;
   letter-spacing: .011em;
-  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "Inter","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   cursor: default;
   display: block;
   margin: 0;
