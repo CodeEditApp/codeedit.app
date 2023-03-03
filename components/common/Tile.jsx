@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import styled from "styled-components";
 import { v4 as uuidV4 } from "uuid";
 import Typography from './Typography';
+import { Inter } from "next/font/google"
 
 const TileWrap = styled.div`
     --tile-background-color: var(--background-tertiary-color);

@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import { Inter } from "next/font/google"
 
 const ribbonDrop = keyframes`
   0% {

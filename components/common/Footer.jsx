@@ -5,6 +5,7 @@ import ColorSchemeToggle from './ColorSchemeToggle';
 import { mediaQueries } from '@/styles/breakpoints';
 import SocialSection from './SocialSection';
 import links from '@/data/links';
+import { Inter } from "next/font/google"
 
 const FooterWrap = styled.footer`
   font-size: 12px;

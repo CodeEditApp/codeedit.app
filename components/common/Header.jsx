@@ -7,6 +7,7 @@ import Button from '@/components/common/Button';
 import { Container } from '@/components/common/layout';
 import { mediaQueries } from '@/styles/breakpoints';
 import navigation from '@/data/navigation';
+import { Inter } from "next/font/google"
 
 const Nav = styled.nav`
   position: relative;
