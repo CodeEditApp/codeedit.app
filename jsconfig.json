@@ -7,7 +7,7 @@
        "@/hooks/*": ["./hooks/*"],
        "@/styles/*": ["./styles/*"],
        "@/utils/*": ["./utils/*"],
-       "@/assets/*": ["./assets/*"]
+       "@/assets/*": ["./assets/*"],
     }
   }
 }
