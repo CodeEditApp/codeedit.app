@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import { Inter } from "next/font/google"
 
 const ribbonDrop = keyframes`
   0% {
@@ -32,7 +33,7 @@ const RibbonContent = styled.div`
   line-height: 1.42859;
   font-weight: 400;
   letter-spacing: -.016em;
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "Inter","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 `;
 
 function Ribbon({ children, onClick, ...props }) {

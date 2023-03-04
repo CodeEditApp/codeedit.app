@@ -7,6 +7,7 @@ import Button from '@/components/common/Button';
 import { Container } from '@/components/common/layout';
 import { mediaQueries } from '@/styles/breakpoints';
 import navigation from '@/data/navigation';
+import { Inter } from "next/font/google"
 
 const Nav = styled.nav`
   position: relative;
@@ -38,7 +39,7 @@ const Title = styled.h2`
   line-height: 1.14286;
   font-weight: 600;
   letter-spacing: .011em;
-  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: "Inter","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   cursor: default;
   display: block;
   margin: 0;
@@ -162,7 +163,7 @@ function Header() {
                 </label>
               </Action>
               <Action>
-                <Button href="https://github.com/CodeEditApp/CodeEdit/releases/latest" target="_blank" compact>Download Alpha</Button>
+                <Button href="https://github.com/CodeEditApp/CodeEdit/releases/latest" target="_blank" compact>Download</Button>
               </Action>
             </Actions>
           </Menu>

@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import styled from "styled-components";
 import { v4 as uuidV4 } from "uuid";
 import Typography from './Typography';
+import { Inter } from "next/font/google"
 
 const TileWrap = styled.div`
     --tile-background-color: var(--background-tertiary-color);
@@ -52,7 +53,7 @@ const TileHeadline = styled(Typography).attrs({ as: "h4" })`
     line-height: 1.1904761905;
     font-weight: 600;
     letter-spacing: .011em;
-    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: Inter,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     ${({ overlay }) => overlay ? `` : `color: var(--section-accent-color);`}
 `;
 const TileCopy = styled(Typography)`
@@ -60,7 +61,7 @@ const TileCopy = styled(Typography)`
     line-height: 1.4211026316;
     font-weight: 600;
     letter-spacing: .012em;
-    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: Inter,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     ${TileHeadline} + & {
       margin-top: 0.3em;
     }
@@ -76,7 +77,7 @@ const TileViolator = styled.div`
   line-height: 1.1764805882;
   font-weight: 400;
   letter-spacing: -0.022em;
-  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: Inter,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
   border-radius: 18px;
   padding: 7px 18px;
 
@@ -85,7 +86,7 @@ const TileViolator = styled.div`
   line-height: 1.3333733333;
   font-weight: 400;
   letter-spacing: -0.01em;
-  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: Inter,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
   border-radius: 12px;
   padding: 3px 11px;
 
@@ -209,7 +210,7 @@ const OverlayCopy = styled.div`
     line-height: 1.4211026316;
     font-weight: 600;
     letter-spacing: .012em;
-    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: Inter,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 
     color: #fff;
 
