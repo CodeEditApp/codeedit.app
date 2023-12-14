@@ -5,6 +5,10 @@ const navigation = [
     href: '/',
     label: 'CodeEdit',
   },
+  {
+    href: '/blog',
+    label: 'Blog',
+  },
   // {
   //   href: '/whats-new',
   //   label: 'What’s Included',

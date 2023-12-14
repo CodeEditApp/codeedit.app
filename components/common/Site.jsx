@@ -1,6 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import theme from "@/styles/theme";
-import { ThemeProvider } from "styled-components";
+import { StyleSheetManager, ThemeProvider } from "styled-components";
+import isPropValid from '@emotion/is-prop-valid'
 import useColorScheme from "@/hooks/useColorScheme";
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 
@@ -32,9 +33,16 @@ const Site = ({ children }) => {
       windowDimensions,
       breakpoint: windowDimensions.breakpoint
     }}>
-      <ThemeProvider theme={theme}>
-        {children}
-      </ThemeProvider>
+      <StyleSheetManager
+        enableVendorPrefixes
+        shouldForwardProp={(propName, elementToBeRendered) => {
+          return typeof elementToBeRendered === 'string' ? isPropValid(propName) : true;
+        }}
+      >
+        <ThemeProvider theme={theme}>
+          {children}
+        </ThemeProvider>
+      </StyleSheetManager>
     </SiteContextProvider>
   )
 }

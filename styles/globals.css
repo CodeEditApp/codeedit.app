@@ -46,8 +46,18 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
 }
 
 html {
@@ -156,7 +166,7 @@ html[data-color-scheme='dark'] {
   --fill-tertiary-override: ;
   --fill-blue-tertiary: ;
   --fill-gray-tertiary: ;
-  --fill-gray-quaternary: ;
+  --fill-gray-quaternary: #e5e6e7;
   --fill-gray-quinary: ;
   --fill-blue-gradient-light: ;
   --fill-blue-gradient-dark: ;

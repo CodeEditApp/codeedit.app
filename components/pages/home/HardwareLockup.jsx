@@ -11,7 +11,7 @@ const HardwareLockupWrap = styled.div`
   width: auto;
   @supports ((-webkit-mask-image:url("")) or (mask-image:url(""))) {
     mask-size: contain;
-    mask-position: center;
+    /* mask-position: center; */
     mask-repeat: no-repeat;
     mask-image: url(/m1_laptop_hw_shape_mask_large.png);
   }
@@ -34,7 +34,7 @@ const HardwareLockupMedia = styled.div`
   right: 9.3%;
   @supports ((-webkit-mask-image:url("")) or (mask-image:url(""))) {
     mask-size: contain;
-    mask-position: center;
+    /* mask-position: center; */
     mask-repeat: no-repeat;
     mask-image: url(/m1_laptop_hw_mask_large.png);
   }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styled from 'styled-components'
@@ -34,10 +35,10 @@ const HeaderContainer = styled(Container)`
   justify-content: space-between;
 `;
 const Title = styled.h2`
-  font-size: 21px;
+  font-size: 22px;
   line-height: 1.14286;
   font-weight: 600;
-  letter-spacing: .011em;
+  letter-spacing: -0.033em;
   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   cursor: default;
   display: block;
@@ -46,6 +47,9 @@ const Title = styled.h2`
   white-space: nowrap;
   transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
   color: var(--glyph-gray);
+  display: flex;
+  align-items: center;
+  gap: 10px;
   a {
     display: inline-block;
     letter-spacing: inherit;
@@ -127,6 +131,12 @@ function Header() {
       <Wrapper>
         <HeaderContainer>
           <Title>
+            <Image
+              width={32}
+              height={32}
+              src="/product-icon.png"
+              alt="CodeEdit product icon"
+            />
             <Link href="/">CodeEdit</Link>
           </Title>
           <Menu>

@@ -32,9 +32,9 @@ const HeroSection = ({versionNumber}) => {
                       alt="CodeEdit product icon"
                     />
                   </ProductIconWrap>
-                  <Typography variant="eyebrow-elevated" as="h1">
+                  {/* <Typography variant="eyebrow-elevated" as="h1">
                     CodeEdit for macOS
-                  </Typography>
+                  </Typography> */}
                   <Typography variant="headline-elevated">
                     A lightweight, natively built editor.
                     Open source. Free forever.
