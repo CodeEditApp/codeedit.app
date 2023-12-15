@@ -9,7 +9,7 @@ export default function BlogPage({ posts }) {
       <Typography variant="headline">Blog</Typography>
       <ul>
         {posts.map((post) => (
-          <li>
+          <li key={post.date + post.slug}>
             <Link href={post.url}>{post.title}</Link>
           </li>
         ))}
