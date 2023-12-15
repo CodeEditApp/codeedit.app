@@ -11,6 +11,7 @@ function formatDate(fullDate) {
 }
 
 const ArticleHeader = ({ frontmatter, author }) => {
+  console.log("ArticleHeader:", author)
   return (
     <div className="article-header">
       <div className="category component">
@@ -35,20 +36,22 @@ const ArticleHeader = ({ frontmatter, author }) => {
       <div className="article-subhead component">
         <div className="component-content">{frontmatter.subhead}</div>
       </div>
-      <div className="author component">
-        <div className="component-content">
-          <div className="author-content">
-            <Image
-              width="24"
-              height="24"
-              className="author-image"
-              src={author.avatar_url}
-              alt={`${author.name} user image`}
-            />
-            <span className="author-text">{author.name}</span>
+      {author && (
+        <div className="author component">
+          <div className="component-content">
+            <div className="author-content">
+              <Image
+                width="24"
+                height="24"
+                className="author-image"
+                src={author.avatar_url}
+                alt={`${author.name} user image`}
+              />
+              <span className="author-text">{author.name}</span>
+            </div>
           </div>
         </div>
-      </div>
+      )}
       <ShareSheet />
     </div>
   );

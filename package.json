@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "rm -rf build && next dev",
+    "build": "rm -rf build && next build",
     "start": "next start",
     "lint": "next lint",
     "postbuild": "NODE_OPTIONS='--experimental-json-modules' node ./scripts/generate-sitemap.mjs"
@@ -24,7 +24,9 @@
     "react-syntax-highlighter": "^15.5.0",
     "rehype-raw": "^7.0.0",
     "remark-gfm": "^4.0.0",
+    "remark-github-alerts": "^0.0.4",
     "styled-components": "^6.1.1",
+    "unist-util-visit": "^5.0.0",
     "uuid": "^9.0.1"
   },
   "devDependencies": {

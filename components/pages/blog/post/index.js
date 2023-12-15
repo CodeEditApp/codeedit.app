@@ -217,8 +217,8 @@ const Article = styled.article`
       padding-top: 52px;
       .author-container {
         display: flex;
-        gap: 22px;
-        margin-top: 28px;
+        gap: 1.1579em;
+        margin-top: 1.4211em;
       }
       img.author-image {
         width: 96px;
@@ -307,31 +307,57 @@ const Article = styled.article`
       }
     }
 
-    pre {
-      width: 653px;
-      margin: 44px auto;
-      font-size: 15px;
-      line-height: 25px;
-      font-weight: 400;
-      .codeStyle {
-        border-radius: 15px;
-        .linenumber {
-          font-style: normal !important;
-          font-size: 85%;
-        }
-      }
-    }
-
-    & :not(.codeStyle) > code {
+    *:not(pre):not(.codeblock) > code {
       background: var(--fill-gray-quaternary);
       padding: 0.2em 0.4em;
       margin: 0;
       border-radius: 0.25em;
       white-space: break-spaces;
-      font-size: 90%;
+      font-size: 85%;
     }
-    & :not(.codeStyle):not(td) > code {
-      font-size: 90%;
+
+    pre {
+      width: 653px;
+      margin: 28px auto;
+      font-size: 15px;
+      line-height: 25px;
+      font-weight: 400;
+
+      & > code {
+        display: block;
+        color: var(--color-syntax-plain-text);
+        background: var(--color-syntax-background);
+        font-family: 'SF Mono', SFMono-Regular, ui-monospace, Menlo, monospace;
+        direction: ltr;
+        text-align: left;
+        white-space: pre;
+        word-spacing: normal;
+        word-break: normal;
+        line-height: 1.666;
+        tab-size: 4;
+        hyphens: none;
+        padding: 0.5333em 0.9333em;
+        margin: 0.5em 0px;
+        overflow: auto;
+        border-radius: 15px;
+      }
+
+      & > .codeblock {
+        border-radius: 15px;
+      }
+    }
+
+    p,
+    li,
+    th,
+    td,
+    code,
+    figcaption {
+      & > a {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
 
     table {
@@ -342,6 +368,8 @@ const Article = styled.article`
       td {
         padding: 0.75em 0;
         border-bottom: 1px solid var(--separator-secondary-color);
+        font-size: 17px;
+        line-height: 25px;
       }
       th {
         border-bottom: 1.5px solid var(--label-tertiary-color);
@@ -463,7 +491,7 @@ const Article = styled.article`
       }
     }
 
-    blockquote {
+    blockquote:not(.alert) {
       width: 656px;
       margin-left: auto;
       margin-right: auto;
@@ -475,6 +503,11 @@ const Article = styled.article`
 
       & p {
         width: 100%;
+      }
+
+      p,
+      blockquote {
+        margin-bottom: 0.7895em;
       }
 
       &:not(.wide):not(.full-width) {
@@ -491,8 +524,8 @@ const Article = styled.article`
           display: block;
           position: absolute;
           left: 0;
-          top: 0.25em;
-          bottom: 0.25em;
+          top: 0.125em;
+          bottom: 0.125em;
           border-left: 4px solid var(--separator-color);
         }
       }
@@ -545,6 +578,102 @@ const Article = styled.article`
         padding: 2em 1em;
         background: var(--background-secondary-color);
         box-sizing: border-box;
+      }
+    }
+
+    blockquote.alert {
+      width: 656px;
+      margin: 28px auto;
+      
+      break-inside: avoid;
+      border-radius: var(--aside-border-radius, 15px);
+      border-style: var(--aside-border-style, solid);
+      border-width: var(--aside-border-width, 1px 1px 1px 1px);
+      padding: 0.9411764706rem;
+      box-sizing: border-box;
+      text-align: start;
+      p {
+        margin-top: 0.4em;
+        margin-bottom: 0;
+        width: auto;
+
+        &:first-child {
+          margin: 0;
+        }
+        &.alert-label {
+          font-size: 1rem;
+          line-height: 1.5294417647;
+          font-weight: 600;
+          letter-spacing: -.021em;
+        }
+      }
+      &.note {
+        background-color: var(--color-alert-note-background);
+        border-color: var(--color-alert-note-border);
+        box-shadow:
+          0 0 1px 0 var(--color-alert-note-border) inset,
+          0 0 1px 0 var(--color-alert-note-border);
+        p.alert-label {
+          color: var(--color-alert-note);
+        }
+      }
+      &.tip {
+        background-color: var(--color-alert-tip-background);
+        border-color: var(--color-alert-tip-border);
+        box-shadow:
+          0 0 1px 0 var(--color-alert-tip-border) inset,
+          0 0 1px 0 var(--color-alert-tip-border);
+        p.alert-label {
+          color: var(--color-alert-tip);
+        }
+      }
+      &.important {
+        background-color: var(--color-alert-important-background);
+        border-color: var(--color-alert-important-border);
+        box-shadow:
+          0 0 1px 0 var(--color-alert-important-border) inset,
+          0 0 1px 0 var(--color-alert-important-border);
+        p.alert-label {
+          color: var(--color-alert-important);
+        }
+      }
+      &.warning {
+        background-color: var(--color-alert-warning-background);
+        border-color: var(--color-alert-warning-border);
+        box-shadow:
+          0 0 1px 0 var(--color-alert-warning-border) inset,
+          0 0 1px 0 var(--color-alert-warning-border);
+        p.alert-label {
+          color: var(--color-alert-warning);
+        }
+      }
+      &.caution {
+        background-color: var(--color-alert-caution-background);
+        border-color: var(--color-alert-caution-border);
+        box-shadow:
+          0 0 1px 0 var(--color-alert-caution-border) inset,
+          0 0 1px 0 var(--color-alert-caution-border);
+        p.alert-label {
+          color: var(--color-alert-caution);
+        }
+      }
+      }
+    }
+
+    section.footnotes {
+      ol {
+        padding: 0;
+        list-style-position: inside;
+      }
+      li::marker,
+      li p {
+        font-size: 0.7895em;
+        width: auto;
+        margin: 0;
+        display: inline-block;
+      }
+      li::marker {
+        float: left;
       }
     }
   }
@@ -621,8 +750,7 @@ const BlogPost = ({ frontmatter, markdownBody, siteTitle, author }) => {
         </div>
 
         <ShareSheet />
-
-        <AboutAuthor author={author} />
+        {author && <AboutAuthor author={author} />}
       </Article>
     </Section>
   );

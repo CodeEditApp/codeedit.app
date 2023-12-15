@@ -1,5 +1,6 @@
 import matter from 'gray-matter';
 import glob from 'glob';
+import { fetchGitHubUser } from '@/utils/fetchData';
 
 export { default } from '@/components/pages/blog/post';
 
@@ -10,15 +11,19 @@ export async function getStaticProps(context) {
   // retrieving the Markdown file associated to the slug
   // and reading its data
   const content = await import(`../../data/blog/${slug.join('/')}.md`);
-  const data = matter(content.default);
-
-  const res = await fetch(`https://api.github.com/users/${data.data.author}`);
-  const author = await res.json();
+  const data = await matter(content.default);
+  // fetching authors user data from GitHub
+  const author = data.data.author
+    ? await fetchGitHubUser(data.data.author)
+    : null;
 
   return {
     props: {
       siteTitle: config.title,
-      frontmatter: data.data,
+      frontmatter: {
+        ...data.data,
+        date: new Date(data.data.date).toISOString(),
+      },
       markdownBody: data.content,
       author,
     },
