@@ -39,7 +39,7 @@ const Article = styled.article`
     line-height: 1.33337;
     font-weight: 700;
     letter-spacing: -0.01em;
-    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
       'Arial', sans-serif;
   }
 
@@ -52,7 +52,7 @@ const Article = styled.article`
     line-height: 1.28577;
     font-weight: 600;
     letter-spacing: -0.016em;
-    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
       'Arial', sans-serif;
   }
 
@@ -66,7 +66,7 @@ const Article = styled.article`
     line-height: 1.08349;
     font-weight: 700;
     letter-spacing: -0.003em;
-    font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
       'Arial', sans-serif;
   }
 
@@ -75,7 +75,7 @@ const Article = styled.article`
     line-height: 1.16667;
     font-weight: 500;
     letter-spacing: 0.009em;
-    font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
       'Arial', sans-serif;
     margin-top: 20px;
     margin-bottom: 0;
@@ -103,7 +103,7 @@ const Article = styled.article`
     line-height: 1.28577;
     font-weight: 600;
     letter-spacing: -0.016em;
-    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
       'Arial', sans-serif;
   }
 
@@ -230,7 +230,7 @@ const Article = styled.article`
         line-height: 1.42859;
         font-weight: 500;
         letter-spacing: -0.016em;
-        font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue',
+        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue',
           'Helvetica', 'Arial', sans-serif;
         box-sizing: border-box;
         word-wrap: break-word;
@@ -242,7 +242,7 @@ const Article = styled.article`
         line-height: 1.21053;
         font-weight: 700;
         letter-spacing: 0.012em;
-        font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue',
+        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue',
           'Helvetica', 'Arial', sans-serif;
         margin-bottom: 3px;
       }
@@ -271,12 +271,18 @@ const Article = styled.article`
   }
 
   .pagebody {
+    & > *:not(figure):not(.wide):not(.full-width) {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 653px;
+    }
+
     p {
       font-size: 19px;
       line-height: 1.4211;
       font-weight: 400;
       letter-spacing: 0.012em;
-      font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue',
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue',
         'Helvetica', 'Arial', sans-serif;
       margin-bottom: 1.4211em;
 
@@ -396,7 +402,7 @@ const Article = styled.article`
         line-height: 1.33337;
         font-weight: 600;
         letter-spacing: -0.01em;
-        font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue',
+        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue',
           'Helvetica', 'Arial', sans-serif;
         width: 653px;
         &.centered {
@@ -495,9 +501,11 @@ const Article = styled.article`
       width: 656px;
       margin-left: auto;
       margin-right: auto;
-      padding-left: calc(1em + 4px);
+      &:not(.wide):not(.full-width) {
+        padding-left: calc(1em + 4px);
+      }
       box-sizing: border-box;
-      font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue',
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue',
         'Helvetica', 'Arial', sans-serif;
       position: relative;
 
@@ -505,8 +513,7 @@ const Article = styled.article`
         width: 100%;
       }
 
-      p,
-      blockquote {
+      p {
         margin-bottom: 0.7895em;
       }
 
@@ -515,7 +522,7 @@ const Article = styled.article`
         line-height: 1.4211;
         font-weight: 400;
         letter-spacing: 0.012em;
-        font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue',
+        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue',
           'Helvetica', 'Arial', sans-serif;
         margin-bottom: 1.4211em;
         color: var(--label-tertiary-color);
@@ -532,14 +539,29 @@ const Article = styled.article`
 
       &.wide,
       &.full-width {
-        text-align: center;
-        text-wrap: balance;
-        font-size: 40px;
         margin-top: 72px;
         margin-bottom: 72px;
-        line-height: 1.1;
-        font-weight: 700;
-        letter-spacing: 0em;
+
+        @media only screen and (max-width: 1068px) {
+          padding: 1em;
+        }
+
+        &, & p {
+          text-align: center;
+          text-wrap: balance;
+          font-size: 40px;
+          @media only screen and (max-width: 1068px) {
+            font-size: 36px;
+          }
+
+          @media only screen and (max-width: 734px) {
+            font-size: 27px;
+          }
+
+          line-height: 1.1;
+          font-weight: 700;
+          letter-spacing: 0em;
+        }
 
         &:not(:has(p)):before,
         &:not(:has(p)):after,
@@ -575,7 +597,7 @@ const Article = styled.article`
         left: 50%;
         position: relative;
         transform: translateX(-50%);
-        padding: 2em 1em;
+        padding: 2em;
         background: var(--background-secondary-color);
         box-sizing: border-box;
       }
@@ -690,12 +712,12 @@ const Article = styled.article`
         line-height: 1.47059;
         font-weight: 400;
         letter-spacing: -0.022em;
-        font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue',
+        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue',
           'Helvetica', 'Arial', sans-serif;
       }
       th,
       td {
-        font-size: 15px;
+        font-size: 15px; 
       }
       pre {
         font-size: 13px;
@@ -711,7 +733,13 @@ const Article = styled.article`
       margin-right: auto;
       width: 87.5%;
     }
-    .pagebody {
+    & .pagebody {
+      & > *:not(figure):not(.wide):not(.full-width) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 87.5%;
+      }
+
       p:not(:has(img)),
       h1,
       h2,

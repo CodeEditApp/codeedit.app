@@ -58,6 +58,7 @@ body {
     Droid Sans,
     Helvetica Neue,
     sans-serif;
+  text-size-adjust: none;
 }
 
 html {

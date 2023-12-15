@@ -216,6 +216,34 @@ Add a greater-than sign in front of a paragraph.
 > another quoted paragraph
 ```
 
+Or if you want to make the quote wide.
+
+<blockquote class="wide">
+  <p>An important quote that we want to call the readers attention to and emphasize in our article from the rest of the content.</p>
+  <p>This is another quoted paragraph that we want to emphasize.</p>
+</blockquote>
+
+```Markdown
+<blockquote class="wide">
+  <p>An important quote that we want to call the readers attention to and emphasize in our article from the rest of the content.</p>
+  <p>This is another quoted paragraph that we want to emphasize.</p>
+</blockquote>
+```
+
+If you want to make the quote full width.
+
+<blockquote class="full-width">
+  <p>An important quote that we want to call the readers attention to and emphasize in our article from the rest of the content.</p>
+  <p>This is another quoted paragraph that we want to emphasize.</p>
+</blockquote>
+
+```Markdown
+<blockquote class="full-width">
+  <p>An important quote that we want to call the readers attention to and emphasize in our article from the rest of the content.</p>
+  <p>This is another quoted paragraph that we want to emphasize.</p>
+</blockquote>
+```
+
 ### Nested Blockquotes
 Add two greater-than signs in front of the paragraph you want to nest.
 
