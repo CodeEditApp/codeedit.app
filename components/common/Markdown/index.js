@@ -1,12 +1,7 @@
 import { useMemo } from 'react';
-import { visit } from 'unist-util-visit';
-// or
-// import "remark-github-alerts/styles/github-colors-dark-media.css"
-import 'remark-github-alerts/styles/github-base.css';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import remarkGfm from 'remark-gfm';
-import remarkGithubAlerts from 'remark-github-alerts';
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
 import tsx from 'react-syntax-highlighter/dist/cjs/languages/prism/tsx';
 import typescript from 'react-syntax-highlighter/dist/cjs/languages/prism/typescript';
@@ -19,8 +14,12 @@ import jsx from 'react-syntax-highlighter/dist/cjs/languages/prism/jsx';
 import swift from 'react-syntax-highlighter/dist/cjs/languages/prism/swift';
 
 import { useSite } from '@/components/common/Site';
-import oneDark from '@/data/syntax-dark';
-import oneLight from '@/data/syntax-light';
+import darkSyntaxTheme from '@/data/syntax-dark';
+import lightSyntaxTheme from '@/data/syntax-light';
+
+import remarkAlerts from './remarkAlerts';
+
+import * as Styled from './Markdown.styles';
 
 SyntaxHighlighter.registerLanguage('tsx', tsx);
 SyntaxHighlighter.registerLanguage('typescript', typescript);
@@ -33,58 +32,17 @@ SyntaxHighlighter.registerLanguage('js', javascript);
 SyntaxHighlighter.registerLanguage('jsx', jsx);
 SyntaxHighlighter.registerLanguage('swift', swift);
 
-const alertPlugin = () => {
-  const alertTypes = [
-    { id: 'note', label: 'Note', code: '[!NOTE]' },
-    { id: 'tip', label: 'Tip', code: '[!TIP]' },
-    { id: 'important', label: 'Important', code: '[!IMPORTANT]' },
-    { id: 'warning', label: 'Warning', code: '[!WARNING]' },
-    { id: 'caution', label: 'Caution', code: '[!CAUTION]' },
-  ];
-
-  return (tree) => {
-    visit(tree, 'blockquote', (node) => {
-      // Check if the first child of the blockquote is a paragraph containing '[!NOTE]'
-      const firstChild = node.children[0];
-      alertTypes.forEach((alertType) => {
-        console.log(alertType);
-        if (
-          firstChild.type === 'paragraph' &&
-          firstChild.children[0].value.startsWith(alertType.code)
-        ) {
-          // Remove the alertType.code marker
-          firstChild.children[0].value = firstChild.children[0].value.replace(
-            alertType.code,
-            ''
-          );
-          console.log(firstChild.children[0].value);
-          if (firstChild.children[0].value == '') {
-            firstChild.children.shift();
-          }
-
-          if (firstChild.children[0]?.type === 'break') {
-            firstChild.children.shift();
-          }
-
-          // Add a new paragraph at the top with 'Note'
-          node.children.unshift({
-            type: 'paragraph',
-            children: [{ type: 'text', value: alertType.label }],
-            data: { hProperties: { className: 'alert-label' } },
-          });
-
-          // Add class to blockquote
-          node.data = { hProperties: { className: `alert ${alertType.id}` } };
-        }
-      });
-    });
-  };
-};
-
-const Markdown = ({ children, md }) => {
+const Markdown = ({
+  children,
+  className,
+  style,
+  components = {},
+  remarkPlugins = [],
+  rehypePlugins = [],
+}) => {
   const { colorScheme } = useSite();
   const syntaxTheme = useMemo(
-    () => (colorScheme === 'dark' ? oneDark : oneLight),
+    () => (colorScheme === 'dark' ? darkSyntaxTheme : lightSyntaxTheme),
     [colorScheme]
   );
 
@@ -122,24 +80,21 @@ const Markdown = ({ children, md }) => {
           {props.children}
         </SyntaxHighlighter>
       ) : (
-        <code
-          className={`${inline ? 'codeblock' : 'inline'} ${
-            className ?? ''
-          }`.trim()}
-          {...props}
-        />
+        <code className={className} {...props} />
       );
     },
   };
 
   return (
-    <ReactMarkdown
-      components={MarkdownComponents}
-      remarkPlugins={[remarkGfm, alertPlugin]}
-      rehypePlugins={[rehypeRaw]}
-    >
-      {children}
-    </ReactMarkdown>
+    <Styled.MarkdownWrap className={className} style={style}>
+      <ReactMarkdown
+        components={{ ...MarkdownComponents, ...components }}
+        remarkPlugins={[remarkGfm, remarkAlerts, ...remarkPlugins]}
+        rehypePlugins={[rehypeRaw, ...rehypePlugins]}
+      >
+        {children}
+      </ReactMarkdown>
+    </Styled.MarkdownWrap>
   );
 };
 

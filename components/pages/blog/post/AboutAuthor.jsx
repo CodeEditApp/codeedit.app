@@ -2,14 +2,78 @@ import Image from 'next/image';
 import XSvg from '@/assets/x-icon.svg';
 import GitHubSvg from '@/assets/github-icon.svg';
 import { Globe } from 'react-feather';
+import styled from 'styled-components';
+
+const AboutAuthorWrap = styled.div`
+  .component-content {
+    border-top: 1px solid var(--separator-color);
+    padding-top: 52px;
+    .author-container {
+      display: flex;
+      gap: 1.1579em;
+      margin-top: 1.4211em;
+    }
+    img.author-image {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+    }
+    .author-info {
+      font-size: 14px;
+      line-height: 1.42859;
+      font-weight: 500;
+      letter-spacing: -0.016em;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue',
+        'Helvetica', 'Arial', sans-serif;
+      box-sizing: border-box;
+      word-wrap: break-word;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .author-info-title {
+      font-size: 19px;
+      line-height: 1.21053;
+      font-weight: 700;
+      letter-spacing: 0.012em;
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue',
+        'Helvetica', 'Arial', sans-serif;
+      margin-bottom: 3px;
+    }
+    .author-info-name {
+      margin-bottom: 3px;
+    }
+    .author-info-location {
+      margin-top: -2px;
+      margin-bottom: 3px;
+      opacity: 0.65;
+    }
+    .author-info-bio {
+      margin-bottom: 3px;
+    }
+    .author-social {
+      margin-top: 12px;
+      .author-social-link {
+        margin-right: 16px;
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 734px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 87.5%;
+  }
+`;
 
 const AboutAuthor = ({ author }) => {
   if (!author) return;
 
-  console.log({author})
-
   return (
-    <div className="about-author component">
+    <AboutAuthorWrap className="about-author component">
       <div className="component-content">
         <h2 className="about-author-headline">About the Author</h2>
         <div className="author-container">
@@ -50,7 +114,7 @@ const AboutAuthor = ({ author }) => {
           </div>
         </div>
       </div>
-    </div>
+    </AboutAuthorWrap>
   );
 };
 

@@ -374,7 +374,13 @@ main {
     var(--dark) 0%,
     var(--fill-gray-secondary-alt) 100%
   );
-  min-height: calc(100vh - 168px);
+  min-height: calc(100vh - 473px);
+}
+
+@media only screen and (max-width: 1068px) {
+  main {
+    min-height: calc(100vh - 634px);
+  }
 }
 
 main a {

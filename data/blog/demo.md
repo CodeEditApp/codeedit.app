@@ -393,36 +393,7 @@ Use three or more asterisks, dashes, or underscores alone on a line.
 ___
 ```
 
-## Special Rendering
-GitHub Markdown has special rendering for certain things.
-
-### URLs
-Referencing specific url formats renders special.
-
-#### Issues & Pull Requests
-From the same or a different repository.
-
-> [!NOTE]  
-> Issues and PRs referenced in lists render with the format `icon title id` in [comments](https://github.com/dipree/github-markdown/issues/13)
-
-https://github.com/dipree/github-markdown/issues/1  
-https://github.com/dipree/dipree/issues/1
-
-```Markdown
-https://github.com/dipree/github-markdown/issues/1  
-https://github.com/dipree/dipree/issues/1
-```
-
-#### Labels
-From the same repository.
-
-https://github.com/dipree/github-markdown/labels/demo
-
-```Markdown
-https://github.com/dipree/github-markdown/labels/demo
-```
-
-### Alerts
+## Alerts
 
 Alerts emphasize critical information. They are displayed with distinctive colors and icons to indicate the importance of the content.
 
@@ -458,17 +429,7 @@ Alerts emphasize critical information. They are displayed with distinctive color
 > Negative potential consequences of an action.
 ```
 
-### Colors
-Specifying colors as HEX, RGBA or HSL in inline code blocks renders a little dot of the given color within the code block.
-
-> [!NOTE]  
-> Only works in Markdown [comments](https://github.com/dipree/github-markdown/issues/12), not in files.
-
-```
-`#00ff00`, `rgba(0, 255, 0, 1)`, `hsl(120, 100%, 50%)`
-```
-
-### Mermaid Diagrams
+## Mermaid Diagrams
 Code blocks with the syntax highlighting set to `mermaid` renders dynamical diagrams using the [Mermaid syntax](https://mermaid.js.org/syntax/classDiagram.html).
 
 ```mermaid
