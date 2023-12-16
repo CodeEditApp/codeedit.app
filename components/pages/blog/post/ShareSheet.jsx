@@ -25,7 +25,6 @@ const ShareSheetWrap = styled.div`
   .sharesheet-options {
     display: inline-flex;
     justify-content: flex-start;
-    /* color: #6e6e73; */
     height: 71px;
   }
 

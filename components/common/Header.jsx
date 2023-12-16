@@ -49,7 +49,6 @@ const Title = styled.h2`
   color: var(--glyph-gray);
   display: flex;
   align-items: center;
-  gap: 10px;
   a {
     display: inline-block;
     letter-spacing: inherit;
@@ -59,6 +58,14 @@ const Title = styled.h2`
     white-space: nowrap;
     color: var(--glyph-gray);
     opacity: .92;
+  }
+  img {
+    margin-left: -3px;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+  span {
+    cursor: pointer;
   }
 `;
 const Menu = styled.div`
@@ -130,15 +137,17 @@ function Header() {
     <Nav role="navigation">
       <Wrapper>
         <HeaderContainer>
-          <Title>
-            <Image
-              width={32}
-              height={32}
-              src="/product-icon.png"
-              alt="CodeEdit product icon"
-            />
-            <Link href="/">CodeEdit</Link>
+          <Link href="/">
+            <Title>
+              <Image
+                width={32}
+                height={32}
+                src="/product-icon.png"
+                alt="CodeEdit product icon"
+              />
+              <span>CodeEdit</span>
           </Title>
+          </Link>
           <Menu>
             <MenuCtaAnchor>
               <MenuCtaAnchorLabel>Open Menu</MenuCtaAnchorLabel>

@@ -209,13 +209,29 @@ const getTypographyStyles = (variant) => {
           letter-spacing: .011em;
           font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
           @media ${mediaQueries.sm} {
-            font-size:19px;
+            font-size: 19px;
             line-height: 1.4211;
             font-weight: 400;
             letter-spacing: .012em;
             font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
           }
         `;
+    case 'section-head':
+      return `
+          font-size: 32px;
+          line-height: 1.125;
+          font-weight: 700;
+          letter-spacing: .004em;
+          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          margin-bottom: 24px;
+          @media ${mediaQueries.md} {
+            font-size: 28px;
+            line-height: 1.14286;
+            font-weight: 700;
+            letter-spacing: .007em;
+            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          }
+      `;
     case 'quote':
       return `
           font-size: 40px;

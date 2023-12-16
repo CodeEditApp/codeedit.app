@@ -104,6 +104,10 @@ const ArticleHeaderWrap = styled.div`
       'Arial', sans-serif;
   }
 
+  @media only screen and (max-width: 1068px) {
+    max-width: 576px;
+  }
+
   @media only screen and (max-width: 734px) {
     margin-left: auto;
     margin-right: auto;

@@ -4,7 +4,9 @@ description: This is a test post.
 headline: A test post for development and blogging purposes only
 subhead: In this post there will be examples of every possible thing imaginable so you will know how to write posts yourself.
 date: '2019-07-10T07:00:00.000Z'
+category: update
 author: austincondiff
+image: https://www.apple.com/newsroom/images/product/mac/standard/Apple-Mac-Skywalker-Sound-hero_Full-Bleed-Image.jpg.large_2x.jpg
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.

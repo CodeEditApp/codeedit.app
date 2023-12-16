@@ -44,9 +44,7 @@ const BlogPost = ({ frontmatter, markdownBody, siteTitle, author }) => {
     <Section gutter={false}>
       <Article>
         <ArticleHeader frontmatter={frontmatter} author={author} />
-
         <Markdown className="pagebody component">{markdownBody}</Markdown>
-
         <ShareSheet />
         {author && <AboutAuthor author={author} />}
       </Article>

@@ -1,11 +1,12 @@
 ---
-title: Markdown Demo
+title: Explore what is possible with a comprehensive markdown demo
 description: Overview of the Markdown rendering in GitHub. This document does not cover HTML tags on the allowlist.
-headline: Markdown Demo
+headline: A Comprehensive Markdown Demo
 subhead: Overview of the Markdown rendering in GitHub. This document does not cover HTML tags on the allowlist.
 date: 2023-12-15
-# author: austincondiff
-image: https://github.com/CodeEditApp/codeedit.app/assets/806104/d6b3166d-1f88-48e6-9648-55c43f797c97
+category: update
+author: austincondiff
+image: https://www.apple.com/newsroom/images/passions/education/Apple_Australian-primary-school-drives-innovation-and-creativity-with-iPad_032521_Full-Bleed-Image.jpg.large_2x.jpg
 ---
 
 ## Headings
