@@ -11,8 +11,6 @@ const Article = styled.article`
   padding: 64px 0;
 
   .component {
-    margin-top: 44px;
-    margin-bottom: 44px;
     margin-left: auto;
     margin-right: auto;
     max-width: 980px;
