@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+// Utility classes
+// - wide
+// - full-width
+// - centered
+// - aspect-ratio-[1:1|5:4|4:3|7:5|3:2|16:9|2:1|5:2|3:1] (and reverse)
+
 export const MarkdownWrap = styled.div`
   .centered {
     text-align: center;
@@ -45,10 +51,87 @@ export const MarkdownWrap = styled.div`
     margin-bottom: 1.4211em;
   }
 
-  img {
+  img,
+  video,
+  iframe {
     display: block;
     margin-top: 44px;
     margin-bottom: 44px;
+
+    &.ratio-1-1 {
+      object-fit: cover;
+      aspect-ratio: 1/1;
+    }
+
+    &.ratio-5-4 {
+      object-fit: cover;
+      aspect-ratio: 5/4;
+    }
+    &.ratio-4-3 {
+      object-fit: cover;
+      aspect-ratio: 4/3;
+    }
+    &.ratio-7-5 {
+      object-fit: cover;
+      aspect-ratio: 7/5;
+    }
+    &.ratio-3-2 {
+      object-fit: cover;
+      aspect-ratio: 3/2;
+    }
+    &.ratio-16-9 {
+      object-fit: cover;
+      aspect-ratio: 16/9;
+    }
+    &.ratio-2-1 {
+      object-fit: cover;
+      aspect-ratio: 2/1;
+    }
+    &.ratio-21-9 {
+      object-fit: cover;
+      aspect-ratio: 21/9;
+    }
+    &.ratio-5-2 {
+      object-fit: cover;
+      aspect-ratio: 5/2;
+    }
+    &.ratio-3-1 {
+      object-fit: cover;
+      aspect-ratio: 3/1;
+    }
+
+    &.ratio-4-5 {
+      object-fit: cover;
+      aspect-ratio: 4/5;
+    }
+    &.ratio-3-4 {
+      object-fit: cover;
+      aspect-ratio: 3/4;
+    }
+    &.ratio-5-7 {
+      object-fit: cover;
+      aspect-ratio: 5/7;
+    }
+    &.ratio-2-3 {
+      object-fit: cover;
+      aspect-ratio: 2/3;
+    }
+    &.ratio-9-16 {
+      object-fit: cover;
+      aspect-ratio: 9/16;
+    }
+    &.ratio-1-2 {
+      object-fit: cover;
+      aspect-ratio: 1/2;
+    }
+    &.ratio-2-5 {
+      object-fit: cover;
+      aspect-ratio: 2/5;
+    }
+    &.ratio-1-3 {
+      object-fit: cover;
+      aspect-ratio: 1/3;
+    }
   }
 
   *:not(pre):not(.codeblock) > code {
@@ -129,7 +212,9 @@ export const MarkdownWrap = styled.div`
     margin-top: 44px;
     margin-bottom: 44px;
 
-    img {
+    img,
+    video,
+    iframe {
       margin-top: 0;
       margin-bottom: 0;
     }
@@ -138,9 +223,6 @@ export const MarkdownWrap = styled.div`
       display: block;
       max-width: 653px;
       position: relative;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
       color: #6e6e73;
       margin-top: 16px;
       font-size: 12px;
@@ -241,6 +323,15 @@ export const MarkdownWrap = styled.div`
         margin-bottom: 0.7895em;
       }
 
+      footer {
+        font-size: 14px;
+        line-height: 1.28577;
+        font-weight: 600;
+        letter-spacing: -0.016em;
+        font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text',
+          'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+      }
+
       &.wide,
       &.full-width {
         margin-top: 72px;
@@ -271,7 +362,7 @@ export const MarkdownWrap = styled.div`
         &:not(:has(p)):before,
         &:not(:has(p)):after,
         & p:first-child:before,
-        & p:last-child:after {
+        & p:last-of-type:after {
           display: inline-block;
           width: 2em;
         }
@@ -284,7 +375,7 @@ export const MarkdownWrap = styled.div`
         }
 
         &:not(:has(p)):after,
-        & p:last-child:after {
+        & p:last-of-type:after {
           margin-right: -2em;
           text-align: left;
           content: '”';
@@ -374,6 +465,14 @@ export const MarkdownWrap = styled.div`
         }
       }
     }
+  }
+
+  iframe[src^="https://www.youtube.com/"]
+  {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
   }
 
   section.footnotes {

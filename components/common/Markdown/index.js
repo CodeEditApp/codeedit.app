@@ -46,6 +46,25 @@ const Markdown = ({
     [colorScheme]
   );
 
+  const CodeSandboxTransformer = {
+    name: 'CodeSandbox',
+    // shouldTransform can also be async
+    shouldTransform(url) {
+      const { host, pathname } = new URL(url);
+
+      return (
+        ['codesandbox.io', 'www.codesandbox.io'].includes(host) &&
+        pathname.includes('/s/')
+      );
+    },
+    // getHTML can also be async
+    getHTML(url) {
+      const iframeUrl = url.replace('/s/', '/embed/');
+
+      return `<iframe src="${iframeUrl}" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"></iframe>`;
+    },
+  };
+
   const MarkdownComponents = {
     code({ node, inline, className, ...props }) {
       const hasLang = /language-(\w+)/.exec(className || '');
@@ -89,7 +108,12 @@ const Markdown = ({
     <Styled.MarkdownWrap className={className} style={style}>
       <ReactMarkdown
         components={{ ...MarkdownComponents, ...components }}
-        remarkPlugins={[remarkGfm, remarkAlerts, ...remarkPlugins]}
+        remarkPlugins={[
+          remarkGfm,
+          remarkAlerts,
+          // [remarkEmbedder, { transformers: [CodeSandboxTransformer] }],
+          ...remarkPlugins,
+        ]}
         rehypePlugins={[rehypeRaw, ...rehypePlugins]}
       >
         {children}

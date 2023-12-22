@@ -1,5 +1,6 @@
 import { Section } from '@/components/common/layout';
 import Typography from '@/components/common/Typography';
+import Image from 'next/image';
 import Link from 'next/link';
 import styled from 'styled-components';
 
@@ -149,15 +150,17 @@ const TileMedia = styled.div`
     flex-shrink: 1;
   }
 `;
-const TileImage = styled.div`
-  background-image: url(${({ src }) => src});
+const TileImage = styled(Image)`
+  /* background-image: url(${({ src }) => src});
   background-size: cover;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0; */
   transition: transform 400ms cubic-bezier(0.4, 0, 0.25, 1) 0ms;
+  width: 100%;
+  height: auto;
 
   .tile:hover & {
     transform: scale(1.03);
@@ -325,8 +328,6 @@ function formatDate(str) {
 }
 
 export default function BlogPage({ posts }) {
-  // console.log(posts);
-
   return (
     <>
       <Section contained gutterY variant="secondary">
@@ -366,7 +367,8 @@ const Tile = ({ post, impositionLayout }) => {
   return (
     <TileWrap href={post.url} className={`tile tile-${impositionLayout}`}>
       <TileMedia>
-        <TileImage src={post.image} />
+        {/* <TileImage src={post.image} /> */}
+        <TileImage width="643" height="362" src={post.image} alt="Post Image" />
       </TileMedia>
       <TileDescription>
         <TileHead>

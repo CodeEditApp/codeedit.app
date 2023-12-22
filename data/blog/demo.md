@@ -1,13 +1,15 @@
 ---
 title: Explore what is possible with a comprehensive markdown demo
-description: Overview of the Markdown rendering in GitHub. This document does not cover HTML tags on the allowlist.
-headline: A Comprehensive Markdown Demo
-subhead: Overview of the Markdown rendering in GitHub. This document does not cover HTML tags on the allowlist.
+description: Overview of the markdown rendering in GitHub.
+headline: Explore everything that is currently possible with a comprehensive markdown demonstration
+subhead: A complete overview of the markdown rendering inspired by GitHub on our blog.
 date: 2023-12-15
 category: update
 author: austincondiff
 image: https://www.apple.com/newsroom/images/passions/education/Apple_Australian-primary-school-drives-innovation-and-creativity-with-iPad_032521_Full-Bleed-Image.jpg.large_2x.jpg
 ---
+
+<img class="full-width ratio-16-9" src="https://www.apple.com/newsroom/images/passions/education/Apple_Australian-primary-school-drives-innovation-and-creativity-with-iPad_032521_Full-Bleed-Image.jpg.large_2x.jpg" alt="">
 
 ## Headings
 
@@ -21,6 +23,19 @@ You can use up to up to six levels by writing `#` at the start of a line. The nu
 ##### Fifth level
 ###### Sixth level
 ```
+
+## Video
+
+<figure>
+  <video class="full-width ratio-3-1" autoplay playsinline muted loop controls>
+    <source src="https://github.com/CodeEditApp/CodeEdit/assets/806104/89de4093-6370-488d-b74d-8499723d8ac5" type="video/mp4">
+  </video>
+  <figcaption>This is a video description</figcaption>
+</figure>
+
+<iframe class="wide" src="https://www.youtube.com/embed/nAchMctX4YA?si=K6HkdBhN5G9-G8Ni" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<blockquote data-theme="dark" class="twitter-tweet"><p lang="en" dir="ltr">📣 Calling all passionate <a href="https://twitter.com/hashtag/Swift?src=hash&amp;ref_src=twsrc%5Etfw">#Swift</a> devs! We invite you to shape the future of code editing. Join us in contributing to a free and <a href="https://twitter.com/hashtag/OpenSource?src=hash&amp;ref_src=twsrc%5Etfw">#OpenSource</a> project to build a native <a href="https://twitter.com/hashtag/CodeEditor?src=hash&amp;ref_src=twsrc%5Etfw">#CodeEditor</a> that unleashes the power of the Mac and complements Xcode.<a href="https://t.co/1gLjzN3tul">https://t.co/1gLjzN3tul</a></p>&mdash; CodeEdit (@CodeEditApp) <a href="https://twitter.com/CodeEditApp/status/1669723002832044034?ref_src=twsrc%5Etfw">June 16, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Linking to Headings
 In Markdown documents, each heading has its name as the identifier which you can [link to](#linking-to-headings) via a fragment.
@@ -242,6 +257,40 @@ If you want to make the quote full width.
 <blockquote class="full-width">
   <p>An important quote that we want to call the readers attention to and emphasize in our article from the rest of the content.</p>
   <p>This is another quoted paragraph that we want to emphasize.</p>
+</blockquote>
+```
+
+### Blockquote Footer
+
+Add a blockquote footer to credit the author.
+
+<blockquote>
+  <p>An important quote that we want to call the readers attention to and emphasize in our article from the rest of the content.</p>
+  <p>This is another quoted paragraph that we want to emphasize.</p>
+  <footer>Steve Jobs, Apple Computers</footer>
+</blockquote>
+
+```Markdown
+<blockquote>
+  <p>An important quote that we want to call the readers attention to and emphasize in our article from the rest of the content.</p>
+  <p>This is another quoted paragraph that we want to emphasize.</p>
+  <footer>Steve Jobs, Apple Computers</footer>
+</blockquote>
+```
+
+It even works with width classes.
+
+<blockquote class="wide">
+  <p>An important quote that we want to call the readers attention to and emphasize in our article from the rest of the content.</p>
+  <p>This is another quoted paragraph that we want to emphasize.</p>
+  <footer>Steve Jobs, Apple Computers</footer>
+</blockquote>
+
+```Markdown
+<blockquote class="wide">
+  <p>An important quote that we want to call the readers attention to and emphasize in our article from the rest of the content.</p>
+  <p>This is another quoted paragraph that we want to emphasize.</p>
+  <footer>Steve Jobs, Apple Computers</footer>
 </blockquote>
 ```
 
