@@ -7,6 +7,10 @@ import styled from 'styled-components';
 // - aspect-ratio-[1:1|5:4|4:3|7:5|3:2|16:9|2:1|5:2|3:1] (and reverse)
 
 export const MarkdownWrap = styled.div`
+  & > *:first-child {
+    margin-top: 0;
+  }
+
   .centered {
     text-align: center;
   }

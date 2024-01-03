@@ -26,6 +26,7 @@
     "remark-gfm": "^4.0.0",
     "remark-github-alerts": "^0.0.4",
     "styled-components": "^6.1.1",
+    "unist-builder": "^4.0.0",
     "unist-util-visit": "^5.0.0",
     "uuid": "^9.0.1"
   },

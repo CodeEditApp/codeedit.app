@@ -1,7 +1,7 @@
 ---
 title: "Why We're Building CodeEdit: The Next Revolution of Code Editing in macOS"
 headline: "Why We're Building CodeEdit: The Next Revolution of Code Editing in macOS"
-subhead: We might sound crazy, but we set out to build an editor native to macOS written in Swift, by the community, for the community. Completely open source and free forever.
+subhead: It might sound crazy, but we set out to build an editor native to macOS written in Swift, by the community, for the community. Completely open source and free forever.
 description: Redesigned Apple TV app elevates the viewing experience
 date: December 26, 2023
 category: update
@@ -33,7 +33,8 @@ CodeEdit is built exclusively for macOS, ensuring seamless integration and optim
 - Extensions 
 - and more...
 
-At the time of writing, not all of these features are built. That is where you come in.
+> [!NOTE]
+> At the time of writing, not all of these features are built. That is where you come in.
 
 ## Community-Driven, Open Source, and Free
 

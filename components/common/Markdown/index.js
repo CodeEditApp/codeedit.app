@@ -20,6 +20,7 @@ import lightSyntaxTheme from '@/data/syntax-light';
 import remarkAlerts from './remarkAlerts';
 
 import * as Styled from './Markdown.styles';
+import remarkGithub from './remarkGithub';
 
 SyntaxHighlighter.registerLanguage('tsx', tsx);
 SyntaxHighlighter.registerLanguage('typescript', typescript);
@@ -111,6 +112,10 @@ const Markdown = ({
         remarkPlugins={[
           remarkGfm,
           remarkAlerts,
+          // [
+          remarkGithub,
+          // { defaultOrg: 'CodeEditApp', defaultRepo: 'CodeEdit' },
+          // ],
           // [remarkEmbedder, { transformers: [CodeSandboxTransformer] }],
           ...remarkPlugins,
         ]}
