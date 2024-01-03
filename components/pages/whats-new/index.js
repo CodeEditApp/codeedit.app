@@ -43,16 +43,23 @@ export default function WhatsNewPage({ releases }) {
       </HeroSection>
       {releases.map((release) => (
         <React.Fragment key={release.id}>
+          <SectionDivider contained />
           <Section contained gutterTop gutterBottom>
             <Stack direction="horizontal" gap align="start">
               <Tile style={{ position: 'sticky', top: 96 }}>
-                <Stack>
-                  <Typography variant="eyebrow-super">
-                    {release.name}
-                  </Typography>
-                  <Typography variant="body">
-                    {formatDate(release.published_at)}
-                  </Typography>
+                <Stack gap>
+                  <Stack>
+                    <Typography variant="eyebrow-super">
+                      {release.name}
+                    </Typography>
+                    <Typography
+                      variant="headline-body-reduced"
+                      color="secondary"
+                    >
+                      {formatDate(release.published_at)}
+                    </Typography>
+                  </Stack>
+
                   <Button>Download</Button>
                 </Stack>
               </Tile>
@@ -60,7 +67,6 @@ export default function WhatsNewPage({ releases }) {
               <Markdown>{release.body}</Markdown>
             </Stack>
           </Section>
-          <SectionDivider contained />
         </React.Fragment>
       ))}
     </div>
