@@ -395,6 +395,7 @@ export const MarkdownWrap = styled.div`
 
     &.alert {
       width: 656px;
+      max-width: 100%;
       margin: 28px auto;
       break-inside: avoid;
       border-radius: var(--aside-border-radius, 15px);
@@ -416,6 +417,7 @@ export const MarkdownWrap = styled.div`
           line-height: 1.5294417647;
           font-weight: 600;
           letter-spacing: -0.021em;
+          margin-top: -0.25em;
         }
       }
       &.note {

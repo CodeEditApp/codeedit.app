@@ -36,7 +36,7 @@ const HeroSection = ({versionNumber}) => {
                     CodeEdit for macOS
                   </Typography> */}
                   <Typography variant="headline-elevated">
-                    A lightweight, natively built editor.
+                    A lightweight, natively-built editor.
                     Open source. Free forever.
                   </Typography>
                   <Typography variant="intro-elevated" color="tertiary" gutterBottom>

@@ -25,6 +25,8 @@ const remarkGithub = (options) => {
           if (start < end) children.push(u('text', text.slice(start, end)));
         }
 
+        // TODO: Handle my-org/my-repo#123 and my-repo#123
+
         // Handle issue numbers
         while ((match = issueRegex.exec(node.value)) !== null) {
           const [fullMatch, issueNumber] = match;
@@ -45,10 +47,9 @@ const remarkGithub = (options) => {
         while ((match = fullUrlRegex.exec(node.value)) !== null) {
           const [fullMatch, org, repo, type, number] = match;
           addText(node.value, lastIndex, match.index);
-          const linkText =
-            org === defaultOrg && repo === defaultRepo
-              ? `#${number}`
-              : `${org}/${repo}#${number}`;
+          const linkText = `${org === defaultOrg ? '' : `${org}/`}${
+            org === defaultOrg && repo === defaultRepo ? '' : repo
+          }#${number}`;
           children.push(
             u(
               'link',

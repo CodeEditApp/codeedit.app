@@ -181,7 +181,7 @@ function Header() {
                 </label>
               </Action>
               <Action>
-                <Button href="https://github.com/CodeEditApp/CodeEdit/releases/latest" target="_blank" compact>Download Alpha</Button>
+                <Button href="https://github.com/CodeEditApp/CodeEdit/releases/latest" target="_blank" compact>Download</Button>
               </Action>
             </Actions>
           </Menu>

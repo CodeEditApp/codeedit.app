@@ -112,10 +112,10 @@ const Markdown = ({
         remarkPlugins={[
           remarkGfm,
           remarkAlerts,
-          // [
-          remarkGithub,
-          // { defaultOrg: 'CodeEditApp', defaultRepo: 'CodeEdit' },
-          // ],
+          [
+            remarkGithub,
+            { defaultOrg: 'CodeEditApp', defaultRepo: 'CodeEdit' },
+          ],
           // [remarkEmbedder, { transformers: [CodeSandboxTransformer] }],
           ...remarkPlugins,
         ]}

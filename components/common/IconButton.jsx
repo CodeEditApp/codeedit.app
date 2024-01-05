@@ -2,9 +2,7 @@ import styled from "styled-components";
 
 const Button = styled.a`
   cursor: ${({ disabled }) => disabled ? `default` : `pointer`};
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5em;
+  display: inline-block;
   text-align: center;
   white-space: nowrap;
   font-size: 17px;
@@ -13,15 +11,20 @@ const Button = styled.a`
   letter-spacing: -.022em;
   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   min-width: 28px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 4px;
   border-radius: 18px;
-  background: var(${({ disabled }) => disabled ? `--glyph-gray-tertiary` : `--color-fill-blue`});
-  color: #fff;
+  color: var(${({ disabled }) => disabled ? `--glyph-gray-tertiary` : `--color-fill-blue`});
   border: 0;
   outline: 0;
+  transition: 200ms;
+
+  &:hover {
+    opacity: 0.66;
+  }
+
+  &:active {
+    opacity: 0.33;
+  }
 
   ${({ compact }) => compact ? `
     font-size: 12px;
@@ -30,18 +33,9 @@ const Button = styled.a`
     letter-spacing: -.01em;
     font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     min-width: 23px;
-    padding-left: 11px;
-    padding-right: 11px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 0;
     border-radius: 12px;
   ` : ``}
-  svg {
-    width: 1em;
-    height: 1em;
-    vertical-align: center;
-    margin: 0 -0.25em;
-  }
 `;
 
 export default Button;

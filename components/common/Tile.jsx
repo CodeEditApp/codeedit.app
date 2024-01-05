@@ -65,7 +65,7 @@ const TileCopy = styled(Typography)`
       margin-top: 0.3em;
     }
 `;
-const TileViolator = styled.div`
+export const TileViolator = styled.div`
   box-sizing: border-box;
   white-space: nowrap;
   display: inline-block;
@@ -91,8 +91,8 @@ const TileViolator = styled.div`
 
   // tile violator
   background: transparent;
-  border-color: #6e6e73;
-  color: #6e6e73;
+  /* border-color: #6e6e73;
+  color: #6e6e73; */
 
 `;
 const TileBody = styled.div`
