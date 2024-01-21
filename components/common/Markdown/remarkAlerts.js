@@ -19,10 +19,9 @@ const remarkAlerts = () => {
           firstChild.children[0].value.startsWith(alertType.code)
         ) {
           // Remove the alertType.code marker
-          firstChild.children[0].value = firstChild.children[0].value.replace(
-            alertType.code,
-            ''
-          );
+          firstChild.children[0].value = firstChild.children[0].value
+            .replace(alertType.code, '')
+            .trim();
 
           if (firstChild.children[0].value == '') {
             firstChild.children.shift();

@@ -6,10 +6,11 @@ subhead: A complete overview of the markdown rendering inspired by GitHub on our
 date: 2023-12-15
 category: update
 author: austincondiff
-image: https://www.apple.com/newsroom/images/passions/education/Apple_Australian-primary-school-drives-innovation-and-creativity-with-iPad_032521_Full-Bleed-Image.jpg.large_2x.jpg
+image: https://github.com/CodeEditApp/codeedit.app/assets/806104/6552453d-c31c-48f3-ae0f-862db07ada9c
+draft: true
 ---
 
-<img class="full-width ratio-16-9" src="https://www.apple.com/newsroom/images/passions/education/Apple_Australian-primary-school-drives-innovation-and-creativity-with-iPad_032521_Full-Bleed-Image.jpg.large_2x.jpg" alt="">
+<img class="full-width ratio-21-9" src="https://github.com/CodeEditApp/codeedit.app/assets/806104/6552453d-c31c-48f3-ae0f-862db07ada9c" alt="">
 
 ## Headings
 

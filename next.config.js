@@ -11,6 +11,12 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'github.com',
+        port: '',
+        pathname: '/*/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'www.apple.com',
         port: '',
         pathname: '/*/**',

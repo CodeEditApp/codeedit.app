@@ -24,6 +24,8 @@ const getAllPosts = async () => {
       const pathComponents = path.split('/');
       const slug = pathComponents[pathComponents.length - 1];
 
+      console.log(frontmatter.draft);
+
       return {
         ...frontmatter,
         date: getDate(frontmatter.date),
@@ -35,7 +37,9 @@ const getAllPosts = async () => {
     })
   );
 
-  posts = posts.sort((a, b) => (new Date(a.date) < new Date(b.date) ? 1 : -1));
+  posts = posts
+    .filter(({ draft }) => !draft)
+    .sort((a, b) => (new Date(a.date) < new Date(b.date) ? 1 : -1));
 
   return posts;
 };

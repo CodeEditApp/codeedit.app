@@ -160,7 +160,8 @@ const TileImage = styled(Image)`
   left: 0; */
   transition: transform 400ms cubic-bezier(0.4, 0, 0.25, 1) 0ms;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 
   .tile:hover & {
     transform: scale(1.03);
@@ -349,16 +350,15 @@ export default function BlogPage({ posts }) {
           })}
         </Tiles>
       </Section>
-      <Section contained gutterBottom>
-        {/* <Typography variant="section-head" as="h2">
-          More News
-        </Typography> */}
-        <CtaWrap>
-          <Link href="/blog/archive/">
-            <CtaButton>View Archive</CtaButton>
-          </Link>
-        </CtaWrap>
-      </Section>
+      {posts.length > 11 && (
+        <Section contained gutterBottom>
+          <CtaWrap>
+            <Link href="/blog/archive/">
+              <CtaButton>View Archive</CtaButton>
+            </Link>
+          </CtaWrap>
+        </Section>
+      )}
     </>
   );
 }

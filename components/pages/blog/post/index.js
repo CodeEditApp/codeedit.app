@@ -5,6 +5,7 @@ import ArticleHeader from './ArticleHeader';
 import ShareSheet from './ShareSheet';
 import AboutAuthor from './AboutAuthor';
 import Markdown from '@/components/common/Markdown';
+import Head from 'next/head';
 
 const Article = styled.article`
   overflow: hidden;
@@ -40,6 +41,11 @@ const Article = styled.article`
 const BlogPost = ({ frontmatter, markdownBody, siteTitle, author }) => {
   return (
     <Section gutter={false}>
+      {!!frontmatter.draft && (
+        <Head>
+          <meta name="robots" content="noindex,nofollow" />
+        </Head>
+      )}
       <Article>
         <ArticleHeader frontmatter={frontmatter} author={author} />
         <Markdown className="pagebody component">{markdownBody}</Markdown>
