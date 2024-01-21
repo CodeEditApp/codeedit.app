@@ -42,6 +42,7 @@ Typography.propTypes = {
     'eyebrow-reduced',
     'intro-elevated',
     'intro',
+    'section-head',
     'quote',
     'quote-reduced',
     'callout',

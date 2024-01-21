@@ -39,6 +39,11 @@ const SceneWrap = styled.div`
   animation-fill-mode: both;
   transform-origin: bottom center;
   margin-top: 6%;
+  img {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
 `;
 const ImageWrap = styled.div`
   position: relative;
@@ -57,6 +62,7 @@ const BlurBackground = styled.div`
   bottom: 8%;
   left: 3%;
   border-radius: 1%;
+
 `;
 const colorFlairPiece = css`
   position: absolute;

@@ -64,7 +64,7 @@ export default function Section (props) {
       accentColor={accentColor}
       {...rest}
     >
-      <Container gutter={gutterX} width={contained}>
+      <Container gutter={gutterX} $width={contained}>
         {children}
       </Container>
     </SectionWrap>

@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta charset="utf-8" />
+          <meta charSet="utf-8" />
           <meta name="apple-mobile-web-app-capable" content="yes"></meta>
           <meta
             property="og:title"

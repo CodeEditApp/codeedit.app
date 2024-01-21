@@ -3,12 +3,16 @@ import links from '@/data/links';
 const navigation = [
   {
     href: '/',
-    label: 'CodeEdit',
+    label: 'Overview',
   },
-  // {
-  //   href: '/whats-new',
-  //   label: 'What’s Included',
-  // },
+  {
+    href: '/whats-new',
+    label: 'What’s New',
+  },
+  {
+    href: '/blog',
+    label: 'Blog',
+  },
   // {
   //   href: '/resources',
   //   label: 'Resources',

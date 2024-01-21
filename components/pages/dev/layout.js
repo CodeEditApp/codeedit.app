@@ -46,7 +46,7 @@ export default function DevPage() {
             </Typography>
           </Column>
         </Row>
-        <Row gap gutterTop>
+        <Row gap={5} gutterTop>
           <Column width={{ sm: 12, md: 3, lg: 2, xl: 1 }}>
             <Box />
           </Column>
@@ -57,7 +57,7 @@ export default function DevPage() {
             <Box />
           </Column>
         </Row>
-        <Row gap gutterTop>
+        <Row gap={5} gutterTop>
           <Column width={{ sm: 12, md: 3, lg: 2, xl: 1 }}>
             <Box />
           </Column>
@@ -65,7 +65,7 @@ export default function DevPage() {
             <Box />
           </Column>
         </Row>
-        <Row gap gutterTop>
+        <Row gap={5} gutterTop>
           <Column width={{ sm: 10, md: 6, lg: 8, xl: 10 }}>
             <Box />
           </Column>

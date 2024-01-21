@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styled from 'styled-components'
@@ -34,10 +35,10 @@ const HeaderContainer = styled(Container)`
   justify-content: space-between;
 `;
 const Title = styled.h2`
-  font-size: 21px;
+  font-size: 22px;
   line-height: 1.14286;
   font-weight: 600;
-  letter-spacing: .011em;
+  letter-spacing: -0.033em;
   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   cursor: default;
   display: block;
@@ -46,6 +47,8 @@ const Title = styled.h2`
   white-space: nowrap;
   transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
   color: var(--glyph-gray);
+  display: flex;
+  align-items: center;
   a {
     display: inline-block;
     letter-spacing: inherit;
@@ -55,6 +58,14 @@ const Title = styled.h2`
     white-space: nowrap;
     color: var(--glyph-gray);
     opacity: .92;
+  }
+  img {
+    margin-left: -3px;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+  span {
+    cursor: pointer;
   }
 `;
 const Menu = styled.div`
@@ -126,9 +137,17 @@ function Header() {
     <Nav role="navigation">
       <Wrapper>
         <HeaderContainer>
-          <Title>
-            <Link href="/">CodeEdit</Link>
+          <Link href="/">
+            <Title>
+              <Image
+                width={32}
+                height={32}
+                src="/product-icon.png"
+                alt="CodeEdit product icon"
+              />
+              <span>CodeEdit</span>
           </Title>
+          </Link>
           <Menu>
             <MenuCtaAnchor>
               <MenuCtaAnchorLabel>Open Menu</MenuCtaAnchorLabel>
@@ -162,7 +181,7 @@ function Header() {
                 </label>
               </Action>
               <Action>
-                <Button href="https://github.com/CodeEditApp/CodeEdit/releases/latest" target="_blank" compact>Download Alpha</Button>
+                <Button href="https://github.com/CodeEditApp/CodeEdit/releases/latest" target="_blank" compact>Download</Button>
               </Action>
             </Actions>
           </Menu>
