@@ -2,7 +2,7 @@
 title: "Why We're Building CodeEdit: A Natively-built Code Editor for the Mac"
 headline: "Why We're Building CodeEdit: A Natively-built Code Editor for the Mac"
 subhead: It might sound crazy, but we are determined to build an editor native to macOS written in Swift, by the community, for the community. Completely open source and free forever.
-description: Redesigned Apple TV app elevates the viewing experience
+description: It might sound crazy, but we are determined to build an editor native to macOS written in Swift, by the community, for the community. Completely open source and free forever.
 date: 2024-01-23
 category: update
 author: austincondiff
