@@ -366,6 +366,10 @@ export default function BlogPage({ posts }) {
           content="The CodeEdit blog is the source for news about CodeEdit. Read project news, get updates, and read about community progress."
         ></meta>
         <meta property="og:url" content="https://www.codeedit.app/blog"></meta>
+        <meta
+          property="og:image"
+          content="https://www.codeedit.app/social-preview.jpg"
+        ></meta>
       </Head>
       <Section contained gutterY variant="secondary">
         <Typography variant="section-head" as="h2">

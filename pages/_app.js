@@ -14,23 +14,6 @@ function MyApp({ Component, pageProps }) {
           content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
         />
         <meta
-          property="og:description"
-          content="A lightweight, natively built editor. Open source. Free forever."
-        ></meta>
-        <meta
-          property="og:title"
-          content="CodeEdit – A native code editor for macOS"
-        ></meta>
-        <meta
-          property="og:image"
-          content="https://www.codeedit.app/social-preview.jpg"
-        ></meta>
-        <meta
-          property="og:description"
-          content="A lightweight, natively built editor. Open source. Free forever."
-        ></meta>
-        <meta property="og:url" content="https://www.codeedit.app"></meta>
-        <meta
           name="twitter:image"
           content="https://www.codeedit.app/social-preview.jpg"
         ></meta>
