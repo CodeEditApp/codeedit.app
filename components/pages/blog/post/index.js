@@ -59,6 +59,26 @@ const BlogPost = ({ frontmatter, markdownBody, siteTitle, author }) => {
           property="og:description"
           content={frontmatter.description ?? frontmatter.subhead}
         />
+        <meta
+          name="twitter:image"
+          content="https://www.codeedit.app/social-preview.jpg"
+        />
+        <meta
+          name="twitter:image:src"
+          content="https://www.codeedit.app/social-preview.jpg"
+        />
+        <meta name="twitter:site" content="@CodeEditApp" />
+        <meta name="twitter:creator" content="@CodeEditApp" />
+        <meta
+          name="twitter:title"
+          content={`${
+            frontmatter.title ?? frontmatter.headline
+          } | ${siteTitle} Blog`}
+        />
+        <meta
+          name="twitter:description"
+          content={frontmatter.description ?? frontmatter.subhead}
+        />
         {!!frontmatter.draft && (
           <meta name="robots" content="noindex,nofollow" />
         )}
