@@ -36,19 +36,15 @@ export default function WhatsNewPage({ releases }) {
       <Head>
         <title>What&apos;s New | CodeEdit</title>
         <meta
-          property="description"
-          content="The CodeEdit blog is the source for news about CodeEdit. Read project news, get updates, and read about community progress."
+          name="description"
+          content="Discover the newest updates, features, and bug fixes in CodeEdit's latest releases. Explore what's new and download builds for any version."
         ></meta>
         <meta property="og:title" content="What's New | CodeEdit"></meta>
         <meta
           property="og:description"
-          content="The CodeEdit blog is the source for news about CodeEdit. Read project news, get updates, and read about community progress."
+          content="Discover the newest updates, features, and bug fixes in CodeEdit's latest releases. Explore what's new and download builds for any version."
         ></meta>
         <meta property="og:url" content="https://www.codeedit.app/blog"></meta>
-        <meta
-          property="og:description"
-          content="A lightweight, natively built editor. Open source. Free forever."
-        ></meta>
         <meta
           property="og:image"
           content="https://www.codeedit.app/social-preview.jpg"
