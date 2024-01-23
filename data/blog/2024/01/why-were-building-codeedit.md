@@ -3,7 +3,7 @@ title: "Why We're Building CodeEdit: A Natively-built Code Editor for the Mac"
 headline: "Why We're Building CodeEdit: A Natively-built Code Editor for the Mac"
 subhead: It might sound crazy, but we are determined to build an editor native to macOS written in Swift, by the community, for the community. Completely open source and free forever.
 description: Redesigned Apple TV app elevates the viewing experience
-date: 2024-01-22
+date: 2024-01-23
 category: update
 author: austincondiff
 image: https://github.com/CodeEditApp/codeedit.app/assets/806104/98a5d642-95b7-4b54-82ce-627099dcaca9
@@ -90,12 +90,12 @@ As CodeEdit continues to grow and evolve, we're more committed than ever to our 
 So sure, it might sound crazy, but in the words of a timeless tribute to innovators:
 
 <figure>
-<blockquote>
-Here's to the crazy ones. The misfits, the rebels, the troublemakers, the round pegs in the square holes, the ones who see things differently. They're not fond of rules, and they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. About the only thing you can't do is ignore them. Because they change things - they push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do.
-</blockquote>
-<figcaption>
-Apple, "Think Different" Campaign, 1997
-</figcaption>
+  <blockquote>
+    Here's to the crazy ones. The misfits, the rebels, the troublemakers, the round pegs in the square holes, the ones who see things differently. They're not fond of rules, and they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. About the only thing you can't do is ignore them. Because they change things - they push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do.
+  </blockquote>
+  <figcaption>
+    Apple, "Think Different" Campaign, 1997
+  </figcaption>
 </figure>
 
 This ethos is at the heart of CodeEdit. We started as a group of 'crazy ones', united by a shared vision. Today, we stand together as a community, forging ahead to change the world of code editing on macOS.
