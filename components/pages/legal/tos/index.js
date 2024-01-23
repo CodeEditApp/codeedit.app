@@ -1,4 +1,5 @@
 import { Section } from '@/components/common/layout';
+import Head from 'next/head';
 
 export default function TosPage() {
   return (
