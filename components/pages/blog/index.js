@@ -1,6 +1,7 @@
 import { Section } from '@/components/common/layout';
 import Typography from '@/components/common/Typography';
 import { mediaQueries } from '@/styles/breakpoints';
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import styled from 'styled-components';
@@ -353,6 +354,19 @@ function formatDate(str) {
 export default function BlogPage({ posts }) {
   return (
     <>
+      <Head>
+        <title>Blog | CodeEdit</title>
+        <meta
+          property="description"
+          content="The CodeEdit blog is the source for news about CodeEdit. Read project news, get updates, and read about community progress."
+        ></meta>
+        <meta property="og:title" content="Blog | CodeEdit"></meta>
+        <meta
+          property="og:description"
+          content="The CodeEdit blog is the source for news about CodeEdit. Read project news, get updates, and read about community progress."
+        ></meta>
+        <meta property="og:url" content="https://www.codeedit.app/blog"></meta>
+      </Head>
       <Section contained gutterY variant="secondary">
         <Typography variant="section-head" as="h2">
           Latest News

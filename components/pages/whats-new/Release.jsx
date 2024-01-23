@@ -18,6 +18,7 @@ import { Link, Mail, Share } from 'react-feather';
 import XSvg from '@/assets/x-icon.svg';
 import FacebookSvg from '@/assets/facebook-icon.svg';
 import macOSVersions from '@/data/macOS-versions';
+import Head from 'next/head';
 
 const ReleaseTile = styled(Tile)`
   border-radius: 18px;

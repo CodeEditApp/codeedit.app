@@ -1,14 +1,14 @@
 import { Section } from '@/components/common/layout';
 import Head from 'next/head';
 
-export default function TosPage() {
+export default function LicensePage() {
   return (
     <>
       <Head>
-        <title>Terms of Service | CodeEdit</title>
+        <title>License | CodeEdit</title>
       </Head>
       <Section contained gutterY>
-        TOS Page
+        License page
       </Section>
     </>
   );
