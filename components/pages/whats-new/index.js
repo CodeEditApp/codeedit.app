@@ -39,7 +39,7 @@ export default function WhatsNewPage({ releases }) {
           property="description"
           content="The CodeEdit blog is the source for news about CodeEdit. Read project news, get updates, and read about community progress."
         ></meta>
-        <meta property="og:title" content="Blog | CodeEdit"></meta>
+        <meta property="og:title" content="What's New | CodeEdit"></meta>
         <meta
           property="og:description"
           content="The CodeEdit blog is the source for news about CodeEdit. Read project news, get updates, and read about community progress."
