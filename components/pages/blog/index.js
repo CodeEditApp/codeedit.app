@@ -1,5 +1,6 @@
 import { Section } from '@/components/common/layout';
 import Typography from '@/components/common/Typography';
+import { mediaQueries } from '@/styles/breakpoints';
 import Image from 'next/image';
 import Link from 'next/link';
 import styled from 'styled-components';
@@ -62,6 +63,9 @@ const TileWrap = styled(Link)`
 
   &.tile-1up {
     width: 100%;
+    @media ${mediaQueries.sm} {
+      flex-direction: column;
+    }
   }
 
   &.tile-1up.tile-quick-read {
@@ -132,6 +136,11 @@ const TileMedia = styled.div`
     min-height: 362px;
     flex-basis: 643px;
     flex-shrink: 1;
+    @media ${mediaQueries.sm} {
+      flex-basis: auto;
+      min-height: 0;
+      aspect-ratio: 16/9;
+    }
   }
 
   .tile-2up & {
@@ -177,18 +186,27 @@ const TileDescription = styled.div`
     padding: 32px;
     justify-content: space-between;
     flex-basis: 0;
+    @media ${mediaQueries.sm} {
+      padding: 24px;
+    }
   }
 
   .tile-2up & {
     padding: 32px;
     justify-content: space-between;
     flex-basis: auto;
+    @media ${mediaQueries.sm} {
+      padding: 19px;
+    }
   }
 
   .tile-3up & {
     padding: 24px;
     justify-content: space-between;
     flex-basis: auto;
+    @media ${mediaQueries.sm} {
+      padding: 19px;
+    }
   }
 `;
 const TileHead = styled.div``;
@@ -232,6 +250,9 @@ const TileHeadline = styled.div`
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;
+    @media ${mediaQueries.sm} {
+      font-size: 24px;
+    }
   }
 
   .tile-2up & {

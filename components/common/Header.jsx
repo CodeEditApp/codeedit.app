@@ -52,25 +52,6 @@ const HeaderContainer = styled(Container)`
     align-items: flex-start;
   }
 `;
-// const HeaderContainer = styled.div`
-//   z-index: 2;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-
-//   margin: 0 auto;
-//   max-width: 980px;
-//   padding: 0 22px;
-//   padding-left: calc(max(22px, env(safe-area-inset-left)));
-//   padding-right: calc(max(22px, env(safe-area-inset-right)));
-//   position: relative;
-//   z-index: 2;
-//   @media ${mediaQueries.sm} {
-//     flex-direction: column;
-//     justify-content: stretch;
-//     align-items: flex-start;
-//   }
-// `;
 const Title = styled.h2`
   font-size: 22px;
   line-height: 1.14286;
