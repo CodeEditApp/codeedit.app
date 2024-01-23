@@ -45,6 +45,14 @@ export default function WhatsNewPage({ releases }) {
           content="The CodeEdit blog is the source for news about CodeEdit. Read project news, get updates, and read about community progress."
         ></meta>
         <meta property="og:url" content="https://www.codeedit.app/blog"></meta>
+        <meta
+          property="og:description"
+          content="A lightweight, natively built editor. Open source. Free forever."
+        ></meta>
+        <meta
+          property="og:image"
+          content="https://www.codeedit.app/social-preview.jpg"
+        ></meta>
       </Head>
       <HeroSection contained gutterY={12}>
         <Typography variant="headline-elevated" as="h1">
