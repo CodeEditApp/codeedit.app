@@ -24,8 +24,6 @@ const getAllPosts = async () => {
       const pathComponents = path.split('/');
       const slug = pathComponents[pathComponents.length - 1];
 
-      console.log(frontmatter.draft);
-
       return {
         ...frontmatter,
         date: getDate(frontmatter.date),
