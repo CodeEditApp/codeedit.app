@@ -325,6 +325,7 @@ function formatDate(str) {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
+    timeZone: 'UTC',
   });
 }
 
@@ -367,7 +368,6 @@ const Tile = ({ post, impositionLayout }) => {
   return (
     <TileWrap href={post.url} className={`tile tile-${impositionLayout}`}>
       <TileMedia>
-        {/* <TileImage src={post.image} /> */}
         <TileImage width="643" height="362" src={post.image} alt="Post Image" />
       </TileMedia>
       <TileDescription>

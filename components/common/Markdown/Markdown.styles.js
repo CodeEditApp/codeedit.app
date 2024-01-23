@@ -254,6 +254,7 @@ export const MarkdownWrap = styled.div`
   h6 {
     margin-top: 1.25em;
     margin-bottom: 20px;
+    line-height: 1.125;
   }
 
   hr {

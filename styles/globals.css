@@ -250,6 +250,7 @@ html[data-color-scheme='dark'] {
   --separator-secondary-color: var(--fill-gray-quaternary);
   --link-color: var(--glyph-blue);
   --material-background-color: rgba(255, 255, 255, 0.72);
+  --thick-material-background-color: rgba(255, 255, 255, 0.9);
   --material-separator-color: rgba(0, 0, 0, 0.16);
   --material-filters: saturate(180%) blur(20px);
 }
@@ -360,6 +361,7 @@ html[data-color-scheme='dark'] {
   --separator-secondary-color: var(--fill-gray-quaternary);
   --link-color: var(--glyph-blue);
   --material-background-color: rgba(29, 29, 31, 0.72);
+  --thick-material-background-color: rgba(29, 29, 31, 0.9);
   --material-separator-color: rgba(255, 255, 255, 0.24);
   --material-filters: saturate(180%) blur(20px);
 }
