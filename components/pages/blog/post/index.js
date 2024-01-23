@@ -70,6 +70,10 @@ const BlogPost = ({ frontmatter, markdownBody, siteTitle, author }) => {
         <meta name="twitter:site" content="@CodeEditApp" />
         <meta name="twitter:creator" content="@CodeEditApp" />
         <meta
+          name="twitter:card"
+          content="https://www.codeedit.app/social-preview.jpg"
+        ></meta>
+        <meta
           name="twitter:title"
           content={`${
             frontmatter.title ?? frontmatter.headline

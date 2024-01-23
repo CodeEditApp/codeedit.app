@@ -55,7 +55,10 @@ export default class MyDocument extends Document {
             name="twitter:image:src"
             content="https://www.codeedit.app/social-preview.jpg"
           ></meta>
-          <meta name="twitter:card" content="summary_large_image"></meta>
+          <meta
+            name="twitter:card"
+            content="https://www.codeedit.app/social-preview.jpg"
+          ></meta>
           <meta name="twitter:site" content="@CodeEditApp"></meta>
           <meta name="twitter:creator" content="@CodeEditApp"></meta>
           <meta name="twitter:title" content="CodeEdit for macOS"></meta>
