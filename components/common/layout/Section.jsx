@@ -3,6 +3,7 @@ import RestrictedContainer from "./Container"
 import getSpacing from '@/styles/spacing';
 import getResponsivePropStyles from '@/styles/getResponsivePropStyles';
 import useVisibilityProps from "@/hooks/useVisibilityProps";
+import { mediaQueries } from "@/styles/breakpoints";
 
 const SectionWrap = styled.section`
   --section-accent-color: ${({ accentColor }) => `var(--${accentColor})`};
@@ -12,6 +13,14 @@ const SectionWrap = styled.section`
   ${({ gutter, gutterBottom, gutterY }) => getResponsivePropStyles((gutterBottom ?? gutterY ?? gutter ?? 8), (val) => `
     padding-bottom: ${getSpacing(val)};
   `)}
+  @media ${mediaQueries.sm} {
+    ${({ gutter, gutterTop, gutterY }) => getResponsivePropStyles((gutterTop ?? gutterY ?? gutter ?? 8), (val) => `
+      padding-top: ${getSpacing(val/2)};
+    `)}
+    ${({ gutter, gutterBottom, gutterY }) => getResponsivePropStyles((gutterBottom ?? gutterY ?? gutter ?? 8), (val) => `
+      padding-bottom: ${getSpacing(val/2)};
+    `)}
+  }
 `;
 
 const FullWidthContainer = styled.div`
@@ -21,6 +30,14 @@ const FullWidthContainer = styled.div`
   ${({ gutter, gutterRight, gutterX }) => getResponsivePropStyles((gutterRight ?? gutterX ?? gutter ?? 3), (val) => `
     padding-right: ${getSpacing(val)};
   `)}
+  @media ${mediaQueries.sm} {
+    ${({ gutter, gutterLeft, gutterX }) => getResponsivePropStyles((gutterLeft ?? gutterX ?? gutter ?? 3), (val) => `
+      padding-left: ${getSpacing(val/2)};
+    `)}
+    ${({ gutter, gutterRight, gutterX }) => getResponsivePropStyles((gutterRight ?? gutterX ?? gutter ?? 3), (val) => `
+      padding-right: ${getSpacing(val/2)};
+    `)}
+  }
 `;
 
 export default function Section (props) {

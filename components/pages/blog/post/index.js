@@ -41,11 +41,28 @@ const Article = styled.article`
 const BlogPost = ({ frontmatter, markdownBody, siteTitle, author }) => {
   return (
     <Section gutter={false}>
-      {!!frontmatter.draft && (
-        <Head>
+      <Head>
+        <title>
+          {frontmatter.title ?? frontmatter.headline} | {siteTitle} Blog
+        </title>
+        <meta
+          name="description"
+          content={frontmatter.description ?? frontmatter.subhead}
+        />
+        <meta
+          property="og:title"
+          content={`${
+            frontmatter.title ?? frontmatter.headline
+          } | ${siteTitle} Blog`}
+        />
+        <meta
+          property="og:description"
+          content={frontmatter.description ?? frontmatter.subhead}
+        />
+        {!!frontmatter.draft && (
           <meta name="robots" content="noindex,nofollow" />
-        </Head>
-      )}
+        )}
+      </Head>
       <Article>
         <ArticleHeader frontmatter={frontmatter} author={author} />
         <Markdown className="pagebody component">{markdownBody}</Markdown>
