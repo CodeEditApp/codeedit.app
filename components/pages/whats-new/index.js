@@ -7,7 +7,6 @@ import { Menu, MenuItem } from '@/components/common/Menu';
 import { ChevronDown } from 'react-feather';
 import { useRouter } from 'next/router';
 import Release from './Release';
-import Head from 'next/head';
 
 const HeroSection = styled(Section)`
   text-align: center;
@@ -33,23 +32,6 @@ export default function WhatsNewPage({ releases }) {
   const router = useRouter();
   return (
     <>
-      <Head>
-        <title>What&apos;s New | CodeEdit</title>
-        <meta
-          name="description"
-          content="Discover the newest updates, features, and bug fixes in CodeEdit's latest releases. Explore what's new and download builds for any version."
-        ></meta>
-        <meta property="og:title" content="What's New | CodeEdit"></meta>
-        <meta
-          property="og:description"
-          content="Discover the newest updates, features, and bug fixes in CodeEdit's latest releases. Explore what's new and download builds for any version."
-        ></meta>
-        <meta property="og:url" content="https://www.codeedit.app/blog"></meta>
-        <meta
-          property="og:image"
-          content="https://www.codeedit.app/social-preview.jpg"
-        ></meta>
-      </Head>
       <HeroSection contained gutterY={12}>
         <Typography variant="headline-elevated" as="h1">
           What’s <HighlightedText>New</HighlightedText>

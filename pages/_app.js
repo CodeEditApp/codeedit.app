@@ -3,35 +3,39 @@ import Footer from '@/components/common/Footer';
 import Header from '@/components//common/Header';
 import Site from '@/components/common/Site';
 import '@/styles/globals.css';
+import config from '@/data/config';
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps, router }) {
+  const { pathname, asPath } = router?.state ?? {};
+  const defaultPageData = config.pages['/'];
+  const pageData = config.pages[pathname] ?? config.pages['/'];
+  const isDefault = defaultPageData === pageData;
+  const title = isDefault
+    ? `CodeEdit | A native code editor for macOS`
+    : `${pageData.title} | CodeEdit`;
+  const { description } = pageData;
+  const { host } = config;
+
   return (
     <Site>
       <Head>
-        <title>CodeEdit</title>
+        <title>{title}</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
         />
-        <meta
-          name="twitter:image"
-          content="https://www.codeedit.app/social-preview.jpg"
-        ></meta>
-        <meta
-          name="twitter:image:src"
-          content="https://www.codeedit.app/social-preview.jpg"
-        ></meta>
-        <meta
-          name="twitter:card"
-          content="https://www.codeedit.app/social-preview.jpg"
-        ></meta>
-        <meta name="twitter:site" content="@CodeEditApp"></meta>
-        <meta name="twitter:creator" content="@CodeEditApp"></meta>
-        <meta name="twitter:title" content="CodeEdit for macOS"></meta>
-        <meta
-          name="twitter:description"
-          content="CodeEdit, a lightweight, natively built editor for macOS. Open source. Free forever."
-        ></meta>
+        <meta name="description" content={description} />
+        <meta property="og:url" content={`${host}${asPath}`} />
+        {pathname !== '/blog/[...slug]' && (
+          <>
+            <meta property="og:title" content={title} />
+            <meta property="og:description" content={description} />
+            <meta property="og:image" content={`${host}/social-preview.jpg`} />
+          </>
+        )}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@CodeEdit" />
+        <meta name="twitter:creator" content="@CodeEdit" />
       </Head>
       <Header />
       <main>
@@ -42,4 +46,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default App;

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import ColorSchemeToggle from './ColorSchemeToggle';
 import { mediaQueries } from '@/styles/breakpoints';
 import SocialSection from './SocialSection';
-import links from '@/data/links';
+import config from '@/data/config';
 
 const FooterWrap = styled.footer`
   font-size: 12px;
@@ -69,7 +69,7 @@ const LegalLinks = styled.div`
     white-space: nowrap;
     color: var(--glyph-gray-secondary-alt);
     border-color: var(--fill-gray-tertiary);
-    :last-child {
+    &:last-child {
       border: 0;
       margin-right: 0;
       padding-right: 0;
@@ -106,13 +106,13 @@ function Footer() {
         <SocialSection />
         <FooterMini>
           <MiniFooterTop>
-            <div>To view the latest CodeEdit developments, visit <a href={links.githubProject}>our roadmap</a>.</div>
+            <div>To view the latest CodeEdit developments, visit <a href={config.links.githubProject}>our roadmap</a>.</div>
             <ColorSchemeToggle />
           </MiniFooterTop>
           <MiniFooterBottom>
             <LegalCopyright>
               Copyright &copy; {currentYear}{' '}
-              <a href="https://codeedit.app">CodeEdit</a>. All rights reserved.
+              <a href={config.host}>CodeEdit</a>. All rights reserved.
             </LegalCopyright>
             <LegalLinks>
               {/* <LegalLink href="/legal/tos">
@@ -121,7 +121,7 @@ function Footer() {
               <LegalLink href="/legal/privacy">
                 Privacy Policy
               </LegalLink> */}
-              <LegalLink href={links.license}>
+              <LegalLink href={config.links.license}>
                 License
               </LegalLink>
             </LegalLinks>

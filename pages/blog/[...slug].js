@@ -4,9 +4,8 @@ import { fetchGitHubUser } from '@/utils/fetchData';
 
 export { default } from '@/components/pages/blog/post';
 
-export async function getStaticProps(context) {
-  const { slug } = context.params;
-  const config = await import(`../../data/config.json`);
+export async function getStaticProps({ params }) {
+  const { slug } = params;
 
   // retrieving the Markdown file associated to the slug
   // and reading its data
@@ -19,7 +18,6 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      siteTitle: config.title,
       frontmatter: {
         ...data.data,
         date: new Date(data.data.date).toISOString(),

@@ -1,5 +1,40 @@
 {
+  "host": "https://www.codeedit.app",
   "title": "CodeEdit",
   "description": "CodeEdit, a lightweight, natively built editor for macOS. Open source. Free forever.",
-  "repositoryUrl": "https://github.com/CodeEditApp/codeedit-app"
+  "repositoryUrl": "https://github.com/CodeEditApp/codeedit-app",
+  "twitter": "@CodeEditApp",
+  "pages": {
+    "/": {
+      "title": "Overview",
+      "description": "A lightweight, natively built editor. Open source. Free forever."
+    },
+    "/whats-new": {
+      "title": "What's New",
+      "description": "Discover the newest updates, features, and bug fixes in CodeEdit's latest releases. Explore what's new and download builds for any version."
+    },
+    "/blog": {
+      "title": "Blog",
+      "description": "The CodeEdit blog is the source for news about CodeEdit. Read project news, get updates, and read about community progress."
+    },
+    "https://github.com/CodeEditApp/CodeEdit": {
+      "title": "GitHub",
+      "description": "CodeEdit GitHub repository"
+    }
+  },
+  "links": {
+    "githubOrg": "https://github.com/CodeEditApp",
+    "githubRepo": "https://github.com/CodeEditApp/CodeEdit",
+    "githubProject": "https://github.com/orgs/CodeEditApp/projects/3/views/1",
+    "githubSponsor": "https://github.com/sponsors/CodeEditApp",
+    "twitter": "https://twitter.com/CodeEditApp",
+    "discord": "https://discord.gg/vChUXVf9Em",
+    "license": "https://github.com/CodeEditApp/CodeEdit/blob/main/LICENSE.md"
+  },
+  "navigation": [
+    "/",
+    "/whats-new",
+    "/blog",
+    "https://github.com/CodeEditApp/CodeEdit"
+  ]
 }
