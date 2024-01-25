@@ -1,11 +1,11 @@
-import { Section } from '@/components/common/layout';
+import Head from 'next/head';
 import styled from 'styled-components';
-
+import config from '@/data/config';
+import { Section } from '@/components/common/layout';
+import Markdown from '@/components/common/Markdown';
 import ArticleHeader from './ArticleHeader';
 import ShareSheet from './ShareSheet';
 import AboutAuthor from './AboutAuthor';
-import Markdown from '@/components/common/Markdown';
-import Head from 'next/head';
 
 const Article = styled.article`
   overflow: hidden;
@@ -38,54 +38,30 @@ const Article = styled.article`
   }
 `;
 
-const BlogPost = ({ frontmatter, markdownBody, siteTitle, author }) => {
+const BlogPost = ({ frontmatter, markdownBody, author }) => {
+  const title = `${frontmatter.title ?? frontmatter.headline} | ${
+    config.title
+  } Blog`;
+  const description = frontmatter.description ?? frontmatter.subhead;
+
   return (
     <Section gutter={false}>
       <Head>
-        <title>
-          {frontmatter.title ?? frontmatter.headline} | {siteTitle} Blog
-        </title>
+        <title>{title}</title>
+        <meta property="og:title" content={title} />
+        <meta name="description" content={description} />
+        <meta property="og:description" content={description} />
         <meta
-          name="description"
-          content={frontmatter.description ?? frontmatter.subhead}
-        />
-        <meta
-          property="og:title"
-          content={`${
-            frontmatter.title ?? frontmatter.headline
-          } | ${siteTitle} Blog`}
-        />
-        <meta
-          property="og:description"
-          content={frontmatter.description ?? frontmatter.subhead}
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.codeedit.app/social-preview.jpg"
-        />
-        <meta
-          name="twitter:image:src"
-          content="https://www.codeedit.app/social-preview.jpg"
-        />
-        <meta name="twitter:site" content="@CodeEditApp" />
-        <meta name="twitter:creator" content="@CodeEditApp" />
-        <meta
-          name="twitter:card"
-          content="https://www.codeedit.app/social-preview.jpg"
-        ></meta>
-        <meta
-          name="twitter:title"
-          content={`${
-            frontmatter.title ?? frontmatter.headline
-          } | ${siteTitle} Blog`}
-        />
-        <meta
-          name="twitter:description"
-          content={frontmatter.description ?? frontmatter.subhead}
+          property="og:image"
+          content={frontmatter.image ?? `${config.host}}/social-preview.jpg`}
         />
         {!!frontmatter.draft && (
           <meta name="robots" content="noindex,nofollow" />
         )}
+        <meta
+          name="twitter:creator"
+          content={frontmatter.authorTwitter ?? config.twitter}
+        />
       </Head>
       <Article>
         <ArticleHeader frontmatter={frontmatter} author={author} />

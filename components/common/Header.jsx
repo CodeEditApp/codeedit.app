@@ -8,7 +8,7 @@ import { ExternalLink } from "react-feather"
 import Button from '@/components/common/Button';
 import { Container } from '@/components/common/layout';
 import { mediaQueries } from '@/styles/breakpoints';
-import navigation from '@/data/navigation';
+import config from '@/data/config';
 
 const Nav = styled.nav`
   position: relative;
@@ -385,19 +385,20 @@ function Header() {
                 src="/product-icon.png"
                 alt="CodeEdit product icon"
               />
-              <span>CodeEdit</span>
+              <span>{config.title}</span>
           </Title>
           </Link>
           <Menu>
             <MenuTray>
               <MenuItems>
-                {navigation.map(item => {
-                  const isExternal = item.href.match(/(https?:\/\/[\w\d.-]+)/gi);
+                {config.navigation.map(href => {
+                  const isExternal = href.match(/(https?:\/\/[\w\d.-]+)/gi);
+                  const item = config.pages[href];
 
                   return (
-                    <MenuItem key={item.href} {...(isExternal ? { target: "_blank" } : {})}>
-                      <MenuLink onClick={() => setIsOpen(false)} href={item.href} $current={asPath === item.href}>
-                        {item.label}
+                    <MenuItem key={href} {...(isExternal ? { target: "_blank" } : {})}>
+                      <MenuLink onClick={() => setIsOpen(false)} href={href} $current={asPath === href || (href !== "/" && asPath.startsWith(href))}>
+                        {item.title}
                         {isExternal && <StyledExternalLink size={11} />}
                       </MenuLink>
                     </MenuItem>
