@@ -11,8 +11,8 @@ function App({ Component, pageProps, router }) {
   const pageData = config.pages[pathname] ?? config.pages['/'];
   const isDefault = defaultPageData === pageData;
   const title = isDefault
-    ? `${pageData.title} | CodeEdit`
-    : `CodeEdit | A native code editor for macOS`;
+    ? `CodeEdit | A native code editor for macOS`
+    : `${pageData.title} | CodeEdit`;
   const { description } = pageData;
   const { host } = config;
 
