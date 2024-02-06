@@ -6,16 +6,15 @@ description: When dealing with search, you will quickly realise that users aren'
 date: 2024-01-28
 category: blog
 author: activcoding
-image: https://github.com/CodeEditApp/codeedit.app/assets/806104/98a5d642-95b7-4b54-82ce-627099dcaca9
+image: https://github.com/activcoding/codeedit.app/assets/83090745/18cfdce4-57e7-4ce6-8c20-c7c765b8d743
 ---
 **TL;DR: This article covers how to implement fuzzy searching in Swift.**
-![image](https://github.com/CodeEditApp/codeedit.app/assets/83090745/1ec078f5-df70-4721-8d51-68ec5a728687)
 
-# What is fuzzy Searching?
+## What is fuzzy Searching?
 A fuzzy search algorithm is designed to find approximate matches for a given search query, rather than requiring an exact match. It takes into account the similarity between the search query and the data being searched, assigning scores to each potential match based on their resemblance. This allows the algorithm to return relevant results even when there are minor discrepancies or typos in the search input.
 Let's say you have a list of products, and a user is looking for a "Cozy Sweater." With a fuzzy search algorithm: If they type "Czy Swetr," the fuzzy search considers the similarity and still returns the "Cozy Sweater."
 
-# Different Algorithms
+## Different Algorithms
 There are many algorithms out there providing fuzzy search capabilities, some of which you may have encountered. 
 These include the well-known **Levenshtein Distance**, the **Jaro-Winkler** Distance, **N-Gram** and the **Hamming 
 Distance** 
@@ -24,7 +23,7 @@ Algorithm**. It's worth noting that the most efficient and fastest fuzzy search 
 index of the data, most likely in the form of a trie.
 
 In our example, we use an algorithm that emphasises matching prefixes and will provide a similarity score. The algorithm is fairly fast and easy to understand.
-# Coding Time
+## Coding Time
 Let's start by setting everything up.
 Go ahead and create a file called `Models`. As the name implies, this is where we define our data models.
 The first one represents a search result:
@@ -36,7 +35,8 @@ struct FuzzySearchMatchResult {
 ```
 The `weight` is something like a score - the higher, the better.
 And the matchedParts are the ranges of the string that match the search query. Note that we are using an array of ranges not just one range, because there can be a few characters in between the matched characters. Here is an illustration:
-[image]
+![image](https://github.com/activcoding/codeedit.app/assets/83090745/bdc29e63-a990-42d7-8b94-4e08f37176ab)
+
 Secondly we need to make sure that the data we searching within is case- and accent-insensitive. This is commonly referred to as 'normalising the string'. To achieve this, we need to add two structs:
 ```swift
 struct FuzzySearchCharacter {
@@ -68,8 +68,9 @@ extension String {
 }
 ```
 In this function, the string it's called on is first converted to lowercase, then converts it to data using the ascii encoding and allows lossy conversion, which means that we lose data, through losing data we make the string accent-insensitive. The function then returns an array of `FuzzySearchCharacter` objects, representing the original and normalised content for each character.
-## Matching Prefix
-Now we need to find out if the search query and the string we're comparing it against match. To achieve this, we can write another extension: `hasPrefix`. For better understanding, let's look at the illustration: [image]
+### Matching Prefix
+Now we need to find out if the search query and the string we're comparing it against match. To achieve this, we can write another extension: `hasPrefix`. For better understanding, let's look at the illustration:
+![image](https://github.com/activcoding/codeedit.app/assets/83090745/1296747d-3c75-4b3b-bfd8-838d6d3acc6f)  
 The function simply checks for matching characters from a specified starting index. This functionality will prove useful in later.
 ```swift
 extension String {
@@ -95,7 +96,7 @@ Step 4: Iterate through the provided data and check if the prefixes are matching
 Step 5: If no match is found, return `nil`.  
 
 If this function doesn't seem clear at the moment, it will become clearer as we use it.
-## Fuzzy Searchable Protocol
+### Fuzzy Searchable Protocol
 In order to make the Fuzzy Search generic, i.e. make it applicable to every data type, we have to write a protocol.
 Other data types can adopt this protocol, enabling them to become fuzzy searchable.
 ```swift
@@ -211,7 +212,7 @@ func fuzzyMatch(query: String) -> FuzzySearchMatchResult {
 ```
 Subsequently, we simply transform the characters into their normalised counterparts and invoke the fuzzyMatch function. This, in turn, provides us with the `FuzzySearchMatchResult`.
 
-## Fuzzy Search Extension
+### Fuzzy Search Extension
 Now, let's make arrays fuzzy-searchable by writing an extension for them. This way, they can easily be searched using our fuzzy match functionality.
 ```swift
 extension Collection where Iterator.Element: FuzzySearchable {
@@ -230,7 +231,7 @@ To enable fuzzy searching, we extend Swift's `Collection` with a handy `fuzzySea
 When using this method, you simply provide a search `query`. The function then iterates over the array, invoking the `fuzzyMatch` method on each element. The `fuzzyMatch` method, as you recall, provides a weight for every element. We leverage these weights to filter out elements with a score less than or equal to 0. Finally, we sort the array, placing the element with the highest score at the top.
 *Additionally, for a slight performance boost, consider utilising a `concurrentMap` from the `CollectionConcurrencyKit` package.*
 
-## Usage
+### Usage
 In CodeEdit we for one use the algorithm to provide a quick open overlay that lets user find files quickly. To apply fuzzy search to an array of URLs, you can easily extend the data type `URL` to conform to the `FuzzySearchable` protocol.
 ```swift
 extension URL: FuzzySearchable {
@@ -268,12 +269,12 @@ var sortedUsers: [Users] {
 }
 ```
 
-# Conclusion
+## Conclusion
 Implementing a fuzzy search algorithm is relatively straightforward, yet it significantly enhances the overall user 
 experience.  
-If you prefer to grab the entire code at once, you can find it conveniently shared in this gist: [url]  
+If you prefer to grab the entire code at once, you can find it conveniently shared in this [gist](https://gist.github.com/activcoding/548e093cda10ea323775c78ba689e303).    
 I also have a repository with a few implementations of the fuzzy search algorithm. It includes an option for 
-utilizing fuzzy search with cached data, providing a slight performance boost. Check out the [Demo Repo] for a 
+utilizing fuzzy search with cached data, providing a slight performance boost. Check out the [Demo Repository](https://github.com/activcoding/FuzzySearch-with-SwiftUI) for a 
 closer look.  
 You can also check out the implementation in [CodeEdit](https://github.com/CodeEditApp/CodeEdit).  
 If you still have questions, feel free to contact me.  
