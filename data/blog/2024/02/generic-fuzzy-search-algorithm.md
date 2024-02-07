@@ -35,7 +35,10 @@ struct FuzzySearchMatchResult {
 ```
 The `weight` is something like a score - the higher, the better.
 And the matchedParts are the ranges of the string that match the search query. Note that we are using an array of ranges not just one range, because there can be a few characters in between the matched characters. Here is an illustration:  
-![image](https://github.com/activcoding/codeedit.app/assets/83090745/a8299718-00ed-478b-8bfc-abf238317461)
+<figure>
+  <img src="https://github.com/activcoding/codeedit.app/assets/83090745/579aef55-95cb-4c9a-8504-ceca6d7c6f96" />
+  <figcaption>Search results: 'Conviw' query returns ContentView with the highest relevance.</figcaption>
+</figure>
 
 Secondly we need to make sure that the data we searching within is case- and accent-insensitive. This is commonly referred to as 'normalising the string'. To achieve this, we need to add two structs:
 ```swift
@@ -51,7 +54,12 @@ struct FuzzySearchString {
 }
 ```
 The first one represents one character, the `content` field holds the original character, while `normalisedContent` steps in as its case- and accent-insensitive counterpart.
-And the FuzzySearchString represents a whole word, essentially an array of characters.
+And the FuzzySearchString represents a whole word, essentially an array of characters. Here is a representation of the frensh word summer: "été":  
+<figure>
+  <img src="https://github.com/activcoding/codeedit.app/assets/83090745/a8299718-00ed-478b-8bfc-abf238317461" />
+  <figcaption>Representation of the word 'été' with normalized characters</figcaption>
+</figure>
+
 ## Normalise Words
 In order to normalise words, we need to create an extension for Strings. Create a new file called: `String+Normalise.swift`. his naming convention enables others to quickly understand the purpose of the file.
 Within the file, you'll need to create an extension for String to use the functionality later.
@@ -130,8 +138,7 @@ extension FuzzySearchable {
 }
 ```
 This function takes the query, i.e., the search term, and the characters of a word as arguments. The characters represent the string that we compare the search query against. We use `FuzzySearchString` instead of a simple String, because we want a case- and accent-insensitive search.
-The function then returns a `FuzzySearchMatchResult`, which just holds information about the search result, to be precise it includes `let weight: Int` and `let matchedParts: [NSRange]`.  
-![image](https://github.com/activcoding/codeedit.app/assets/83090745/579aef55-95cb-4c9a-8504-ceca6d7c6f96)
+The function then returns a `FuzzySearchMatchResult`, which just holds information about the search result, to be precise it includes `let weight: Int` and `let matchedParts: [NSRange]`.
 
 Now let's implement the function:
 ```swift
