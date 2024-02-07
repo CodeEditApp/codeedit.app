@@ -34,8 +34,8 @@ struct FuzzySearchMatchResult {
 }
 ```
 The `weight` is something like a score - the higher, the better.
-And the matchedParts are the ranges of the string that match the search query. Note that we are using an array of ranges not just one range, because there can be a few characters in between the matched characters. Here is an illustration:
-![image](https://github.com/activcoding/codeedit.app/assets/83090745/bdc29e63-a990-42d7-8b94-4e08f37176ab)
+And the matchedParts are the ranges of the string that match the search query. Note that we are using an array of ranges not just one range, because there can be a few characters in between the matched characters. Here is an illustration:  
+![image](https://github.com/activcoding/codeedit.app/assets/83090745/a8299718-00ed-478b-8bfc-abf238317461)
 
 Secondly we need to make sure that the data we searching within is case- and accent-insensitive. This is commonly referred to as 'normalising the string'. To achieve this, we need to add two structs:
 ```swift
@@ -69,8 +69,10 @@ extension String {
 ```
 In this function, the string it's called on is first converted to lowercase, then converts it to data using the ascii encoding and allows lossy conversion, which means that we lose data, through losing data we make the string accent-insensitive. The function then returns an array of `FuzzySearchCharacter` objects, representing the original and normalised content for each character.
 ### Matching Prefix
-Now we need to find out if the search query and the string we're comparing it against match. To achieve this, we can write another extension: `hasPrefix`. For better understanding, let's look at the illustration:
-![image](https://github.com/activcoding/codeedit.app/assets/83090745/1296747d-3c75-4b3b-bfd8-838d6d3acc6f)  
+Now we need to find out if the search query and the string we're comparing it against match. To achieve this, we can write another extension: `hasPrefix`. For better understanding, let's look at the illustration:  
+![image](https://github.com/activcoding/codeedit.app/assets/83090745/65eb88e2-94cf-4447-8d1b-b6906d7701bd)
+
+
 The function simply checks for matching characters from a specified starting index. This functionality will prove useful in later.
 ```swift
 extension String {
@@ -128,7 +130,8 @@ extension FuzzySearchable {
 }
 ```
 This function takes the query, i.e., the search term, and the characters of a word as arguments. The characters represent the string that we compare the search query against. We use `FuzzySearchString` instead of a simple String, because we want a case- and accent-insensitive search.
-The function then returns a `FuzzySearchMatchResult`, which just holds information about the search result, to be precise it includes `let weight: Int` and `let matchedParts: [NSRange]`.
+The function then returns a `FuzzySearchMatchResult`, which just holds information about the search result, to be precise it includes `let weight: Int` and `let matchedParts: [NSRange]`.  
+![image](https://github.com/activcoding/codeedit.app/assets/83090745/579aef55-95cb-4c9a-8504-ceca6d7c6f96)
 
 Now let's implement the function:
 ```swift
