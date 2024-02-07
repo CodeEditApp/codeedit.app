@@ -6,7 +6,7 @@ description: When dealing with search, you will quickly realise that users aren'
 date: 2024-01-28
 category: blog
 author: activcoding
-image: https://github.com/activcoding/codeedit.app/assets/83090745/18cfdce4-57e7-4ce6-8c20-c7c765b8d743
+image: https://github.com/activcoding/codeedit.app/assets/83090745/68c27266-e87c-42d5-9e82-d1e07e77bad9
 ---
 **TL;DR: This article covers how to implement fuzzy searching in Swift.**
 
