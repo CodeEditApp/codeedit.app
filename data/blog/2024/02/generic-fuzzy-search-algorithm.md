@@ -6,7 +6,7 @@ description: When dealing with search, you will quickly realise that users aren'
 date: 2024-01-28
 category: blog
 author: activcoding
-image: https://github.com/activcoding/codeedit.app/assets/83090745/a7d88a57-493a-4590-8a17-d1c5d249083d
+image: https://github.com/activcoding/codeedit.app/assets/83090745/b7c9daee-26f5-4aa9-aafd-117ebaa26169
 ---
 ![FuzzySearch-Blog-Image](https://github.com/activcoding/codeedit.app/assets/83090745/b5dca1f7-0d19-44f3-b823-784f8eb3ff76)
 
