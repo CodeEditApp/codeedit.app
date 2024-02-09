@@ -6,9 +6,9 @@ description: When dealing with search, you will quickly realise that users aren'
 date: 2024-01-28
 category: blog
 author: activcoding
-image: https://github.com/activcoding/codeedit.app/assets/83090745/68c27266-e87c-42d5-9e82-d1e07e77bad9
+image: https://github.com/activcoding/codeedit.app/assets/83090745/a7d88a57-493a-4590-8a17-d1c5d249083d
 ---
-**TL;DR: This article covers how to implement fuzzy searching in Swift.**
+![FuzzySearch-Blog-Image](https://github.com/activcoding/codeedit.app/assets/83090745/b5dca1f7-0d19-44f3-b823-784f8eb3ff76)
 
 ## What is fuzzy Searching?
 A fuzzy search algorithm is designed to find approximate matches for a given search query, rather than requiring an exact match. It takes into account the similarity between the search query and the data being searched, assigning scores to each potential match based on their resemblance. This allows the algorithm to return relevant results even when there are minor discrepancies or typos in the search input.
