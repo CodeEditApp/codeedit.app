@@ -1,8 +1,8 @@
 ---
-title: "A Generic Fuzzy Search Algorithm"
-headline: "A Generic Fuzzy Search Algorithm"
-subhead: When dealing with search you will quickly realise that users aren't always typing in the exact terms they're looking for. At first you start to disable case sensitivity and although it improves the search a little bit, the characters still have to match a 100%. Here's where fuzzy searching comes in handy.
-description: When dealing with search, you will quickly realise that users aren't always typing in the exact terms they're looking for. At first, you start to disable case sensitivity, and although it improves the search a little bit, the characters still have to match a 100%. Here's where fuzzy searching comes in handy.
+title: "A Generic Fuzzy Search Algorithm in Swift"
+headline: "A Generic Fuzzy Search Algorithm in Swift"
+subhead: Fuzzy searching finds matches even if there are spelling mistakes or slight variations in the search terms. It helps improve search accuracy by understanding what the user is likely looking for.
+description: Fuzzy searching finds matches even if there are spelling mistakes or slight variations in the search terms. It helps improve search accuracy by understanding what the user is likely looking for.
 date: 2024-01-28
 category: blog
 author: activcoding
@@ -23,7 +23,7 @@ Algorithm**. It's worth noting that the most efficient and fastest fuzzy search 
 index of the data, most likely in the form of a trie.
 
 In our example, we use an algorithm that emphasises matching prefixes and will provide a similarity score. The algorithm is fairly fast and easy to understand.
-## Coding Time
+## Putting search algorithms into practice
 Let's start by setting everything up.
 Go ahead and create a file called `Models`. As the name implies, this is where we define our data models.
 The first one represents a search result:
