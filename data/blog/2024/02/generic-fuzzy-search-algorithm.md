@@ -8,7 +8,7 @@ category: blog
 author: activcoding
 image: https://github.com/activcoding/codeedit.app/assets/83090745/b7c9daee-26f5-4aa9-aafd-117ebaa26169
 ---
-![FuzzySearch-Blog-Image](https://github.com/activcoding/codeedit.app/assets/83090745/b5dca1f7-0d19-44f3-b823-784f8eb3ff76)
+![image](https://github.com/activcoding/codeedit.app/assets/83090745/fcba455b-5b4e-4252-9e8a-6d83a097b2e7)
 
 ## What is fuzzy Searching?
 A fuzzy search algorithm is designed to find approximate matches for a given search query, rather than requiring an exact match. It takes into account the similarity between the search query and the data being searched, assigning scores to each potential match based on their resemblance. This allows the algorithm to return relevant results even when there are minor discrepancies or typos in the search input.
@@ -36,7 +36,7 @@ struct FuzzySearchMatchResult {
 The `weight` is something like a score - the higher, the better.
 And the matchedParts are the ranges of the string that match the search query. Note that we are using an array of ranges not just one range, because there can be a few characters in between the matched characters. Here is an illustration:  
 <figure>
-  <img src="https://github.com/activcoding/codeedit.app/assets/83090745/579aef55-95cb-4c9a-8504-ceca6d7c6f96" />
+  <img src="https://github.com/activcoding/codeedit.app/assets/83090745/eaa1c772-a010-4510-b548-1f132a6e367a" />
   <figcaption>Search results: 'Conviw' query returns ContentView with the highest relevance.</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ struct FuzzySearchString {
 The first one represents one character, the `content` field holds the original character, while `normalisedContent` steps in as its case- and accent-insensitive counterpart.
 And the FuzzySearchString represents a whole word, essentially an array of characters. Here is a representation of the frensh word summer: "été":  
 <figure>
-  <img src="https://github.com/activcoding/codeedit.app/assets/83090745/a8299718-00ed-478b-8bfc-abf238317461" />
+  <img src="https://github.com/activcoding/codeedit.app/assets/83090745/0ad77727-6bb0-4f2b-a2b4-b1a824c54d11" />
   <figcaption>Representation of the word 'été' with normalized characters</figcaption>
 </figure>
 
@@ -78,8 +78,10 @@ extension String {
 In this function, the string it's called on is first converted to lowercase, then converts it to data using the ascii encoding and allows lossy conversion, which means that we lose data, through losing data we make the string accent-insensitive. The function then returns an array of `FuzzySearchCharacter` objects, representing the original and normalised content for each character.
 ### Matching Prefix
 Now we need to find out if the search query and the string we're comparing it against match. To achieve this, we can write another extension: `hasPrefix`. For better understanding, let's look at the illustration:  
-![image](https://github.com/activcoding/codeedit.app/assets/83090745/65eb88e2-94cf-4447-8d1b-b6906d7701bd)
-
+<figure>
+  <img src="https://github.com/activcoding/codeedit.app/assets/83090745/0373c97f-bd25-443b-84e9-3621aa2046a8" />
+  <figcaption>Depicts iterations checking prefixes for a match.</figcaption>
+</figure>
 
 The function simply checks for matching characters from a specified starting index. This functionality will prove useful in later.
 ```swift
