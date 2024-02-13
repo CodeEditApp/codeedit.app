@@ -3,7 +3,7 @@ title: "A Generic Fuzzy Search Algorithm in Swift"
 headline: "A Generic Fuzzy Search Algorithm in Swift"
 subhead: Fuzzy searching finds matches even if there are spelling mistakes or slight variations in the search terms. It helps improve search accuracy by understanding what the user is likely looking for.
 description: Fuzzy searching finds matches even if there are spelling mistakes or slight variations in the search terms. It helps improve search accuracy by understanding what the user is likely looking for.
-date: 2024-01-28
+date: 2024-02-13
 category: blog
 author: activcoding
 image: https://github.com/activcoding/codeedit.app/assets/83090745/b7c9daee-26f5-4aa9-aafd-117ebaa26169
