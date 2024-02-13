@@ -61,7 +61,7 @@ And the FuzzySearchString represents a whole word, essentially an array of chara
 </figure>
 
 ## Normalise Words
-In order to normalise words, we need to create an extension for Strings. Create a new file called: `String+Normalise.swift`. his naming convention enables others to quickly understand the purpose of the file.
+In order to normalise words, we need to create an extension for Strings. Create a new file called: `String+Normalise.swift`. This naming convention enables others to quickly understand the purpose of the file.
 Within the file, you'll need to create an extension for String to use the functionality later.
 ```swift
 extension String {
@@ -86,21 +86,21 @@ Now we need to find out if the search query and the string we're comparing it ag
 The function simply checks for matching characters from a specified starting index. This functionality will prove useful in later.
 ```swift
 extension String {
-	func hasPrefix(prefix: FuzzySearchCharacter, startingAt index: Int) -> Int? {
-	guard let stringIndex = self.index(self.startIndex, offsetBy: index, limitedBy: self.endIndex) else {
-		return nil
-	}
-	let searchString = self.sufflix(from: stringIndex)
-	for prefix in [prefix.content, prefix.normalisedContent] where searchString.hasPrefix(prefix) {
-		return prefix.count
-	}
-	return nil
-	}
+    func hasPrefix(prefix: FuzzySearchCharacter, startingAt index: Int) -> Int? {
+        guard let stringIndex = self.index(self.startIndex, offsetBy: index, limitedBy: self.endIndex) else {
+            return nil
+        }
+        let searchString = self.sufflix(from: stringIndex)
+        for prefix in [prefix.content, prefix.normalisedContent] where searchString.hasPrefix(prefix) {
+            return prefix.count
+        }
+        return nil
+    }
 }
 ```
 Let's go through the code step by step:
 
-Step 1: We except a prefix that is of type `FuzzySearchCharacter`, this is the data against which we test our search 
+Step 1: We accept a prefix that is of type `FuzzySearchCharacter`, this is the data against which we test our search 
 query. And we need a starting index.  
 Step 2: Verify if the provided index is valid for the search query.  
 Step 3: Clip the search query (`self`) to start from the provided starting index.  
@@ -179,7 +179,7 @@ extension FuzzySearchable {
 		}
 
 		if searchString.count == matchedParts.reduce(0, { partialResults, range in 
-		range.length + partialResult
+			range.length + partialResult
 		}) {
 			return FuzzySearchMatchResult(weight: totalScore, matchedParts: matchedParts)
 		} else {
@@ -283,11 +283,9 @@ var sortedUsers: [Users] {
 
 ## Conclusion
 Implementing a fuzzy search algorithm is relatively straightforward, yet it significantly enhances the overall user 
-experience.  
-If you prefer to grab the entire code at once, you can find it conveniently shared in this [gist](https://gist.github.com/activcoding/548e093cda10ea323775c78ba689e303).    
-I also have a repository with a few implementations of the fuzzy search algorithm. It includes an option for 
-utilizing fuzzy search with cached data, providing a slight performance boost. Check out the [Demo Repository](https://github.com/activcoding/FuzzySearch-with-SwiftUI) for a 
-closer look.  
-You can also check out the implementation in [CodeEdit](https://github.com/CodeEditApp/CodeEdit).  
+experience.
+
+If you prefer to grab the entire code at once, you can find it conveniently shared in this [gist](https://gist.github.com/activcoding/548e093cda10ea323775c78ba689e303). I also have a repository with a few implementations of the fuzzy search algorithm. It includes an option for utilizing fuzzy search with cached data, providing a slight performance boost. Check out the [Demo Repository](https://github.com/activcoding/FuzzySearch-with-SwiftUI) for a closer look. You can also check out the implementation in [CodeEdit](https://github.com/CodeEditApp/CodeEdit).
+
 If you still have questions, feel free to contact me.  
 Happy coding!  
