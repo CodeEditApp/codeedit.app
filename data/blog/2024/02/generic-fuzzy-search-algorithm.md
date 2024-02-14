@@ -6,9 +6,9 @@ description: Fuzzy searching finds matches even if there are spelling mistakes o
 date: 2024-02-13
 category: blog
 author: activcoding
-image: https://github.com/activcoding/codeedit.app/assets/83090745/b7c9daee-26f5-4aa9-aafd-117ebaa26169
+image: https://github.com/activcoding/codeedit.app/assets/83090745/c648a54b-9a8e-4899-8f30-cf1133530c51
 ---
-![image](https://github.com/activcoding/codeedit.app/assets/83090745/fcba455b-5b4e-4252-9e8a-6d83a097b2e7)
+![image](https://github.com/activcoding/codeedit.app/assets/83090745/c648a54b-9a8e-4899-8f30-cf1133530c51)
 
 ## What is fuzzy Searching?
 A fuzzy search algorithm is designed to find approximate matches for a given search query, rather than requiring an exact match. It takes into account the similarity between the search query and the data being searched, assigning scores to each potential match based on their resemblance. This allows the algorithm to return relevant results even when there are minor discrepancies or typos in the search input.
@@ -34,7 +34,7 @@ struct FuzzySearchMatchResult {
 }
 ```
 The `weight` is something like a score - the higher, the better.
-And the matchedParts are the ranges of the string that match the search query. Note that we are using an array of ranges not just one range, because there can be a few characters in between the matched characters. Here is an illustration:  
+And the `matchedParts` are the ranges of the string that match the search query. Note that we are using an array of ranges not just one range, because there can be a few characters in between the matched characters. Here is an illustration:  
 <figure>
   <img src="https://github.com/activcoding/codeedit.app/assets/83090745/eaa1c772-a010-4510-b548-1f132a6e367a" />
   <figcaption>Search results: 'Conviw' query returns ContentView with the highest relevance.</figcaption>
@@ -61,21 +61,23 @@ And the FuzzySearchString represents a whole word, essentially an array of chara
 </figure>
 
 ## Normalise Words
-In order to normalise words, we need to create an extension for Strings. Create a new file called: `String+Normalise.swift`. This naming convention enables others to quickly understand the purpose of the file.
+In order to normalise words, we can create an extension for Strings. Create a new file called: `String+Normalise.swift`. This naming convention enables others to quickly understand the purpose of the file.
 Within the file, you'll need to create an extension for String to use the functionality later.
 ```swift
 extension String {
-	func normalise() -> [FuzzySearchCharacter] {
-	return self.lowercased().map { char in
-	    guard let data = String(char).data(using: .ascii, allowLossyConversion: true), let normalisedCharacter = String(data: data, encoding: .ascii) else {
-	        return FuzzySearchCharacter(content: String(char), normalisedContent: String(char))
-     }
+    func normalise() -> [FuzzySearchCharacter] {
+		return self.lowercased().map { char in
+			guard let data = String(char).data(using: .ascii, allowLossyConversion: true), let normalisedCharacter = String(data: data, encoding: .ascii) else {
+				return FuzzySearchCharacter(content: String(char), normalisedContent: String(char))
+            }
 
-	return FuzzySearchCharacter(content: String(char), normalisedContent: normalisedCharacter)
+			return FuzzySearchCharacter(content: String(char), normalisedContent: normalisedCharacter)
+    	}
 	}
 }
 ```
-In this function, the string it's called on is first converted to lowercase, then converts it to data using the ascii encoding and allows lossy conversion, which means that we lose data, through losing data we make the string accent-insensitive. The function then returns an array of `FuzzySearchCharacter` objects, representing the original and normalised content for each character.
+In this function, the String it's called on, is first converted to lowercase. Then, it will convert it to data using the ascii encoding and allow lossy conversion, which means that we lose data. Through losing data, we make the String accent-insensitive.
+The function then returns an array of `FuzzySearchCharacter` objects, representing the original and normalised content for each character.
 ### Matching Prefix
 Now we need to find out if the search query and the string we're comparing it against match. To achieve this, we can write another extension: `hasPrefix`. For better understanding, let's look at the illustration:  
 <figure>
