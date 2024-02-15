@@ -8,9 +8,6 @@ category: blog
 author: activcoding
 image: https://github.com/activcoding/codeedit.app/assets/83090745/118e8b35-bacd-4a1d-9ddd-993660a6b2cd
 ---
-![image](https://github.com/activcoding/codeedit.app/assets/83090745/118e8b35-bacd-4a1d-9ddd-993660a6b2cd)
-
-
 ## What is fuzzy Searching?
 A fuzzy search algorithm is designed to find approximate matches for a given search query, rather than requiring an exact match. It takes into account the similarity between the search query and the data being searched, assigning scores to each potential match based on their resemblance. This allows the algorithm to return relevant results even when there are minor discrepancies or typos in the search input.
 Let's say you have a list of products, and a user is looking for a "Cozy Sweater." With a fuzzy search algorithm: If they type "Czy Swetr," the fuzzy search considers the similarity and still returns the "Cozy Sweater."
