@@ -6,9 +6,10 @@ description: Fuzzy searching finds matches even if there are spelling mistakes o
 date: 2024-02-13
 category: blog
 author: activcoding
-image: https://github.com/activcoding/codeedit.app/assets/83090745/c648a54b-9a8e-4899-8f30-cf1133530c51
+image: https://github.com/activcoding/codeedit.app/assets/83090745/118e8b35-bacd-4a1d-9ddd-993660a6b2cd
 ---
-![image](https://github.com/activcoding/codeedit.app/assets/83090745/c648a54b-9a8e-4899-8f30-cf1133530c51)
+![image](https://github.com/activcoding/codeedit.app/assets/83090745/118e8b35-bacd-4a1d-9ddd-993660a6b2cd)
+
 
 ## What is fuzzy Searching?
 A fuzzy search algorithm is designed to find approximate matches for a given search query, rather than requiring an exact match. It takes into account the similarity between the search query and the data being searched, assigning scores to each potential match based on their resemblance. This allows the algorithm to return relevant results even when there are minor discrepancies or typos in the search input.
