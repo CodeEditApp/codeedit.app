@@ -43,7 +43,7 @@ The `weight` is something like a score - the higher, the better.
 And the `matchedParts` are the ranges of the string that match the search query. Note that we are using an array of ranges not just one range, because there can be a few characters in between the matched characters. Here is an illustration:  
 
 <figure>
-  <img src="https://github.com/activcoding/codeedit.app/assets/806104/6e1ee7d3-4c63-4c15-9f45-15cbe0933708" />
+  <img class="rounded-corners" src="https://github.com/activcoding/codeedit.app/assets/806104/6e1ee7d3-4c63-4c15-9f45-15cbe0933708" />
   <figcaption>Search results: 'conviw' query returns ContentView with the highest relevance.</figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ The first one represents one character, the `content` field holds the original c
 And the FuzzySearchString represents a whole word, essentially an array of characters. Here is a representation of the frensh word summer: "été":
 
 <figure>
-  <img src="https://github.com/activcoding/codeedit.app/assets/806104/4fecb94f-f2b5-4a83-948a-84f12feddafc" />
+  <img class="rounded-corners" src="https://github.com/activcoding/codeedit.app/assets/806104/4fecb94f-f2b5-4a83-948a-84f12feddafc" />
   <figcaption>Representation of the word 'été' with normalized characters</figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ The function then returns an array of `FuzzySearchCharacter` objects, representi
 Now we need to find out if the search query and the string we're comparing it against match. To achieve this, we can write another extension: `hasPrefix`. For better understanding, let's look at the illustration:
 
 <figure>
-  <img src="https://github.com/activcoding/codeedit.app/assets/806104/077c3572-83ea-40b8-81ab-fa636bc0f411" />
+  <img class="rounded-corners" src="https://github.com/activcoding/codeedit.app/assets/806104/077c3572-83ea-40b8-81ab-fa636bc0f411" />
   <figcaption>Depicts iterations checking prefixes for a match.</figcaption>
 </figure>
 
