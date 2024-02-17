@@ -16,7 +16,7 @@ export const MarkdownWrap = styled.div`
   }
 
   .rounded-corners {
-    border-radius: 15px
+    border-radius: 15px;
   }
 
   &,
