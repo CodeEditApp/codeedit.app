@@ -101,7 +101,7 @@ The function then returns an array of `FuzzySearchCharacter` objects, representi
 Now we need to find out if the search query and the string we're comparing it against match. To achieve this, we can write another extension: `hasPrefix`. For better understanding, let's look at the illustration:
 
 <figure>
-  <img class="rounded-corners" src="https://github.com/activcoding/codeedit.app/assets/806104/077c3572-83ea-40b8-81ab-fa636bc0f411" />
+  <img class="rounded-corners" src="https://github.com/activcoding/codeedit.app/assets/806104/f96a4e4f-8821-4989-a744-266cc47b8e8e" />
   <figcaption>Depicts iterations checking prefixes for a match.</figcaption>
 </figure>
 
