@@ -6,8 +6,10 @@ description: Fuzzy searching finds matches even if there are spelling mistakes o
 date: 2024-02-13
 category: blog
 author: activcoding
-image: https://github.com/activcoding/codeedit.app/assets/83090745/118e8b35-bacd-4a1d-9ddd-993660a6b2cd
+image: https://github.com/activcoding/codeedit.app/assets/806104/e4db5b6a-0214-4cc7-8019-8354f37851aa
 ---
+
+<img class="full-width ratio-21-9" alt="Search Field" src="https://github.com/activcoding/codeedit.app/assets/806104/e4db5b6a-0214-4cc7-8019-8354f37851aa">
 
 ## What is fuzzy Searching?
 
