@@ -11,7 +11,7 @@ image: https://github.com/activcoding/codeedit.app/assets/806104/e4db5b6a-0214-4
 
 <img class="full-width ratio-21-9" alt="Search Field" src="https://github.com/activcoding/codeedit.app/assets/806104/e4db5b6a-0214-4cc7-8019-8354f37851aa">
 
-## What is fuzzy Search?
+## What is fuzzy search?
 
 A fuzzy search algorithm is designed to find approximate matches for a given search query, rather than requiring an exact match. It takes into account the similarity between the search query and the data being searched, assigning scores to each potential match based on their resemblance. This allows the algorithm to return relevant results even when there are minor discrepancies or typos in the search input.
 
