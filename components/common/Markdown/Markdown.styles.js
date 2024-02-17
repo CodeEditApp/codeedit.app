@@ -15,6 +15,10 @@ export const MarkdownWrap = styled.div`
     text-align: center;
   }
 
+  .rounded-corners {
+    border-radius: 15px
+  }
+
   &,
   & p,
   & figure {
