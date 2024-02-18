@@ -129,7 +129,7 @@ const ArticleHeader = ({ frontmatter, author }) => {
         <div className="component-content">
           <div className="category-eyebrow">
             <span className="category-eyebrow__category category_update">
-              UPDATE
+              { frontmatter.category.toUpperCase() }
             </span>
             <span className="category-eyebrow__date">
               {formatDate(frontmatter.date)}
