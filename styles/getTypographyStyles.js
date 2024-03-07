@@ -8,20 +8,20 @@ const getTypographyStyles = (variant) => {
           line-height: 1.04167;
           font-weight: 600;
           letter-spacing: -.015em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.md} {
             font-size:80px;
             line-height: 1.05;
             font-weight: 600;
             letter-spacing: -.015em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
           @media ${mediaQueries.sm} {
             font-size:48px;
             line-height: 1.08349;
             font-weight: 600;
             letter-spacing: -.003em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'headline-super':
@@ -30,20 +30,20 @@ const getTypographyStyles = (variant) => {
           line-height: 1.05;
           font-weight: 600;
           letter-spacing: -.015em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.md} {
             font-size:64px;
             line-height: 1.0625;
             font-weight: 600;
             letter-spacing: -.009em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
           @media ${mediaQueries.sm} {
             font-size:48px;
             line-height: 1.08349;
             font-weight: 600;
             letter-spacing: -.003em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'headline-elevated':
@@ -52,20 +52,20 @@ const getTypographyStyles = (variant) => {
           line-height: 1.0625;
           font-weight: 600;
           letter-spacing: -.009em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.md} {
             font-size:48px;
             line-height: 1.08349;
             font-weight: 600;
             letter-spacing: -.003em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
           @media ${mediaQueries.sm} {
             font-size:40px;
             line-height: 1.1;
             font-weight: 600;
             letter-spacing: 0em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'headline':
@@ -74,20 +74,20 @@ const getTypographyStyles = (variant) => {
           line-height: 1.08349;
           font-weight: 600;
           letter-spacing: -.003em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.md} {
             font-size:40px;
             line-height: 1.1;
             font-weight: 600;
             letter-spacing: 0em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
           @media ${mediaQueries.sm} {
             font-size:32px;
             line-height: 1.125;
             font-weight: 600;
             letter-spacing: .004em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'headline-reduced':
@@ -96,20 +96,20 @@ const getTypographyStyles = (variant) => {
           line-height: 1.1;
           font-weight: 600;
           letter-spacing: 0em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.md} {
             font-size:32px;
             line-height: 1.125;
             font-weight: 600;
             letter-spacing: .004em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
           @media ${mediaQueries.sm} {
             font-size:28px;
             line-height: 1.14286;
             font-weight: 600;
             letter-spacing: .007em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'eyebrow-super':
@@ -118,20 +118,20 @@ const getTypographyStyles = (variant) => {
           line-height: 1.125;
           font-weight: 600;
           letter-spacing: .004em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.md} {
             font-size:28px;
             line-height: 1.14286;
             font-weight: 600;
             letter-spacing: .007em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
           @media ${mediaQueries.sm} {
             font-size:24px;
             line-height: 1.16667;
             font-weight: 600;
             letter-spacing: .009em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'eyebrow-elevated':
@@ -140,20 +140,20 @@ const getTypographyStyles = (variant) => {
           line-height: 1.14286;
           font-weight: 600;
           letter-spacing: .007em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.md} {
             font-size:24px;
             line-height: 1.16667;
             font-weight: 600;
             letter-spacing: .009em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
           @media ${mediaQueries.sm} {
             font-size:21px;
             line-height: 1.19048;
             font-weight: 600;
             letter-spacing: .011em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'eyebrow':
@@ -162,13 +162,13 @@ const getTypographyStyles = (variant) => {
           line-height: 1.16667;
           font-weight: 600;
           letter-spacing: .009em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.md} {
             font-size:21px;
             line-height: 1.19048;
             font-weight: 600;
             letter-spacing: .011em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'eyebrow-reduced':
@@ -177,13 +177,13 @@ const getTypographyStyles = (variant) => {
           line-height: 1.19048;
           font-weight: 600;
           letter-spacing: .011em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.sm} {
             font-size:19px;
             line-height: 1.21053;
             font-weight: 600;
             letter-spacing: .012em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'intro-elevated':
@@ -192,13 +192,13 @@ const getTypographyStyles = (variant) => {
           line-height: 1.33341;
           font-weight: 400;
           letter-spacing: .009em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.md} {
             font-size:21px;
             line-height: 1.381;
             font-weight: 400;
             letter-spacing: .011em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'intro':
@@ -207,13 +207,13 @@ const getTypographyStyles = (variant) => {
           line-height: 1.381;
           font-weight: 400;
           letter-spacing: .011em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.sm} {
             font-size: 19px;
             line-height: 1.4211;
             font-weight: 400;
             letter-spacing: .012em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'section-head':
@@ -222,14 +222,14 @@ const getTypographyStyles = (variant) => {
           line-height: 1.125;
           font-weight: 700;
           letter-spacing: .004em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           margin-bottom: 24px;
           @media ${mediaQueries.md} {
             font-size: 28px;
             line-height: 1.14286;
             font-weight: 700;
             letter-spacing: .007em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
       `;
     case 'quote':
@@ -238,20 +238,20 @@ const getTypographyStyles = (variant) => {
           line-height: 1.2;
           font-weight: 400;
           letter-spacing: 0em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.md} {
             font-size:32px;
             line-height: 1.25;
             font-weight: 400;
             letter-spacing: .004em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
           @media ${mediaQueries.sm} {
             font-size:28px;
             line-height: 1.28583;
             font-weight: 400;
             letter-spacing: .007em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'quote-reduced':
@@ -260,20 +260,20 @@ const getTypographyStyles = (variant) => {
           line-height: 1.25;
           font-weight: 400;
           letter-spacing: .004em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.md} {
             font-size:28px;
             line-height: 1.28583;
             font-weight: 400;
             letter-spacing: .007em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
           @media ${mediaQueries.sm} {
             font-size:24px;
             line-height: 1.33341;
             font-weight: 400;
             letter-spacing: .009em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'callout':
@@ -282,20 +282,20 @@ const getTypographyStyles = (variant) => {
           line-height: 1.125;
           font-weight: 600;
           letter-spacing: .004em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.md} {
             font-size:28px;
             line-height: 1.14286;
             font-weight: 600;
             letter-spacing: .007em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
           @media ${mediaQueries.sm} {
             font-size:24px;
             line-height: 1.16667;
             font-weight: 600;
             letter-spacing: .009em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'manifesto':
@@ -304,20 +304,20 @@ const getTypographyStyles = (variant) => {
           line-height: 1.25;
           font-weight: 600;
           letter-spacing: .004em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.md} {
             font-size:28px;
             line-height: 1.28583;
             font-weight: 600;
             letter-spacing: .007em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
           @media ${mediaQueries.sm} {
             font-size:24px;
             line-height: 1.33341;
             font-weight: 600;
             letter-spacing: .009em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'label':
@@ -326,13 +326,13 @@ const getTypographyStyles = (variant) => {
           line-height: 1.16667;
           font-weight: 600;
           letter-spacing: .009em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           @media ${mediaQueries.md} {
             font-size:21px;
             line-height: 1.19048;
             font-weight: 600;
             letter-spacing: .011em;
-            font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
           }
         `;
     case 'tout':
@@ -341,7 +341,7 @@ const getTypographyStyles = (variant) => {
           line-height: 1.21053;
           font-weight: 600;
           letter-spacing: .012em;
-          font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         `;
     case 'body':
       return `
@@ -349,7 +349,7 @@ const getTypographyStyles = (variant) => {
           line-height: 1.47059;
           font-weight: 400;
           letter-spacing: -.022em;
-          font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         `;
     case 'body-tight':
       return `
@@ -357,7 +357,7 @@ const getTypographyStyles = (variant) => {
           line-height: 1.23536;
           font-weight: 400;
           letter-spacing: -.022em;
-          font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         `;
     case 'body-reduced':
       return `
@@ -365,7 +365,7 @@ const getTypographyStyles = (variant) => {
           line-height: 1.42859;
           font-weight: 400;
           letter-spacing: -.016em;
-          font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         `;
     case 'body-reduced-tight':
       return `
@@ -373,7 +373,7 @@ const getTypographyStyles = (variant) => {
           line-height: 1.28577;
           font-weight: 400;
           letter-spacing: -.016em;
-          font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         `;
     case 'caption':
       return `
@@ -381,7 +381,7 @@ const getTypographyStyles = (variant) => {
           line-height: 1.33337;
           font-weight: 400;
           letter-spacing: -.01em;
-          font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         `;
     case 'sosumi':
       return `
@@ -389,7 +389,7 @@ const getTypographyStyles = (variant) => {
           line-height: 1.33337;
           font-weight: 400;
           letter-spacing: -.01em;
-          font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         `;
     case 'headline-body':
       return `
@@ -397,7 +397,7 @@ const getTypographyStyles = (variant) => {
           line-height: 1.47059;
           font-weight: 600;
           letter-spacing: -.022em;
-          font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         `;
     case 'headline-body-reduced':
       return `
@@ -405,7 +405,7 @@ const getTypographyStyles = (variant) => {
           line-height: 1.42859;
           font-weight: 600;
           letter-spacing: -.016em;
-          font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+          font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         `;
     default:
       return ``;

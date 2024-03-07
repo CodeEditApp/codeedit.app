@@ -17,6 +17,10 @@
       "title": "Blog",
       "description": "The CodeEdit blog is the source for news about CodeEdit. Read project news, get updates, and read about community progress."
     },
+    "/download": {
+      "title": "Download",
+      "description": "Download CodeEdit. A lightweight, natively built editor. Open source. Free forever."
+    },
     "https://github.com/CodeEditApp/CodeEdit": {
       "title": "GitHub",
       "description": "CodeEdit GitHub repository"
@@ -36,5 +40,37 @@
     "/whats-new",
     "/blog",
     "https://github.com/CodeEditApp/CodeEdit"
-  ]
+  ],
+  "categories": {
+    "updates": {
+      "title": "Updates",
+      "longTitle": "Project Updates",
+      "description": "Get the latest news on our code editor, including new releases and upcoming features, keeping you in the loop with our project's progress."
+    },
+    "insights": {
+      "title": "Insights",
+      "longTitle": "Development Insights",
+      "description": "Explore the nuts and bolts of our development process, offering a behind-the-scenes look at the challenges and solutions that power our project."
+    },
+    "spotlights": {
+      "title": "Contributor Spotlights",
+      "longTitle": "Contributor Spotlights",
+      "description": "Celebrate the individuals who make our project possible, highlighting their contributions, stories, and the impact they have on our community."
+    },
+    "tutorials": {
+      "title": "Tutorials",
+      "longTitle": "Guides and Tutorials",
+      "description": "Explore a wide range of tutorials that not only guide you through mastering our code editor but also delve into general coding tutorials to elevate your development skills."
+    },
+    "user-voices": {
+      "title": "User Voices",
+      "longTitle": "User Voices and Stories",
+      "description": "Hear firsthand from our users about how our code editor enhances their coding journey, with personal anecdotes, innovative usage tips, and custom setup guides."
+    },
+    "news": {
+      "title": "News",
+      "longTitle": "Industry News and Trends",
+      "description": "Stay informed with updates and insights on the latest in tech, software development, and how these trends impact our project and community."
+    }
+  }
 }

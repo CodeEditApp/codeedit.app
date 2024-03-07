@@ -9,7 +9,7 @@ const Button = styled.a`
   line-height: 1.17648;
   font-weight: 400;
   letter-spacing: -.022em;
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   min-width: 28px;
   padding: 4px;
   border-radius: 18px;
@@ -31,7 +31,7 @@ const Button = styled.a`
     line-height: 1.33337;
     font-weight: 400;
     letter-spacing: -.01em;
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     min-width: 23px;
     padding: 0;
     border-radius: 12px;

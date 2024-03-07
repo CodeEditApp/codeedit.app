@@ -12,7 +12,7 @@ const ColorSchemeToggleWrap = styled.div`
   line-height: 1.33337;
   font-weight: 400;
   letter-spacing: -.01em;
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   border: 1px solid var(--toggle-color-fill);
   border-radius: var(--toggle-border-radius-outer, 2px);
   display: inline-flex;

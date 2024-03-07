@@ -1,11 +1,16 @@
 import Image from "next/image";
 import ShareSheet from "./ShareSheet";
 import styled from "styled-components";
+import config from '@/data/config';
 
 const ArticleHeaderWrap = styled.div`
   .category.component {
     margin-top: 0;
     margin-bottom: 20px;
+  }
+
+  .category-eyebrow__category {
+    text-transform: uppercase;
   }
 
   .category-eyebrow__category,
@@ -128,8 +133,8 @@ const ArticleHeader = ({ frontmatter, author }) => {
       <div className="category component">
         <div className="component-content">
           <div className="category-eyebrow">
-            <span className="category-eyebrow__category category_update">
-              UPDATE
+            <span className="category-eyebrow__category">
+              {config.categories[frontmatter.category ?? "updates"]?.title ?? config.categories.updates.title}
             </span>
             <span className="category-eyebrow__date">
               {formatDate(frontmatter.date)}
