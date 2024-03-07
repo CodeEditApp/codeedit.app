@@ -43,6 +43,9 @@ const TileItem = styled.li`
     &.item-portrait-secondary {
       & ~ .tile-item {
         margin-top: 36px;
+        @media ${mediaQueries.md} {
+          margin-top: 22px;
+        }
       }
     }
   }
@@ -117,10 +120,22 @@ const TileWrap = styled(Link)`
   &.tile-2up {
     flex-direction: column;
     width: 472px;
+    @media ${mediaQueries.md} {
+      width: 333px;
+    }
+    @media ${mediaQueries.sm} {
+      width: 100%;
+    }
   }
   &.tile-3up {
     flex-direction: column;
     width: 303px;
+    @media ${mediaQueries.md} {
+      width: 333px;
+    }
+    @media ${mediaQueries.sm} {
+      width: 100%;
+    }
   }
 `;
 const TileMedia = styled.div`
@@ -136,6 +151,13 @@ const TileMedia = styled.div`
     min-height: 362px;
     flex-basis: 643px;
     flex-shrink: 1;
+    @media ${mediaQueries.md} {
+      width: 100%;
+      height: auto;
+      min-height: 255px;
+      flex-basis: 453px;
+      flex-shrink: 1;
+    }
     @media ${mediaQueries.sm} {
       flex-basis: auto;
       min-height: 0;
@@ -149,6 +171,13 @@ const TileMedia = styled.div`
     min-height: auto;
     flex-basis: auto;
     flex-shrink: 1;
+    @media ${mediaQueries.md} {
+      width: 100%;
+      height: 187px;
+      min-height: auto;
+      flex-basis: auto;
+      flex-shrink: 1;
+    }
   }
 
   .tile-3up & {
@@ -186,6 +215,9 @@ const TileDescription = styled.div`
     padding: 32px;
     justify-content: space-between;
     flex-basis: 0;
+    @media ${mediaQueries.md} {
+      padding: 24px;
+    }
     @media ${mediaQueries.sm} {
       padding: 24px;
     }
@@ -195,6 +227,9 @@ const TileDescription = styled.div`
     padding: 32px;
     justify-content: space-between;
     flex-basis: auto;
+    @media ${mediaQueries.md} {
+      padding: 24px;
+    }
     @media ${mediaQueries.sm} {
       padding: 19px;
     }
@@ -223,9 +258,15 @@ const TileCategory = styled.div`
 
   .tile-1up & {
     margin-bottom: 8px;
+    @media ${mediaQueries.md} {
+      margin-bottom: 8px;
+    }
   }
   .tile-2up & {
     margin-bottom: 8px;
+    @media ${mediaQueries.md} {
+      margin-bottom: 8px;
+    }
   }
   .tile-3up & {
     margin-bottom: 8px;
@@ -250,6 +291,14 @@ const TileHeadline = styled.div`
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;
+    @media ${mediaQueries.md} {
+      font-size: 21px;
+      line-height: 1.19048;
+      font-weight: 700;
+      letter-spacing: 0.011em;
+      font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue',
+        'Helvetica', 'Arial', sans-serif;
+    }
     @media ${mediaQueries.sm} {
       font-size: 24px;
     }
@@ -266,6 +315,14 @@ const TileHeadline = styled.div`
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;
+    @media ${mediaQueries.md} {
+      font-size: 19px;
+      line-height: 1.21053;
+      font-weight: 700;
+      letter-spacing: 0.012em;
+      font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue',
+        'Helvetica', 'Arial', sans-serif;
+    }
   }
 
   .tile-3up & {
@@ -295,12 +352,21 @@ const TileTimestamp = styled.div`
 
   .tile-quick-read.tile-1up & {
     margin-top: 16px;
+    @media ${mediaQueries.md} {
+      margin-top: 12px;
+    }
   }
   .tile-1up & {
     margin-top: 12px;
+    @media ${mediaQueries.md} {
+      margin-top: 12px;
+    }
   }
   .tile-2up & {
     margin-top: 12px;
+    @media ${mediaQueries.md} {
+      margin-top: 8px;
+    }
   }
   .tile-3up & {
     margin-top: 8px;

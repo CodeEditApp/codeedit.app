@@ -11,7 +11,7 @@ const Button = styled.a`
   line-height: 1.17648;
   font-weight: 400;
   letter-spacing: -.022em;
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   min-width: 28px;
   padding-left: 16px;
   padding-right: 16px;
@@ -23,18 +23,23 @@ const Button = styled.a`
   border: 0;
   outline: 0;
 
-  ${({ compact }) => compact ? `
+  ${({ size }) => size === "sm" ? `
     font-size: 12px;
     line-height: 1.33337;
     font-weight: 400;
     letter-spacing: -.01em;
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
     min-width: 23px;
     padding-left: 11px;
     padding-right: 11px;
     padding-top: 4px;
     padding-bottom: 4px;
     border-radius: 12px;
+  ` : size === "lg" ? `
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 21px;
   ` : ``}
   svg {
     width: 1em;

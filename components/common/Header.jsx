@@ -57,7 +57,7 @@ const Title = styled.h2`
   line-height: 1.14286;
   font-weight: 600;
   letter-spacing: -0.033em;
-  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   cursor: default;
   display: block;
   margin: 0;
@@ -103,7 +103,7 @@ const Menu = styled.div`
   line-height: 1;
   font-weight: 400;
   letter-spacing: -.01em;
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -348,7 +348,7 @@ const MenuChevron = styled.span`
 `;
 
 function Header() {
-  const { asPath } = useRouter();
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState();
   const menuRef = useRef();
 
@@ -397,7 +397,7 @@ function Header() {
 
                   return (
                     <MenuItem key={href} {...(isExternal ? { target: "_blank" } : {})}>
-                      <MenuLink onClick={() => setIsOpen(false)} href={href} $current={asPath === href || (href !== "/" && asPath.startsWith(href))}>
+                      <MenuLink onClick={() => setIsOpen(false)} href={href} $current={router.asPath === href || (href !== "/" && router.asPath.startsWith(href))}>
                         {item.title}
                         {isExternal && <StyledExternalLink size={11} />}
                       </MenuLink>
@@ -413,7 +413,7 @@ function Header() {
                 </MenuToggle>
               </Action>
               <Action>
-                <Button href="https://github.com/CodeEditApp/CodeEdit/releases/latest" target="_blank" compact>Download</Button>
+                <Button size="sm" onClick={() => router.push("/download")}>Download</Button>
               </Action>
             </Actions>
           </Menu>

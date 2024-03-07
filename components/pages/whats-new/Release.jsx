@@ -18,7 +18,7 @@ import { Link, Mail, Share } from 'react-feather';
 import XSvg from '@/assets/x-icon.svg';
 import FacebookSvg from '@/assets/facebook-icon.svg';
 import macOSVersions from '@/data/macOS-versions';
-import Head from 'next/head';
+import getMinimumSystemVersion from '@/utils/getMinimumSystemVersion';
 
 const ReleaseTile = styled(Tile)`
   border-radius: 18px;
@@ -77,12 +77,6 @@ const sendInEmail = (name, url) => {
   window.open(uri);
 };
 
-function extractVersion(str) {
-  const regex = /minimumSystemVersion=(\d+\.\d+)/;
-  const match = str.match(regex);
-  return match ? match[1] : null;
-}
-
 const Release = ({ release, latest }) => {
   const appAsset = release.assets?.filter((asset) =>
     /^CodeEdit.*\.dmg$/.test(asset.name)
@@ -94,7 +88,7 @@ const Release = ({ release, latest }) => {
     releaseUrl = `${window.location.href.split('#')[0]}#${release.name}`;
   }
 
-  const versionNumber = extractVersion(release.body);
+  const versionNumber = getMinimumSystemVersion(release.body);
   const versionName = versionNumber
     ? macOSVersions[versionNumber.split('.')[0]]
     : null;

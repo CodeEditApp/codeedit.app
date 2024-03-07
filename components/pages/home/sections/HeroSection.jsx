@@ -4,8 +4,9 @@ import styled from 'styled-components';
 import { Parallax } from 'react-parallax';
 import Typography from '@/components/common/Typography';
 import { Row, Column, Section, Stack } from '@/components/common/layout';
+import Button from '@/components/common/Button';
 import HeroImage from '../HeroImage';
-import Button from '../../../common/Button';
+import { useRouter } from 'next/router';
 
 const ProductIconWrap = styled.div`
   width: 128px;
@@ -13,8 +14,9 @@ const ProductIconWrap = styled.div`
   margin-right: auto;
 `;
 
-const HeroSection = ({versionNumber}) => {
-
+const HeroSection = ({ versionNumber, minimumSystemVersion }) => {
+  const router = useRouter();
+  
   return (
     <Parallax
       style={{ overflow: 'visible' }}
@@ -32,9 +34,6 @@ const HeroSection = ({versionNumber}) => {
                       alt="CodeEdit product icon"
                     />
                   </ProductIconWrap>
-                  {/* <Typography variant="eyebrow-elevated" as="h1">
-                    CodeEdit for macOS
-                  </Typography> */}
                   <Typography variant="headline-elevated">
                     A lightweight, natively-built editor.
                     Open source. Free forever.
@@ -42,8 +41,8 @@ const HeroSection = ({versionNumber}) => {
                   <Typography variant="intro-elevated" color="tertiary" gutterBottom>
                     CodeEdit is an exciting new code editor written entirely and unapologetically for macOS. Develop any project using any language at speeds like never before with increased efficiency and reliability in an editor that feels right at home on your Mac.
                   </Typography>
-                  <Button href="https://github.com/CodeEditApp/CodeEdit/releases/latest" target="_blank">Download Alpha</Button>
-                  <Typography variant="body-reduced" color="tertiary">{ versionNumber } | macOS 13+</Typography>
+                  <Button size="lg" onClick={() => router.push("/download")}>Download</Button>
+                  <Typography variant="body-reduced" color="tertiary">{ versionNumber } | macOS {minimumSystemVersion ? `${minimumSystemVersion.split(".")[0]}+` : ``}</Typography>
                 </Stack>
               </Column>
             </Row>

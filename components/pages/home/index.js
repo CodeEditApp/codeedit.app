@@ -13,13 +13,13 @@ import SampleStorySection from './sections/SampleStorySection';
 import config from '@/data/config';
 import Head from 'next/head';
 
-export default function HomePage({ versionNumber }) {
+export default function HomePage(props) {
   return (
     <>
       <Ribbon onClick={() => window.open(config.links.githubProject)}>
         CodeEdit is currently in development. Check out the roadmap.
       </Ribbon>
-      <HeroSection versionNumber={versionNumber} />
+      <HeroSection {...props} />
       <IntroFeaturesSection />
       {/* <SampleStorySection /> */}
       {/* <SampleStorySection /> */}
