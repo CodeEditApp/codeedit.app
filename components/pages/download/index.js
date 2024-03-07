@@ -43,37 +43,21 @@ const StepNumber = styled.div`
   font-size: 18px;
   border: 2.5px solid;
 `;
+const Download = styled.iframe`
+  width: 0;
+  height: 0;
+  position: fixed;
+  top: 100%;
+  right: 100%;
+  border: 0;
+  background: transparent;
+  opacity: 0;
+`;
 
 export default function DownloadPage({ downloadUrl }) {
-  const downloadStartedRef = useRef(false);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      if (!downloadStartedRef.current) {
-        const link = document.createElement('a');
-        link.href = downloadUrl;
-        link.setAttribute('download', `CodeEdit.dmg`);
-
-        // Append to html link element page
-        document.body.appendChild(link);
-
-        // Start download
-        link.click();
-
-        // Clean up and remove the link
-        link.parentNode.removeChild(link);
-
-        downloadStartedRef.current = true;
-      }
-    }, 100);
-
-    return () => {
-      clearTimeout(timeout);
-    };
-  }, [downloadUrl]);
-
   return (
     <>
+      <Download src={downloadUrl} />
       <Section contained gutterTop>
         <Row align="center" style={{ position: 'relative', zIndex: 1 }}>
           <Column width={{ md: 12, lg: 12 }}>
