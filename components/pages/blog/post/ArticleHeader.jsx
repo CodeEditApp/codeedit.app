@@ -134,7 +134,7 @@ const ArticleHeader = ({ frontmatter, author }) => {
         <div className="component-content">
           <div className="category-eyebrow">
             <span className="category-eyebrow__category">
-              {config.categories[frontmatter.category ?? "updates"].title}
+              {config.categories[frontmatter.category ?? "updates"]?.title ?? config.categories.updates.title}
             </span>
             <span className="category-eyebrow__date">
               {formatDate(frontmatter.date)}
