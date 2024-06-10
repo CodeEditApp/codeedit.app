@@ -1,11 +1,11 @@
-import matter from 'gray-matter';
-import glob from 'glob';
-import { fetchGitHubUser } from '@/utils/fetchData';
+import matter from "gray-matter";
+import glob from "glob";
+import { fetchGitHubUser } from "@/utils/fetchData";
 
 const getDate = (str) => new Date(str).toISOString();
 
 const getAllPosts = async () => {
-  const paths = glob.sync('data/blog/**/*.md');
+  const paths = glob.sync("src/data/blog/**/*.md");
 
   let posts = await Promise.all(
     paths.map(async (path) => {
@@ -21,7 +21,7 @@ const getAllPosts = async () => {
         ? await fetchGitHubUser(frontmatter.author)
         : null;
       // extracting slug from path
-      const pathComponents = path.split('/');
+      const pathComponents = path.split("/");
       const slug = pathComponents[pathComponents.length - 1];
 
       return {
@@ -32,7 +32,7 @@ const getAllPosts = async () => {
         path,
         author,
       };
-    })
+    }),
   );
 
   posts = posts

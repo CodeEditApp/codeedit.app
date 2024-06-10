@@ -4,34 +4,34 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'avatars.githubusercontent.com',
-        port: '',
-        pathname: '/*/**',
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+        port: "",
+        pathname: "/*/**",
       },
       {
-        protocol: 'https',
-        hostname: 'github.com',
-        port: '',
-        pathname: '/*/**',
+        protocol: "https",
+        hostname: "github.com",
+        port: "",
+        pathname: "/*/**",
       },
       {
-        protocol: 'https',
-        hostname: 'www.apple.com',
-        port: '',
-        pathname: '/*/**',
+        protocol: "https",
+        hostname: "www.apple.com",
+        port: "",
+        pathname: "/*/**",
       },
     ],
   },
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.svg$/,
-      use: ['@svgr/webpack'],
+      use: ["@svgr/webpack"],
     });
 
     config.module.rules.push({
       test: /\.md$/,
-      use: 'raw-loader',
+      use: "raw-loader",
     });
 
     return config;
