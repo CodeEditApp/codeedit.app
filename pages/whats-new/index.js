@@ -1,10 +1,11 @@
 export { default } from '@/components/pages/whats-new';
+import { fetchWithCache } from '@/utils/fetchData';
 
 export async function getStaticProps() {
-  const res = await fetch(
+  const data = await fetchWithCache(
+    'releases',
     'https://api.github.com/repos/CodeEditApp/CodeEdit/releases'
   );
-  const data = await res.json();
 
   return {
     props: {
