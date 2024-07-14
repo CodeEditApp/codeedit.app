@@ -72,6 +72,11 @@ const AboutAuthorWrap = styled.div`
 const AboutAuthor = ({ author }) => {
   if (!author) return;
 
+  // If the author's url does not start with http(s) then append https
+  if (!author.blog.startsWith('http')) {
+    author.blog = `https://${author.blog}`;
+  }
+  
   return (
     <AboutAuthorWrap className="about-author component">
       <div className="component-content">
