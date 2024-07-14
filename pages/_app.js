@@ -6,7 +6,7 @@ import '@/styles/globals.css';
 import config from '@/data/config';
 
 function App({ Component, pageProps, router }) {
-  const { pathname, asPath } = router?.state ?? {};
+  const { pathname, asPath } = router ?? {};
   const defaultPageData = config.pages['/'];
   const pageData = config.pages[pathname] ?? config.pages['/'];
   const isDefault = defaultPageData === pageData;
@@ -37,12 +37,24 @@ function App({ Component, pageProps, router }) {
         <meta name="twitter:site" content="@CodeEdit" />
         <meta name="twitter:creator" content="@CodeEdit" />
       </Head>
-      <Header />
-      <main>
+      <Layout pathname={pathname}>
         <Component {...pageProps} />
-      </main>
-      <Footer />
+      </Layout>
     </Site>
+  );
+}
+
+const Layout = ({ children, pathname }) => {
+  if (pathname === '/whats-new/raw/[tag]') {
+    return <main>{children}</main>;
+  }
+
+  return (
+    <>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
   );
 }
 

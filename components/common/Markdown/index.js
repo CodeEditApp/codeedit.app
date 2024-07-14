@@ -106,6 +106,7 @@ const Markdown = ({
   };
 
   return (
+    <div>
     <Styled.MarkdownWrap className={className} style={style}>
       <ReactMarkdown
         components={{ ...MarkdownComponents, ...components }}
@@ -124,6 +125,7 @@ const Markdown = ({
         {children}
       </ReactMarkdown>
     </Styled.MarkdownWrap>
+    </div>
   );
 };
 

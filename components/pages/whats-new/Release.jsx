@@ -88,6 +88,8 @@ const Release = ({ release, latest }) => {
     releaseUrl = `${window.location.href.split('#')[0]}#${release.name}`;
   }
 
+  console.log("release")
+
   const versionNumber = getMinimumSystemVersion(release.body);
   const versionName = versionNumber
     ? macOSVersions[versionNumber.split('.')[0]]
