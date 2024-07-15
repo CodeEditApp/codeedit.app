@@ -17,6 +17,7 @@ async function generate() {
     '!pages/_*.jsx',
     '!pages/api',
     '!pages/404.tsx',
+    '!pages/sparkle/**/*.js'
   ]);
 
   const sitemap = `
