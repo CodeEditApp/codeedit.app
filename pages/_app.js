@@ -45,7 +45,7 @@ function App({ Component, pageProps, router }) {
 }
 
 const Layout = ({ children, pathname }) => {
-  if (pathname === '/whats-new/raw/[tag]') {
+  if (pathname === '/sparkle/[tag]/CodeEdit.html') {
     return <main>{children}</main>;
   }
 
