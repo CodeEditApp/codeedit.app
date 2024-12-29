@@ -34,7 +34,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta name="apple-mobile-web-app-capable" content="yes"></meta>
-          <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+          <link rel="icon" href="/favicon.png" type="image/svg+xml" />
         </Head>
         <body>
           <Main />
