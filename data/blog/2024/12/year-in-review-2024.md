@@ -1,7 +1,7 @@
 ---
 title: "Our Year in Review, and What’s Ahead"
 headline: "Our Year in Review, and What’s Ahead"
-subhead: As 2024 comes to a close, we wanted to take a moment to reflect on what we achieved in this last year. Our community has continued to drive the development of CodeEdit. We're especially excited to share what we worked on, and what's coming for CodeEdit!
+subhead: As 2024 comes to a close, we wanted to take a moment to reflect on what we achieved in this last year.
 description: As 2024 comes to a close, we wanted to take a moment to reflect on what we achieved in this last year. Our community has continued to drive the development of CodeEdit. We're especially excited to share what we worked on, and what's coming for CodeEdit!
 date: 2024-12-26
 category: roundup
@@ -45,11 +45,11 @@ As we wrap up this year, we look ahead towards 2025 and what we hope to accompli
 
 Some things we'd like to highlight as our focuses going into the new year:
 
-### Continuing to improve our Language Server Protocol integration. 
+### Language Server Protocol integration. 
 
 Supporting language servers will unlock a whole new level of functionality for CodeEdit. Autocomplete,  syntax highlighting upgrades, searching symbols, and so much more.
 
-### The extension architecture.
+### Extension architecture.
 
 Extensions are essential for a code editor. We know they're highly anticipated and can make or break an editor's success. We'll be working hard to get extensions right, ensuring CodeEdit gets the full power of good customization behind it.
 
