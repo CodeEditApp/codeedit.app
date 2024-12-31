@@ -3,7 +3,7 @@ title: "Our Year in Review, and What’s Ahead"
 headline: "Our Year in Review, and What’s Ahead"
 subhead: As 2024 comes to a close, we wanted to take a moment to reflect on what we achieved in this last year.
 description: As 2024 comes to a close, we wanted to take a moment to reflect on what we achieved in this last year. Our community has continued to drive the development of CodeEdit. We're especially excited to share what we worked on, and what's coming for CodeEdit!
-date: 2024-12-26
+date: 2024-12-31
 category: roundup
 author: thecoolwinter
 image: https://github.com/activcoding/codeedit.app/assets/806104/e4db5b6a-0214-4cc7-8019-8354f37851aa
