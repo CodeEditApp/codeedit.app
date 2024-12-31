@@ -1,8 +1,8 @@
 ---
 title: "Our Year in Review, and What’s Ahead"
 headline: "Our Year in Review, and What’s Ahead"
-subhead: As 2024 comes to a close, we wanted to take a moment to reflect on what we achieved in this last year.
-description: As 2024 comes to a close, we wanted to take a moment to reflect on what we achieved in this last year. Our community has continued to drive the development of CodeEdit. We're especially excited to share what we worked on, and what's coming for CodeEdit!
+subhead: As 2024 comes to a close, we wanted to take a moment to reflect on what we achieved in this last year. Our community has continued to drive the development of CodeEdit. We're especially excited to share what we worked on, and what's coming for CodeEdit!
+description: As 2024 comes to a close, we wanted to take a moment to reflect on what we achieved in this last year.
 date: 2024-12-31
 category: roundup
 author: thecoolwinter
@@ -37,13 +37,7 @@ A code editor is more than just displaying text. This year saw bounds of progres
 
 ## 🧪 What's Next?
 
-As we wrap up this year, we look ahead towards 2025 and what we hope to accomplish. We'll continue to lean on our community as we learn and build out an application we can all use and love.
-
-<blockquote class="wide">
-	<p>...a whole new level of functionality for CodeEdit</p>
-</blockquote>
-
-### **Our focuses going into the new year**
+As we wrap up this year, we look ahead towards 2025 and what we hope to accomplish. We'll continue to lean on our community as we learn and build out an application we can all use and love. Here's what we'll be focusing on this coming year.
 
 ### Language Server Protocol integration. 
 
