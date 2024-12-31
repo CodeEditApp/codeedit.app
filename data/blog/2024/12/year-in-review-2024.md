@@ -43,7 +43,7 @@ As we wrap up this year, we look ahead towards 2025 and what we hope to accompli
 	<p>...a whole new level of functionality for CodeEdit</p>
 </blockquote>
 
-Some things we'd like to highlight as our focuses going into the new year:
+### **Our focuses going into the new year**
 
 ### Language Server Protocol integration. 
 
