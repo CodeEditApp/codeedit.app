@@ -6,7 +6,7 @@ description: As 2024 comes to a close, we wanted to take a moment to reflect on 
 date: 2024-12-31
 category: roundup
 author: thecoolwinter
-image: https://github.com/activcoding/codeedit.app/assets/806104/e4db5b6a-0214-4cc7-8019-8354f37851aa
+image: ./cover.png
 ---
 
 ## 🐙 Source Control
