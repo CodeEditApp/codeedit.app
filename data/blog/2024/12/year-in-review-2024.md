@@ -37,7 +37,7 @@ A code editor is more than just displaying text. This year saw bounds of progres
 
 ## 🧪 What's Next?
 
-<blockquote class="full-width">
+<blockquote class="wide">
 	<p>...a whole new level of functionality for CodeEdit</p>
 </blockquote>
 
@@ -45,12 +45,17 @@ As we wrap up this year, we look ahead towards 2025 and what we hope to accompli
 
 Some things we'd like to highlight as our focuses going into the new year:
 
--   Continuing to improve our Language Server Protocol integration. 
-    Supporting language servers will unlock a whole new level of functionality for CodeEdit. Autocomplete,  syntax highlighting upgrades, searching symbols, and so much more.
--   The extension architecture.
-    Extensions are essential for a code editor. We know they're highly anticipated and can make or break an editor's success. We'll be working hard to get extensions right, ensuring CodeEdit gets the full power of good customization behind it.
--   Solidifying the core.
-    We'll continue to solidify the core experience you have while writing code. Our mission is to create a macOS native editor, and we're not going to settle for less than perfection. We'll continue to work on performance in latency and memory utilization so you don't have to worry about your editor draining your battery.
+#### Continuing to improve our Language Server Protocol integration. 
+
+Supporting language servers will unlock a whole new level of functionality for CodeEdit. Autocomplete,  syntax highlighting upgrades, searching symbols, and so much more.
+
+#### The extension architecture.
+
+Extensions are essential for a code editor. We know they're highly anticipated and can make or break an editor's success. We'll be working hard to get extensions right, ensuring CodeEdit gets the full power of good customization behind it.
+
+#### Solidifying the core.
+
+We'll continue to solidify the core experience you have while writing code. Our mission is to create a macOS native editor, and we're not going to settle for less than perfection. We'll continue to work on performance in latency and memory utilization so you don't have to worry about your editor draining your battery.
 
 ## 💌 A Note of Gratitude
 
