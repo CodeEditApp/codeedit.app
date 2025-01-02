@@ -10,7 +10,7 @@ image: https://github.com/user-attachments/assets/108dadf2-2bdb-4954-b7ba-086c2b
 ---
 
 <video class="full-width ratio-21-9" playsinline muted loop autoplay>
-  <source src="https://github.com/user-attachments/assets/a5462167-f084-4fab-8229-38c5e5855d54" type="video/mp4">
+  <source src="https://github.com/user-attachments/assets/cdcc7311-3b04-4f5a-98c4-4b47ac9b4324" type="video/mp4">
 </video>
 
 ## 🐙 Source Control
