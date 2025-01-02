@@ -54,7 +54,14 @@ The theme list got improvements as well, adding [fuzzy](https://www.codeedit.app
 
 After introducing our custom ground-up [text view](https://github.com/CodeEditApp/CodeEditTextView) package at the end of last year, we continued to improve stability and accessibility. Support for non-latin characters, the macOS Sequoia system cursor, and fixes for many more [UX papercuts](https://en.wikipedia.org/wiki/Paper_cut_bug) were fixed and released in that package.
 
-A code editor is more than just displaying text. This year saw bounds of progress making CodeEdit do much more in our [open-source](https://github.com/CodeEditApp/CodeEditSourceEditor) source editor view. A quick shortcut [⌘/ to comment code](https://github.com/CodeEditApp/CodeEditSourceEditor/pull/241), [indenting and unindenting lines](https://github.com/CodeEditApp/CodeEditSourceEditor/pull/266), and [tag](https://github.com/CodeEditApp/CodeEditSourceEditor/pull/247) [autocomplete](https://github.com/CodeEditApp/CodeEditSourceEditor/pull/250) powered by tree-sitter were all added by our wonderful contributors this past year. These features make a huge difference in the editing experience for CodeEdit
+This year saw bounds of progress making CodeEdit more capable using our [open-source](https://github.com/CodeEditApp/CodeEditSourceEditor) source editor component. A shortcut (⌘/) to [comment code](https://github.com/CodeEditApp/CodeEditSourceEditor/pull/241), [indenting and unindenting lines](https://github.com/CodeEditApp/CodeEditSourceEditor/pull/266), and [tag](https://github.com/CodeEditApp/CodeEditSourceEditor/pull/247) [autocomplete](https://github.com/CodeEditApp/CodeEditSourceEditor/pull/250) powered by tree-sitter were all added by our wonderful contributors this past year. These features have made a huge difference in elevating the editing experience in CodeEdit this year.
+
+<figure>
+  <video class="wide ratio-16-9" playsinline muted loop controls>
+    <source src="https://github.com/user-attachments/assets/633ff5c0-d649-46b6-9447-45791b6966ec" type="video/mp4">
+  </video>
+  <figcaption>Indenting lines, making use of tag autocomplete in the editor.</figcaption>
+</figure>
 
 ## 🧪 What's Next?
 
