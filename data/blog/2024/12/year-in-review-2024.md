@@ -6,7 +6,7 @@ description: As 2024 comes to a close, we wanted to take a moment to reflect on 
 date: 2024-12-31
 category: roundup
 author: thecoolwinter
-image: https://private-user-images.githubusercontent.com/35942988/399612725-108dadf2-2bdb-4954-b7ba-086c2be8abfd.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzU3OTIyNDksIm5iZiI6MTczNTc5MTk0OSwicGF0aCI6Ii8zNTk0Mjk4OC8zOTk2MTI3MjUtMTA4ZGFkZjItMmJkYi00OTU0LWI3YmEtMDg2YzJiZThhYmZkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAxMDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMTAyVDA0MjU0OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNjNjdiYTliYjM1YjE5ZDVkYzMwNjBhMTQ3ODg4ODViN2M0MTgxNjJjNWI0NjQ0NWI3NGZmZDc1NDY2ZGUzNWEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.kh1Ljh9uQ1bm7AHOEXvjtSF23rp6wGBA56hTz6JEz1M
+image: https://github.com/user-attachments/assets/108dadf2-2bdb-4954-b7ba-086c2be8abfd
 ---
 
 ## 🐙 Source Control
@@ -16,10 +16,10 @@ This year one of our focuses was improving how developers can use Git with CodeE
 The heart of CodeEdit's source control features is the source control navigator pane. This pane was [seriously](https://github.com/CodeEditApp/CodeEdit/pull/1534) [upgraded](https://github.com/CodeEditApp/CodeEdit/pull/1471) this year, introducing new interfaces for initializing repositories, managing commits and messages, viewing history, local and remote branches, and more.
 
 <figure>
-  <video class="full-width ratio-3-1" autoplay playsinline muted loop controls>
-    <source src="https://github.com/user-attachments/assets/a109b839-89a5-4be7-baab-a08321b14889" type="video/mp4">
+  <video class="full-width ratio-9-16" autoplay playsinline muted loop controls>
+    <source src="https://github.com/user-attachments/assets/a5462167-f084-4fab-8229-38c5e5855d54" type="video/mp4">
   </video>
-  <figcaption>Source control demo video.</figcaption>
+  <figcaption>Source control upgrades.</figcaption>
 </figure>
 
 ## 📋 Tasks
