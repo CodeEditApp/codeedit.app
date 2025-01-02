@@ -16,7 +16,7 @@ This year one of our focuses was improving how developers can use Git with CodeE
 The heart of CodeEdit's source control features is the source control navigator pane. This pane was [seriously](https://github.com/CodeEditApp/CodeEdit/pull/1534) [upgraded](https://github.com/CodeEditApp/CodeEdit/pull/1471) this year, introducing new interfaces for initializing repositories, managing commits and messages, viewing history, local and remote branches, and more.
 
 <figure>
-  <video class="wide ratio-16-9" playsinline muted loop controls>
+  <video class="wide ratio-16-9" playsinline muted loop controls preload="metadata">
     <source src="https://github.com/user-attachments/assets/a5462167-f084-4fab-8229-38c5e5855d54" type="video/mp4">
   </video>
   <figcaption>Source control upgrades.</figcaption>
