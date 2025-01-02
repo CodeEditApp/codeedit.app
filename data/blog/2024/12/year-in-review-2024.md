@@ -67,19 +67,29 @@ This year saw bounds of progress making CodeEdit more capable using our [open-so
 
 ## 🧪 What's Next?
 
-As we wrap up this year, we look ahead towards 2025 and what we hope to accomplish. We'll continue to lean on our community as we learn and build out an application we can all use and love. Here's what we'll be focusing on this coming year.
+As we wrap up this year, we look ahead toward 2025 and what we hope to accomplish. We'll continue to lean on our community as we learn and build out an application we can all use and love. Here's what we'll be focusing on this coming year.
 
-### Language Server Protocol integration. 
+### Language Server Protocol integration
 
-Supporting language servers will unlock a whole new level of functionality for CodeEdit. Autocomplete, syntax highlighting upgrades, searching symbols, and so much more.
+Supporting language servers will unlock a whole new level of functionality for CodeEdit. Features like autocomplete, upgraded syntax highlighting, symbol searching, an issue navigator, inline messaging, and linting are just the beginning of what’s possible. With LSP integration, we’re opening the door to a smarter and more capable coding experience.
 
-### Extension architecture.
+### Extension architecture
 
 Extensions are essential for a code editor. We know they're highly anticipated and can make or break an editor's success. We'll be working hard to get extensions right, ensuring CodeEdit gets the full power of good customization behind it.
 
-### Solidifying the core.
+### Snippets
 
-We'll continue to solidify the core experience you have while writing code. Our mission is to create a macOS native editor, and we're not going to settle for less than perfection. We'll continue to work on performance in latency and memory utilization so you don't have to worry about your editor draining your battery.
+Snippets are a coder's best friend, saving time and reducing repetitive work. In 2025, we'll focus on making snippets easy to create, manage, and use, helping you code faster and smarter.
+
+### Minimap
+
+A minimap provides a high-level overview of your code, making navigation through large files intuitive and efficient. It’s a feature that many have asked for, and we’re excited to bring it to CodeEdit.
+
+### Solidifying the core
+
+We'll continue to solidify the core experience you have while writing code. Our mission is to create a macOS-native editor, and we're not going to settle for less than perfection. Performance enhancements in latency and memory utilization remain a top priority so that you can code without worrying about your editor draining your battery.
+
+These ambitious plans will only be possible with the continued support of our incredible community. Help us bring these features to life by contributing today! Jump into our [GitHub](https://github.com/CodeEditApp/CodeEdit), join the conversation on [Discord](https://discord.gg/vChUXVf9Em), or become a [sponsor](https://github.com/sponsors/CodeEditApp) to help shape the future of CodeEdit.
 
 ## 💌 A Note of Gratitude
 
