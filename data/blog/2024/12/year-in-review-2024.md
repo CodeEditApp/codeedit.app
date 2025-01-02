@@ -26,7 +26,7 @@ The heart of CodeEdit's source control features is the source control navigator 
 
 ## 📋 Tasks
 
-We’re constantly working to make CodeEdit a tool that will adapt to any developer’s workflow. This year saw the introduction of the [Activity Viewer](https://github.com/CodeEditApp/CodeEdit/pull/1769), a way for developers to set up and run tasks in their workspace. Tasks are essentially shell scripts that run in a workspace, such as starting a development server, or kicking off a test run.
+We’re constantly working to make CodeEdit a tool that will adapt to any developer’s workflow. This year saw the introduction of the [Activity Viewer](https://github.com/CodeEditApp/CodeEdit/pull/1769), a way for developers to set up and run Tasks in their workspace. Tasks are shell commands that run in your workspace. Tasks can do anything you do in a terminal, such as starting a development server, or sending off a test run.
 
 To configure tasks, we added workspace specific settings and will continue to expand them to allow developers to override settings for specific workspaces. Once tasks are configured, they send their output to a new Utility Area pane.
 
