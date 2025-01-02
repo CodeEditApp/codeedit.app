@@ -73,5 +73,4 @@ We'd also like to take the time to give a special shout out to our contributors!
 
 As 2024 comes to a close, we’re excited to continue this journey with you. We're honored and proud of everything we accomplished this year. Here's to another great next year! 🎉
 
-Happy New Year,
-The CodeEdit Team
+Happy New Year,<br>The CodeEdit Team
