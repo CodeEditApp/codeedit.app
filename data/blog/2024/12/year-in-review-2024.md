@@ -83,7 +83,7 @@ Snippets are a coder's best friend, saving time and reducing repetitive work. In
 
 ### Minimap
 
-A minimap provides a high-level overview of your code, making navigation through large files intuitive and efficient. It’s a feature that many have asked for, and we’re excited to bring it to CodeEdit.
+The minimap is a beloved feature in modern editors, providing a bird's-eye view of your code. We'll be working to integrate a minimap into CodeEdit, making it easier than ever to navigate large files.
 
 ### Solidifying the core
 
