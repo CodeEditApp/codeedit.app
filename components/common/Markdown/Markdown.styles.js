@@ -66,6 +66,22 @@ export const MarkdownWrap = styled.div`
     margin-top: 44px;
     margin-bottom: 44px;
 
+    &.crop-top {
+      object-position: top;
+    }
+
+    &.crop-right {
+      object-position: right;
+    }
+
+    &.crop-bottom {
+      object-position: bottom;
+    }
+
+    &.crop-left {
+      object-position: left;
+    }
+
     &.ratio-1-1 {
       object-fit: cover;
       aspect-ratio: 1/1;
