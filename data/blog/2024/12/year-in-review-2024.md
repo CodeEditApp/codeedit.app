@@ -9,7 +9,7 @@ author: thecoolwinter
 image: https://github.com/user-attachments/assets/108dadf2-2bdb-4954-b7ba-086c2be8abfd
 ---
 
-<img class="full-width ratio-21-9" alt="CodeEdit Workspace Window" src="https://github.com/user-attachments/assets/108dadf2-2bdb-4954-b7ba-086c2be8abfd">
+<img class="full-width ratio-21-9 crop-top" alt="CodeEdit Workspace Window" src="https://github.com/user-attachments/assets/108dadf2-2bdb-4954-b7ba-086c2be8abfd">
 
 ## 🐙 Source Control
 
