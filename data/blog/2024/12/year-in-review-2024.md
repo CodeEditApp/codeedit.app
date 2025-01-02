@@ -30,7 +30,7 @@ To configure tasks, we added workspace specific settings and will continue to ex
 
 <figure>
   <video class="wide ratio-16-9" playsinline muted loop controls>
-    <source src="https://github.com/user-attachments/assets/f26b2caa-dbe5-4797-aeed-b46c2636ec21" type="video/mp4">
+    <source src="https://github.com/user-attachments/assets/e316ad80-6e8b-4249-86dd-f79fb6b043ee" type="video/mp4">
   </video>
   <figcaption>Tasks & Activity Viewer demo, building an Next application.</figcaption>
 </figure>
