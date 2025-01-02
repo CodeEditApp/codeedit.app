@@ -71,7 +71,7 @@ As we wrap up this year, we look ahead towards 2025 and what we hope to accompli
 
 ### Language Server Protocol integration. 
 
-Supporting language servers will unlock a whole new level of functionality for CodeEdit. Autocomplete,  syntax highlighting upgrades, searching symbols, and so much more.
+Supporting language servers will unlock a whole new level of functionality for CodeEdit. Autocomplete, syntax highlighting upgrades, searching symbols, and so much more.
 
 ### Extension architecture.
 
