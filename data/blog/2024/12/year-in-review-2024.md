@@ -18,7 +18,7 @@ This year one of our focuses was improving how developers can use Git with CodeE
 The heart of CodeEdit's source control features is the source control navigator pane. This pane was [seriously](https://github.com/CodeEditApp/CodeEdit/pull/1534) [upgraded](https://github.com/CodeEditApp/CodeEdit/pull/1471) this year, introducing new interfaces for initializing repositories, managing commits and messages, viewing history, local and remote branches, and more.
 
 <figure>
-  <video class="wide ratio-16-9" playsinline muted loop controls preload="metadata" poster="https://github.com/user-attachments/assets/fdf9e6b5-f060-40b1-bcb9-d166d3644de2">
+  <video class="wide ratio-16-9" playsinline muted loop controls preload="metadata" poster="https://github.com/user-attachments/assets/f41ad52f-36b5-4c68-8d46-72d25e666402">
     <source src="https://github.com/user-attachments/assets/a5462167-f084-4fab-8229-38c5e5855d54" type="video/mp4">
   </video>
   <figcaption>Source control upgrades.</figcaption>
@@ -31,7 +31,7 @@ We’re constantly working to make CodeEdit a tool that will adapt to any develo
 To configure tasks, we added workspace specific settings and will continue to expand them to allow developers to override settings for specific workspaces. Once tasks are configured, they send their output to a new Utility Area pane.
 
 <figure>
-  <video class="wide ratio-16-9" playsinline muted loop controls preload="metadata"  poster="https://github.com/user-attachments/assets/b40e2aee-59ae-4fd8-a8ce-7d05a94a9105">
+  <video class="wide ratio-16-9" playsinline muted loop controls preload="metadata" poster="https://github.com/user-attachments/assets/b40e2aee-59ae-4fd8-a8ce-7d05a94a9105">
     <source src="https://github.com/user-attachments/assets/e316ad80-6e8b-4249-86dd-f79fb6b043ee" type="video/mp4">
   </video>
   <figcaption>Tasks & Activity Viewer demo, building an Next application.</figcaption>
