@@ -62,7 +62,7 @@ This year saw bounds of progress making CodeEdit more capable using our [open-so
 
 <figure>
   <video class="wide ratio-16-9" playsinline muted loop controls preload="metadata" poster="https://github.com/user-attachments/assets/6999ceda-94a3-4261-9122-c1b6c39c798d">
-    <source src="https://github.com/user-attachments/assets/633ff5c0-d649-46b6-9447-45791b6966ec" type="video/mp4">
+    <source src="https://github.com/user-attachments/assets/34ee2ca0-c12d-43f5-b755-c69c882c086d" type="video/mp4">
   </video>
   <figcaption>Indenting lines, making use of tag autocomplete in the editor.</figcaption>
 </figure>
