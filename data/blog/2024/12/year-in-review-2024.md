@@ -39,9 +39,16 @@ As we continue developing Tasks and the Activity Viewer, we see lots of potentia
 
 ## 🎨 Themes
 
-Everyone loves themes, so they got some upgrades this year. We improved how default themes are bundled with CodeEdit. Now, default themes will be updated as new updates are released. It's now less confusing which themes are built-in or user-installed.
+Everyone loves themes, so they got some upgrades this year. We improved how default themes are bundled with CodeEdit. Now, default themes will be updated as new updates are released. It's now less confusing which themes are built-in or user-installed and easier to create a new theme from an existing one.
 
 The theme list got improvements as well, adding [fuzzy](https://www.codeedit.app/blog/2024/02/generic-fuzzy-search-algorithm) [searching](https://github.com/CodeEditApp/CodeEdit/pull/1584) to the themes list so everything is easier to find, and improving the design so you never need to modify a [JSON file](https://code.visualstudio.com/api/extension-guides/color-theme#create-a-new-color-theme) to make your editor look just right.
+
+<figure>
+  <video class="wide ratio-16-9" playsinline muted loop controls>
+    <source src="https://github.com/user-attachments/assets/19311db2-a880-41f5-a9f6-a1076dab2e2c" type="video/mp4">
+  </video>
+  <figcaption>Themes search, starting a new theme.</figcaption>
+</figure>
 
 ## 📝 Source Editor
 
