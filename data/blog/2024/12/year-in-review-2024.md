@@ -89,7 +89,7 @@ The minimap is a beloved feature in modern editors, providing a bird's-eye view 
 
 We'll continue to solidify the core experience you have while writing code. Our mission is to create a macOS-native editor, and we're not going to settle for less than perfection. Performance enhancements in latency and memory utilization remain a top priority so that you can code without worrying about your editor draining your battery.
 
-These ambitious plans will only be possible with the continued support of our incredible community. Help us bring these features to life by contributing today! Jump into our [GitHub](https://github.com/CodeEditApp/CodeEdit), join the conversation on [Discord](https://discord.gg/vChUXVf9Em), or become a [sponsor](https://github.com/sponsors/CodeEditApp) to help shape the future of CodeEdit.
+These ambitious plans will only be possible with the continued support of our incredible community. Help us bring these features to life by [contributing](https://github.com/CodeEditApp/CodeEdit/blob/main/CONTRIBUTING.md) today! Jump into our [GitHub](https://github.com/CodeEditApp/CodeEdit), join the conversation on [Discord](https://discord.gg/vChUXVf9Em), or become a [sponsor](https://github.com/sponsors/CodeEditApp) to help shape the future of CodeEdit.
 
 ## 💌 A Note of Gratitude
 
