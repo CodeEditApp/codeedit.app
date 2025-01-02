@@ -15,7 +15,7 @@ image: https://github.com/user-attachments/assets/108dadf2-2bdb-4954-b7ba-086c2b
 
 ## 🐙 Source Control
 
-This year one of our focuses was improving how developers can use Git with CodeEdit. Our goal was to make Git easy. We felt editors can often miss the mark when it comes to the user experience and clarity that source control requires. So, as we built out our source control features we were grateful to our wonderful community as we looked for shared opinions and design guidance.
+This year one of our focuses was improving how developers use Git with CodeEdit. Our goal was to make Git easy. We felt editors can often miss the mark when it comes to the user experience and clarity that source control requires. So, as we built out our source control features we were grateful to our wonderful community as we looked for shared opinions and design guidance.
 
 The heart of CodeEdit's source control features is the source control navigator pane. This pane was [seriously](https://github.com/CodeEditApp/CodeEdit/pull/1534) [upgraded](https://github.com/CodeEditApp/CodeEdit/pull/1471) this year, introducing new interfaces for initializing repositories, managing commits and messages, viewing history, local and remote branches, and more.
 
@@ -39,11 +39,11 @@ To configure tasks, we added workspace specific settings and will continue to ex
   <figcaption>Tasks & Activity Viewer demo, building an Next application.</figcaption>
 </figure>
 
-As we continue developing Tasks and the Activity Viewer, we see lots of potential for this feature to make day-to-day development with CodeEdit smoother and faster. We're excited to see where it'll go this next year, and are excited to see how developers like you use it.
+As we continue developing Tasks and the Activity Viewer, we see lots of potential for this feature to make day-to-day development with CodeEdit smoother and faster. We're excited to see where it'll go this next year, and look forward to seeing how developers like you use it.
 
 ## 🎨 Themes
 
-Everyone loves themes, so they got some upgrades this year. We improved how default themes are bundled with CodeEdit. Now, default themes will be updated as new updates are released. It's now less confusing which themes are built-in or user-installed and easier to create a new theme from an existing one.
+Everyone loves themes, so they got some upgrades this year. We improved how default themes are bundled with CodeEdit. Now, default themes will be updated as new updates are released. It's also less confusing which themes are built-in or user-installed and it's easier to create a new theme from an existing one.
 
 The theme list got improvements as well, adding [fuzzy](https://www.codeedit.app/blog/2024/02/generic-fuzzy-search-algorithm) [searching](https://github.com/CodeEditApp/CodeEdit/pull/1584) to the themes list so everything is easier to find, and improving the design so you never need to modify a [JSON file](https://code.visualstudio.com/api/extension-guides/color-theme#create-a-new-color-theme) to make your editor look just right.
 
@@ -73,23 +73,15 @@ As we wrap up this year, we look ahead toward 2025 and what we hope to accomplis
 
 ### Language Server Protocol integration
 
-Supporting language servers will unlock a whole new level of functionality for CodeEdit. Features like autocomplete, upgraded syntax highlighting, symbol searching, an issue navigator, inline messaging, and linting are just the beginning of what’s possible. With LSP integration, we’re opening the door to a smarter and more capable coding experience.
+Supporting language servers will unlock a whole new level of functionality for CodeEdit. Features like autocomplete, upgraded syntax highlighting, symbol searching, snippets, and diagnostics, are all unlocked by supporting LSP. With LSP integration, we’re opening the door to a smarter and more capable coding experience.
 
 ### Extension architecture
 
 Extensions are essential for a code editor. We know they're highly anticipated and can make or break an editor's success. We'll be working hard to get extensions right, ensuring CodeEdit gets the full power of good customization behind it.
 
-### Snippets
-
-Snippets are a coder's best friend, saving time and reducing repetitive work. In 2025, we'll focus on making snippets easy to create, manage, and use, helping you code faster and smarter.
-
-### Minimap
-
-The minimap is a beloved feature in modern editors, providing a bird's-eye view of your code. We'll be working to integrate a minimap into CodeEdit, making it easier than ever to navigate large files.
-
 ### Solidifying the core
 
-We'll continue to solidify the core experience you have while writing code. Our mission is to create a macOS-native editor, and we're not going to settle for less than perfection. Performance enhancements in latency and memory utilization remain a top priority so that you can code without worrying about your editor draining your battery.
+We'll continue to solidify the core experience you have while writing code. Our mission is to create the best macOS-native editor, and we're not going to settle for less than perfection. We'll be looking to shore up our support for features you expect from a top-of-the-line editor, such as a minimap and more shell integrations. On top of that, performance enhancements in latency and memory utilization remain a top priority so you can code without your editor draining your battery.
 
 These ambitious plans will only be possible with the continued support of our incredible community. Help us bring these features to life by [contributing](https://github.com/CodeEditApp/CodeEdit/blob/main/CONTRIBUTING.md) today! Jump into our [GitHub](https://github.com/CodeEditApp/CodeEdit), join the conversation on [Discord](https://discord.gg/vChUXVf9Em), or become a [sponsor](https://github.com/sponsors/CodeEditApp) to help shape the future of CodeEdit.
 
