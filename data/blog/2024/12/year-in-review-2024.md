@@ -18,7 +18,7 @@ This year one of our focuses was improving how developers can use Git with CodeE
 The heart of CodeEdit's source control features is the source control navigator pane. This pane was [seriously](https://github.com/CodeEditApp/CodeEdit/pull/1534) [upgraded](https://github.com/CodeEditApp/CodeEdit/pull/1471) this year, introducing new interfaces for initializing repositories, managing commits and messages, viewing history, local and remote branches, and more.
 
 <figure>
-  <video class="wide ratio-16-9" playsinline muted loop controls poster="https://github.com/user-attachments/assets/fdf9e6b5-f060-40b1-bcb9-d166d3644de2">
+  <video class="wide ratio-16-9" playsinline muted loop controls preload="metadata" poster="https://github.com/user-attachments/assets/fdf9e6b5-f060-40b1-bcb9-d166d3644de2">
     <source src="https://github.com/user-attachments/assets/a5462167-f084-4fab-8229-38c5e5855d54" type="video/mp4">
   </video>
   <figcaption>Source control upgrades.</figcaption>
@@ -31,7 +31,7 @@ We’re constantly working to make CodeEdit a tool that will adapt to any develo
 To configure tasks, we added workspace specific settings and will continue to expand them to allow developers to override settings for specific workspaces. Once tasks are configured, they send their output to a new Utility Area pane.
 
 <figure>
-  <video class="wide ratio-16-9" playsinline muted loop controls poster="https://github.com/user-attachments/assets/b40e2aee-59ae-4fd8-a8ce-7d05a94a9105">
+  <video class="wide ratio-16-9" playsinline muted loop controls preload="metadata"  poster="https://github.com/user-attachments/assets/b40e2aee-59ae-4fd8-a8ce-7d05a94a9105">
     <source src="https://github.com/user-attachments/assets/e316ad80-6e8b-4249-86dd-f79fb6b043ee" type="video/mp4">
   </video>
   <figcaption>Tasks & Activity Viewer demo, building an Next application.</figcaption>
@@ -46,7 +46,7 @@ Everyone loves themes, so they got some upgrades this year. We improved how defa
 The theme list got improvements as well, adding [fuzzy](https://www.codeedit.app/blog/2024/02/generic-fuzzy-search-algorithm) [searching](https://github.com/CodeEditApp/CodeEdit/pull/1584) to the themes list so everything is easier to find, and improving the design so you never need to modify a [JSON file](https://code.visualstudio.com/api/extension-guides/color-theme#create-a-new-color-theme) to make your editor look just right.
 
 <figure>
-  <video class="wide ratio-16-9" playsinline muted loop controls poster="https://github.com/user-attachments/assets/86809f72-6d21-4397-856b-bedf7099a525">
+  <video class="wide ratio-16-9" playsinline muted loop controls preload="metadata"  poster="https://github.com/user-attachments/assets/86809f72-6d21-4397-856b-bedf7099a525">
     <source src="https://github.com/user-attachments/assets/19311db2-a880-41f5-a9f6-a1076dab2e2c" type="video/mp4">
   </video>
   <figcaption>Themes search, starting a new theme.</figcaption>
@@ -59,7 +59,7 @@ After introducing our custom ground-up [text view](https://github.com/CodeEditAp
 This year saw bounds of progress making CodeEdit more capable using our [open-source](https://github.com/CodeEditApp/CodeEditSourceEditor) source editor component. A shortcut (⌘/) to [comment code](https://github.com/CodeEditApp/CodeEditSourceEditor/pull/241), [indenting and unindenting lines](https://github.com/CodeEditApp/CodeEditSourceEditor/pull/266), and [tag](https://github.com/CodeEditApp/CodeEditSourceEditor/pull/247) [autocomplete](https://github.com/CodeEditApp/CodeEditSourceEditor/pull/250) powered by tree-sitter were all added by our wonderful contributors this past year. These features have made a huge difference in elevating the editing experience in CodeEdit this year.
 
 <figure>
-  <video class="wide ratio-16-9" playsinline muted loop controls poster="https://github.com/user-attachments/assets/6999ceda-94a3-4261-9122-c1b6c39c798d">
+  <video class="wide ratio-16-9" playsinline muted loop controls preload="metadata" poster="https://github.com/user-attachments/assets/6999ceda-94a3-4261-9122-c1b6c39c798d">
     <source src="https://github.com/user-attachments/assets/633ff5c0-d649-46b6-9447-45791b6966ec" type="video/mp4">
   </video>
   <figcaption>Indenting lines, making use of tag autocomplete in the editor.</figcaption>
