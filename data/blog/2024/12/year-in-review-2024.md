@@ -16,7 +16,7 @@ This year one of our focuses was improving how developers can use Git with CodeE
 The heart of CodeEdit's source control features is the source control navigator pane. This pane was [seriously](https://github.com/CodeEditApp/CodeEdit/pull/1534) [upgraded](https://github.com/CodeEditApp/CodeEdit/pull/1471) this year, introducing new interfaces for initializing repositories, managing commits and messages, viewing history, local and remote branches, and more.
 
 <figure>
-  <video class="full-width ratio-9-16" autoplay playsinline muted loop controls>
+  <video class="wide ratio-16-9" playsinline muted loop controls>
     <source src="https://github.com/user-attachments/assets/a5462167-f084-4fab-8229-38c5e5855d54" type="video/mp4">
   </video>
   <figcaption>Source control upgrades.</figcaption>
@@ -27,6 +27,13 @@ The heart of CodeEdit's source control features is the source control navigator 
 We’re constantly working to make CodeEdit a tool that will adapt to any developer’s workflow. This year saw the introduction of the [Activity Viewer](https://github.com/CodeEditApp/CodeEdit/pull/1769), a way for developers to set up and run tasks in their workspace. Tasks are essentially shell scripts that run in a workspace, such as starting a development server, or kicking off a test run.
 
 To configure tasks, we added workspace specific settings and will continue to expand them to allow developers to override settings for specific workspaces. Once tasks are configured, they send their output to a new Utility Area pane.
+
+<figure>
+  <video class="wide ratio-16-9" playsinline muted loop controls>
+    <source src="https://github.com/user-attachments/assets/f26b2caa-dbe5-4797-aeed-b46c2636ec21" type="video/mp4">
+  </video>
+  <figcaption>Tasks & Activity Viewer demo, building an Next application.</figcaption>
+</figure>
 
 As we continue developing Tasks and the Activity Viewer, we see lots of potential for this feature to make day-to-day development with CodeEdit smoother and faster. We're excited to see where it'll go this next year, and are excited to see how developers like you use it.
 
