@@ -17,8 +17,9 @@ When designing our API, we often use terms like "action" and "command" interchan
 
 Let's first clarify these terms:
 
-- **Action**: An action broadly describes any interaction or event initiated by the user, such as clicking a button, typing text, or selecting something from a menu. Actions describe user intention and events that change the application's state.
-- **Command**: A command is a specific instruction—explicitly invoked by the user—that the application performs. Commands typically correspond directly to something selectable from the application's menus, buttons, or keyboard shortcuts.
+**Action**: An action broadly describes any interaction or event initiated by the user, such as clicking a button, typing text, or selecting something from a menu. Actions describe user intention and events that change the application's state.
+
+**Command**: A command is a specific instruction—explicitly invoked by the user—that the application performs. Commands typically correspond directly to something selectable from the application's menus, buttons, or keyboard shortcuts.
 
 **Why distinguish between Actions and Commands?**
 
@@ -63,23 +64,25 @@ Events provide a clean separation of concerns. Commands initiate processes, and 
 
 Another insightful discovery is how Apple carefully chooses verbs in their APIs to convey precise meanings. Two particularly illustrative verbs are **perform** and **add**:
 
-- **perform**: Apple frequently uses "perform" when explicitly invoking a defined action or command:
+**Perform**: Apple frequently uses "perform" when explicitly invoking a defined action or command:
   - `perform(_: Selector)` from `NSObject`
   - `NSApplication.perform(_:with:)`
 
   This informed our decision to adopt `CommandManager.perform("commandName")` for explicit command invocations.
 
-- **add**: Apple uses "add" consistently when registering something persistent, like observers or handlers:
+**Add**: Apple uses "add" consistently when registering something persistent, like observers or handlers:
   - `NotificationCenter.addObserver(...)`
   - `NSView.addSubview(...)`
 
-  Therefore, we chose `CommandManager.addCommand("commandName")` to explicitly register commands.
+Therefore, we chose `CommandManager.addCommand("commandName")` to explicitly register commands.
 
 We also observed Apple's careful distinction among "choose," "pick," and "select":
 
-- **Choose**: Typically reserved for selecting menu items or explicit commands ("Choose File > New").
-- **Select**: Often used when interacting with UI elements like list items or selections in a collection ("Select the text you want to copy").
-- **Pick**: Commonly used for informal, quick decisions or interactions with simplified interfaces (e.g., color pickers, item pickers).
+**Choose**: Typically reserved for selecting menu items or explicit commands ("Choose File > New").
+
+**Select**: Often used when interacting with UI elements like list items or selections in a collection ("Select the text you want to copy").
+
+**Pick**: Commonly used for informal, quick decisions or interactions with simplified interfaces (e.g., color pickers, item pickers).
 
 This nuanced use of language provides clarity and reduces ambiguity, guiding users intuitively through interactions.
 
@@ -92,4 +95,3 @@ While these linguistic distinctions may initially seem subtle or trivial, embrac
 - **Enhanced Maintainability**: Explicit naming conventions reduce cognitive load for contributors, leading to cleaner codebases.
 
 By carefully examining and adopting Apple's deliberate and precise language conventions, we reinforce CodeEdit's design clarity and ensure the application remains intuitive, powerful, and enjoyable for users and developers alike.
-
