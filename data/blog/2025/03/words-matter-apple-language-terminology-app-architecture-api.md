@@ -88,10 +88,6 @@ This nuanced use of language provides clarity and reduces ambiguity, guiding use
 
 ### Conclusion: Why This Matters for CodeEdit
 
-While these linguistic distinctions may initially seem subtle or trivial, embracing Apple's approach brings significant benefits:
-
-- **API Consistency**: Clear distinctions make our APIs more intuitive and easier to learn.
-- **Better Extension Experience**: Extension developers have clear guidelines for integrating seamlessly.
-- **Enhanced Maintainability**: Explicit naming conventions reduce cognitive load for contributors, leading to cleaner codebases.
+While these linguistic distinctions may initially seem subtle or trivial, embracing Apple's intentional approach significantly benefits our project by ensuring greater API consistency, making them more intuitive and easier to learn. It also provides extension developers with clear guidelines, enabling them to integrate seamlessly into the ecosystem. Additionally, explicit naming conventions enhance maintainability by reducing cognitive load for contributors, resulting in a cleaner and more maintainable codebase.
 
 By carefully examining and adopting Apple's deliberate and precise language conventions, we reinforce CodeEdit's design clarity and ensure the application remains intuitive, powerful, and enjoyable for users and developers alike.
