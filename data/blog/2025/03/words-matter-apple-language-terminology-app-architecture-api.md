@@ -5,8 +5,8 @@ headline: "Words Matter: How Apple's Terminology Shapes App Architecture and API
 subhead: Exploring the subtle yet powerful influence of Apple's terminology on software architecture and API design decisions. 
 image: https://github.com/user-attachments/assets/f665dee7-0a23-42c9-b2e4-f4b9a482ab2c
 date: 2025-03-06
-draft: true
 ---
+
 <img class="wide" alt="Typewriter" src="https://github.com/user-attachments/assets/f665dee7-0a23-42c9-b2e4-f4b9a482ab2c" />
 
 In the journey of developing CodeEdit, one crucial realization we've had is the importance of how language influences software design. At first glance, it might seem trivial to obsess over words like "action," "command," "event," "perform," and "add," but diving deeper into Apple's deliberate usage of these terms reveals powerful insights that significantly shape how we build our application architecture, APIs, and overall user experience.
