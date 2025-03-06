@@ -1,7 +1,7 @@
 ---
-title: Words Matter: How Apple's Terminology Shapes App Architecture and API Design 
+title: "Words Matter: How Apple's Terminology Shapes App Architecture and API Design"
 description: Learn how Apple's thoughtful use of language and terminology can inform better app design, architecture decisions, API naming, and extension ecosystems. 
-headline: Words Matter: How Apple's Terminology Shapes App Architecture and API Design 
+headline: "Words Matter: How Apple's Terminology Shapes App Architecture and API Design"
 subhead: Exploring the subtle yet powerful influence of Apple's terminology on software architecture and API design decisions. 
 date: 2025-03-06
 draft: true
