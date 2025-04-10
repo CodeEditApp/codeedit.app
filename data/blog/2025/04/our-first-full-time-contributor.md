@@ -6,6 +6,7 @@ description: "CodeEdit now has a full-time contributor for a limited time. Here�
 date: 2025-04-10
 category: update
 author: austincondiff
+image: https://github.com/CodeEditApp/codeedit.app/assets/806104/6552453d-c31c-48f3-ae0f-862db07ada9c
 ---
 
 We’re excited to share a milestone moment in CodeEdit’s journey:  
