@@ -1,8 +1,8 @@
 ---
 title: "Our First Full-Time Contributor: A Big Step Forward"
 headline: "Our First Full-Time Contributor: A Big Step Forward"
-subhead: We’ve brought on our first full-time contributor to accelerate CodeEdit’s development. Learn how we’re using this limited-time opportunity, what’s next on the roadmap, and how you can get involved.
-description: CodeEdit now has a full-time contributor for a limited time. Here’s what we’re focusing on and how you can get involved.
+subhead: "We’ve brought on our first full-time contributor to accelerate CodeEdit’s development. Learn how we’re using this limited-time opportunity, what’s next on the roadmap, and how you can get involved."
+description: "CodeEdit now has a full-time contributor for a limited time. Here’s what we’re focusing on and how you can get involved."
 date: 2025-04-10
 category: update
 author: austincondiff
