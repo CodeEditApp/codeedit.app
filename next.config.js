@@ -34,6 +34,13 @@ const nextConfig = {
       use: 'raw-loader',
     });
 
+    // Ignore XML files in the public directory
+    config.module.rules.push({
+      test: /\.xml$/,
+      include: /public/,
+      type: 'asset/resource',
+    });
+
     return config;
   },
 };

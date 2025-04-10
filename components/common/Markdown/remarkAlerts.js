@@ -12,18 +12,19 @@ const remarkAlerts = () => {
   return (tree) => {
     visit(tree, 'blockquote', (node) => {
       // Check if the first child is a paragraph with the alert syntax code
-      const firstChild = node.children[0];
+      const firstChild = node.children?.[0];
+      if (!firstChild || firstChild.type !== 'paragraph' || !firstChild.children?.[0]?.value) {
+        return;
+      }
+
       alertTypes.forEach((alertType) => {
-        if (
-          firstChild.type === 'paragraph' &&
-          firstChild.children[0].value.startsWith(alertType.code)
-        ) {
+        if (firstChild.children[0].value.startsWith(alertType.code)) {
           // Remove the alertType.code marker
           firstChild.children[0].value = firstChild.children[0].value
             .replace(alertType.code, '')
             .trim();
 
-          if (firstChild.children[0].value == '') {
+          if (firstChild.children[0].value === '') {
             firstChild.children.shift();
           }
 
