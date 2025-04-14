@@ -35,7 +35,9 @@ This rhythm helps us stay focused, get feedback early, and iterate quickly.
 
 ## A Note from Khan
 
-> _[Khan’s message here — a quick paragraph or two about what this opportunity means to him, what he’s focusing on, or a thank-you to the community.]_
+<video controls>
+  <source src="https://github.com/user-attachments/assets/468123f7-efff-48a3-9f79-1a7a44cd44e0" type="video/mp4">
+<video>
 
 ## Get Involved
 
