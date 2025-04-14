@@ -6,8 +6,10 @@ description: "CodeEdit now has a full-time contributor for a limited time. Here�
 date: 2025-04-10
 category: update
 author: austincondiff
-image: https://github.com/CodeEditApp/codeedit.app/assets/806104/6552453d-c31c-48f3-ae0f-862db07ada9c
+image: https://github.com/user-attachments/assets/48c16b8d-4868-4dfe-bfdc-e2511bf1c63b
 ---
+
+<iframe class="wide" src="https://www.youtube.com/embed/Vc1-0f83pkk?si=d98Qc2fVxFLmXHwi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 We’re excited to share a milestone moment in CodeEdit’s journey:  
 For the first time, we’ve brought on a **full-time contributor** to work on the project.
@@ -34,8 +36,6 @@ He will also be posting **daily progress updates** and sharing **weekly progress
 This rhythm helps us stay focused, get feedback early, and iterate quickly.
 
 ## A Message from Khan
-
-<iframe class="wide" src="https://www.youtube.com/embed/Vc1-0f83pkk?si=d98Qc2fVxFLmXHwi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Hello everyone. My name is Khan Winter and I'm grateful and delighted to have the opportunity to work on CodeEdit full time.
 > 
