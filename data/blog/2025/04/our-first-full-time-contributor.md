@@ -33,11 +33,23 @@ He will also be posting **daily progress updates** and sharing **weekly progress
 
 This rhythm helps us stay focused, get feedback early, and iterate quickly.
 
-## A Note from Khan
+## A Message from Khan
 
-<video controls>
-  <source src="https://github.com/user-attachments/assets/468123f7-efff-48a3-9f79-1a7a44cd44e0" type="video/mp4">
-</video>
+<iframe class="wide" src="https://www.youtube.com/embed/Vc1-0f83pkk?si=d98Qc2fVxFLmXHwi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+> Hello everyone. My name is Khan Winter and I'm grateful and delighted to have the opportunity to work on CodeEdit full time.
+> 
+> I've been developing for Apple platforms for about six years and for three of those years I've been working on CodeEdit. CodeEdit excited me when I first came across the GitHub page. I saw a macOS editor that wasn't based on Electron and felt right at home on my Mac. It was my dream editor.
+> 
+> Once I saw I wasn't finished and had a lot to get done, I was excited to start contributing. I soon discovered a passion for this project that has stayed with me to this very day, volunteering hundreds of hours of my time towards this project.
+> 
+> I've worked closely on our Swift TextView package, our editor package, and coded its file management system, along with numerous other bug fixes and performance improvements throughout the app.
+> 
+> Since becoming a maintainer, I've constantly wished that I could put more time and energy towards developing what myself and other maintainers think this application could be. I'm excited to the opportunity to do exactly that. And we'll be putting my utmost effort towards this while I have the chance.
+> 
+> I'm looking forward to knocking out the features that we still have in our roadmap. I'll be looking to bring code edit to what we consider viable for a version one release that includes smoothing out our most basic editing interactions from copy paste to multi-line editing. It also includes things like language server integration. So all of your favorite languages support a best in class editing experience.
+> 
+> I'm thrilled to get started. I want to thank our generous and wonderful sponsors  who have made this all possible. None of this would happen without your generosity. I'm looking forward to continuing to collaborate with this wonderful community. I'm excited to see what we can get done.
 
 ## Get Involved
 
