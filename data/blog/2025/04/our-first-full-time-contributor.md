@@ -50,9 +50,9 @@ You can hear more about Khan’s story and his vision for CodeEdit in the [full 
 
 This full-time window won’t last forever — we have a limited runway, and we want to make the most of it. That’s why we’re inviting you to get involved in whatever way makes sense for you:
 
-- 💙 **Sponsor CodeEdit** – Help us extend this full-time effort  
-- 💻 **Contribute** – Join the dev conversation, submit a PR, or help with docs  
-- 🗣️ **Join our community** – Hang out in Discord, join the weekly meetup, share your feedback
+- 💙 [**Sponsor CodeEdit**](https://github.com/sponsors/CodeEditApp) – Help us extend this full-time effort  
+- 💻 [**Contribute**](https://github.com/CodeEditApp/CodeEdit/tree/main) – Join the dev conversation, submit a PR, or help with docs  
+- 🗣️ [**Join our community**](https://discord.gg/vChUXVf9Em) – Hang out in Discord, join the weekly meetup, share your feedback
 
 We believe CodeEdit can become the default code editor for macOS — fast, beautiful, open source, and built with care for the platform and community it serves.
 
