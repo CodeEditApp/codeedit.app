@@ -39,9 +39,9 @@ This rhythm helps us stay focused, get feedback early, and iterate quickly.
 ## A Message from Khan
 
 > “I'm grateful and delighted to have the opportunity to work on CodeEdit full time. I’ll be putting my utmost effort towards this while I have the chance.”
->
+
 > “I’m looking forward to knocking out the features that we still have in our roadmap—everything from smoothing out basic editing interactions like copy-paste and multi-line editing, to integrating language servers for a best-in-class experience across all your favorite languages.”
->
+
 > “I want to thank our generous and wonderful sponsors who have made this all possible. None of this would happen without your support.”
 
 You can hear more about Khan’s story and his vision for CodeEdit in the [full video](https://www.youtube.com/watch?v=Vc1-0f83pkk).  
