@@ -6,8 +6,7 @@ description: "CodeEdit now has a full-time contributor for a limited time. Hereâ
 date: 2025-04-10
 category: update
 author: austincondiff
-image: https://github.com/user-attachments/assets/083b4f33-db45-4d8f-a656-ec2cbc1788a0
-
+image: https://github.com/user-attachments/assets/f766deba-3ea4-4cab-8c76-8df9ca2b49f9
 ---
 
 <iframe class="wide" src="https://www.youtube.com/embed/Vc1-0f83pkk?si=d98Qc2fVxFLmXHwi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
