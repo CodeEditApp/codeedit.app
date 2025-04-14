@@ -37,7 +37,7 @@ This rhythm helps us stay focused, get feedback early, and iterate quickly.
 
 <video controls>
   <source src="https://github.com/user-attachments/assets/468123f7-efff-48a3-9f79-1a7a44cd44e0" type="video/mp4">
-<video>
+</video>
 
 ## Get Involved
 
