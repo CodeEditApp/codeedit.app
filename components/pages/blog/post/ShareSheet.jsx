@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import XSvg from '@/assets/x-icon.svg';
+import BlueSkySvg from '@/assets/bluesky-icon.svg';
 import FacebookSvg from '@/assets/facebook-icon.svg';
 import { Link, Mail } from 'react-feather';
 import styled from "styled-components";
@@ -111,6 +112,18 @@ const ShareSheetWrap = styled.div`
 
 const ShareSheet = () => {
   const shareLinkInputRef = useRef();
+
+  const sanitizeUrl = (url) => {
+    if (!url) return '';
+    try {
+      const urlObj = new URL(url);
+      return encodeURIComponent(urlObj.toString());
+    } catch (e) {
+      console.error('Error sanitizing URL:', e);
+      return '';
+    }
+  };
+
   const shareViaMail = () => {
     var subject = 'CodeEdit Blog Post';
     var body = window.location.href;
@@ -122,12 +135,13 @@ const ShareSheet = () => {
   };
 
   function shareViaLink() {
-    navigator.clipboard.writeText(window.location.href).then(
-      function (data) {
-        console.log('Copying to clipboard was successful!', data);
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(
+      function () {
+        console.log('Copying to clipboard was successful!');
       },
       function (err) {
-        console.log('Could not copy text: ', err);
+        console.error('Could not copy text: ', err);
       }
     );
   }
@@ -144,7 +158,7 @@ const ShareSheet = () => {
                 aria-label="Share this article via Facebook (opens in new window)"
                 onClick={() =>
                   window.open(
-                    `https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`
+                    `https://www.facebook.com/sharer/sharer.php?u=${sanitizeUrl(window.location.href)}`
                   )
                 }
               >
@@ -153,16 +167,30 @@ const ShareSheet = () => {
             </li>
             <li className="social-option">
               <button
-                className="icon icon-twitter social-icon"
-                title="Share via Twitter"
-                aria-label="Share this article via Twitter (opens in new window)"
+                className="icon icon-x social-icon"
+                title="Share via X"
+                aria-label="Share this article via X (opens in new window)"
                 onClick={() =>
                   window.open(
-                    `https://x.com/intent/tweet?url=${window.location.href}`
+                    `https://x.com/intent/tweet?url=${sanitizeUrl(window.location.href)}`
                   )
                 }
               >
                 <XSvg />
+              </button>
+            </li>
+            <li className="social-option">
+              <button
+                className="icon icon-bluesky social-icon"
+                title="Share via BlueSky"
+                aria-label="Share this article via BlueSky (opens in new window)"
+                onClick={() =>
+                  window.open(
+                    `https://bsky.app/intent/compose?text=${sanitizeUrl(window.location.href)}`
+                  )
+                }
+              >
+                <BlueSkySvg />
               </button>
             </li>
             <li className="social-option">
@@ -191,19 +219,17 @@ const ShareSheet = () => {
               <input
                 ref={shareLinkInputRef}
                 className="link-text"
-                value={
-                  typeof window !== 'undefined' ? window.location.href : ''
-                }
-                tabindex="-1"
-                readonly=""
+                value={typeof window !== 'undefined' ? window.location.href : ''}
+                tabIndex="-1"
+                readOnly
                 aria-hidden="true"
-                disabled="disabled"
+                disabled
               />
               <button
                 className="icon icon-close sharesheet-link-close"
                 title="close"
                 aria-label="close link"
-                tabindex="-1"
+                tabIndex="-1"
                 aria-hidden="true"
                 role="button"
               ></button>

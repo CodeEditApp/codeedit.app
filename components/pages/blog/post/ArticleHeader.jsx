@@ -133,12 +133,16 @@ const ArticleHeader = ({ frontmatter, author }) => {
       <div className="category component">
         <div className="component-content">
           <div className="category-eyebrow">
-            <span className="category-eyebrow__category">
-              {config.categories[frontmatter.category ?? "updates"]?.title ?? config.categories.updates.title}
-            </span>
-            <span className="category-eyebrow__date">
-              {formatDate(frontmatter.date)}
-            </span>
+            {frontmatter.category && (
+              <span className="category-eyebrow__category">
+                {config.categories[frontmatter.category]?.title ?? config.categories.updates.title}
+              </span>
+            )}
+            {frontmatter.date && (
+              <span className="category-eyebrow__date">
+                {formatDate(frontmatter.date)}
+              </span>
+            )}
           </div>
         </div>
       </div>
