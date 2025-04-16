@@ -27,7 +27,17 @@ export const readFile = async (pathName) => {
       if (error) {
         reject(error);
       }
-      resolve(JSON.parse(data));
+      // If the file is a markdown file, return the raw content
+      if (pathName.endsWith('.md')) {
+        resolve(data);
+      } else {
+        // Otherwise try to parse as JSON
+        try {
+          resolve(JSON.parse(data));
+        } catch (e) {
+          reject(e);
+        }
+      }
     });
   });
 };
