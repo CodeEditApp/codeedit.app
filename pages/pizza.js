@@ -7,10 +7,7 @@ export async function getStaticProps() {
   
   return {
     props: {
-      frontmatter: {
-        ...data.data,
-        date: new Date().toISOString(),
-      },
+      frontmatter: data.data,
       markdownBody: data.content,
     }
   };
