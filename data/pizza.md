@@ -22,7 +22,7 @@ Here's how to claim your slice:
 
 Once your PR is merged and you've sent us an email, we'll send you a digital gift card to order a pizza — on us.
 
-Hurry, this won't last long, [get started](https://github.com/CodeEditApp/CodeEdit/issues)!
+Hurry, this won't last long, [get started](https://github.com/CodeEditApp/CodeEdit/blob/main/CONTRIBUTING.md)!
 
 > [!NOTE]
 > We reserve the right to only reward completed and meaningful contributions (but we'll still love you for trying).
