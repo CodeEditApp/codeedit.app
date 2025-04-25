@@ -21,7 +21,9 @@ export const MarkdownWrap = styled.div`
 
   &,
   & p,
-  & figure {
+  & figure,
+  & picture,
+  & figure > picture {
     & > * {
       margin-left: auto;
       margin-right: auto;
@@ -60,11 +62,17 @@ export const MarkdownWrap = styled.div`
   }
 
   img,
+  picture > img,
   video,
   iframe {
     display: block;
     margin-top: 44px;
     margin-bottom: 44px;
+
+    @media only screen and (max-width: 734px) {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
 
     &.crop-top {
       object-position: top;
@@ -210,6 +218,37 @@ export const MarkdownWrap = styled.div`
       &:hover {
         text-decoration: underline;
       }
+      &.button {
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5em;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 17px;
+        line-height: 1.17648;
+        font-weight: 400;
+        letter-spacing: -.022em;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        min-width: 28px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 18px;
+        background: var(--color-fill-blue);
+        color: #fff;
+        border: 0;
+        outline: 0;
+        padding-left: 21px;
+        padding-right: 21px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        border-radius: 21px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
   }
 
@@ -237,6 +276,7 @@ export const MarkdownWrap = styled.div`
     margin-bottom: 44px;
 
     img,
+    picture > img,
     video,
     iframe {
       margin-top: 0;
@@ -425,6 +465,11 @@ export const MarkdownWrap = styled.div`
       padding: 0.9411764706rem;
       box-sizing: border-box;
       text-align: start;
+
+      @media only screen and (max-width: 734px) {
+        max-width: 87.5%;
+      }
+
       p {
         margin-top: 0.4em;
         margin-bottom: 0;
