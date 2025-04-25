@@ -38,9 +38,6 @@ Make a PR solving that issue
 
 Email your name, GitHub username, a link to your merged PR to [pizza@codeedit.app](mailto:codeforpizza@codeedit.app?subject=Give%20Me%20Pizza!%20🍕&body=Merged%20PR%20link:%0D%0A%0D%0APreferred%20pizza%20delivery%20service:%20%0D%0A%0D%0AName:%20%0D%0A%0D%0AEmail%20to%20send%20gift%20card%20to:%20), along with your preferred pizza delivery service.
 
-<a href="mailto:no-one@snai1mai1.com?subject=look at this website&body=Hi,I found this website and thought you might like it http://www.geocities.com/wowhtml/">tell a friend</a>
-
-
 Once your PR is merged and you've sent us an email, we'll send you a digital gift card to order a pizza — on us.
 
 <picture>
