@@ -1,6 +1,6 @@
 ---
 title: 'Get it while its hot! You ship code, we ship 🍕!'
-image: 'https://media1.tenor.com/m/VWAZosGBC6AAAAAd/hellmo-pizza.gif'
+image: 'https://github.com/user-attachments/assets/fc1b7310-52f0-433e-a4be-47d9a3b63a63'
 subhead: 'Shipping code never tasted so good.'
 ---
 
