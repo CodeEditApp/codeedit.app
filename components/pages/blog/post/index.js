@@ -28,6 +28,7 @@ const Article = styled.article`
   }
 
   @media only screen and (max-width: 734px) {
+    padding: 32px 0;
     .pagebody + .sharesheet,
     .about-author,
     .article-header {

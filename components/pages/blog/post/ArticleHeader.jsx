@@ -130,6 +130,7 @@ function formatDate(fullDate) {
 const ArticleHeader = ({ frontmatter, author }) => {
   return (
     <ArticleHeaderWrap className="article-header">
+      {(frontmatter.category || frontmatter.date) && (
       <div className="category component">
         <div className="component-content">
           <div className="category-eyebrow">
@@ -146,6 +147,7 @@ const ArticleHeader = ({ frontmatter, author }) => {
           </div>
         </div>
       </div>
+      )}
       <div className="pagetitle component">
         <div className="component-content">
           <h1 className="hero-headline">
@@ -153,9 +155,11 @@ const ArticleHeader = ({ frontmatter, author }) => {
           </h1>
         </div>
       </div>
-      <div className="article-subhead component">
-        <div className="component-content">{frontmatter.subhead}</div>
-      </div>
+      {frontmatter.subhead && (
+        <div className="article-subhead component">
+          <div className="component-content">{frontmatter.subhead}</div>
+        </div>
+      )}
       {author && (
         <div className="author component">
           <div className="component-content">
