@@ -64,7 +64,7 @@ Make a pull request, claim your pie, climb the leaderboard. Let's get saucy!
 
 | Name                                                  | PRs Merged / 🍕 Received |
 |:------------------------------------------------------|------------------------:|
-| [thecoolwinter](https://github.com/thecoolwinter)     | 2                       |
-| [tom-ludwig](https://github.com/tom-ludwig)           | 1                       |
-| [FastestMolasses](https://github.com/FastestMolasses) | 1                       |
-| [austincondiff](https://github.com/austincondiff)     | 1                       | 
+| [thecoolwinter](https://github.com/thecoolwinter)     |                       2 |
+| [tom-ludwig](https://github.com/tom-ludwig)           |                       1 |
+| [FastestMolasses](https://github.com/FastestMolasses) |                       1 |
+| [austincondiff](https://github.com/austincondiff)     |                       1 | 
