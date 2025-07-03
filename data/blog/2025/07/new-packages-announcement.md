@@ -37,10 +37,9 @@ Our new AboutWindow package lets you take advantage of the care we have put into
 It comes with some smooth animations as well, continuing a commitment to thoughtful and meaningful delight in design.
 
 <figure>
-  <video class="full-width ratio-3-1" autoplay playsinline muted loop controls>
+  <video autoplay playsinline muted loop controls preload="metadata">
     <source src="https://github.com/user-attachments/assets/e2700e0d-7b08-46c7-aec5-cc6ddd93fcb4" type="video/mp4">
   </video>
-  <figcaption>AboutWindow package demo, showing off the smooth animation between content.</figcaption>
 </figure>
 
 # Commitment to community
