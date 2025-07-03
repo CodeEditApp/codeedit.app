@@ -22,7 +22,7 @@ One of the first things you'll see when opening CodeEdit is our welcome window. 
 
 It’s packaged as a SwiftUI scene with flexible customization options to style the presented actions for your own application. The example app in the repository provides a good introduction to some of the customizations.
 
-<img class="full-width ratio-21-9" src="https://github.com/user-attachments/assets/ee2fc36a-e4ec-4cb3-bd39-f61fc6f3e8fc" alt="">
+![](https://github.com/user-attachments/assets/ee2fc36a-e4ec-4cb3-bd39-f61fc6f3e8fc)
 
 A common feature of document-based apps is a recent projects list. The WelcomeWindow package provides an easy API for registering recent project files, that makes it easy to integrate with NSDocument or however you may handle files in your app. Recent projects are automatically added to the WelcomeWindow’s recents list.
 
@@ -32,13 +32,13 @@ A core principle of designing macOS apps is inspiring delight where it makes sen
 
 Our new AboutWindow package lets you take advantage of the care we have put into our own about window. For our project, being open source, we feature our amazing contributors and maintainers right in the app. More commonly, CodeEdit also has a list of library attributions and a link to our license. The AboutWindow package has been built to allow you to include whatever information you think is relevant to your users.
 
-<img class="full-width ratio-21-9" src="https://github.com/user-attachments/assets/0f9a0c7e-dbc1-4dab-b756-cf930cec60aa" alt="">
+![](https://github.com/user-attachments/assets/0f9a0c7e-dbc1-4dab-b756-cf930cec60aa)
 
 It comes with some smooth animations as well, continuing a commitment to thoughtful and meaningful delight in design.
 
 <figure>
   <video class="full-width ratio-3-1" autoplay playsinline muted loop controls>
-    <source src="https://github.com/user-attachments/assets/02ebf7f6-bd14-4f96-a4eb-4fc7fa1d1e8d" type="video/mp4">
+    <source src="https://github.com/user-attachments/assets/e2700e0d-7b08-46c7-aec5-cc6ddd93fcb4" type="video/mp4">
   </video>
   <figcaption>AboutWindow package demo, showing off the smooth animation between content.</figcaption>
 </figure>
