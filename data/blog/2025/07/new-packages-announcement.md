@@ -45,7 +45,9 @@ It comes with some smooth animations as well, continuing a commitment to thought
 
 # Commitment to community
 
-Publishing these packages continues our commitment to raising the bar for native macOS applications, and the entire Swift community.
+Publishing these packages continues our commitment to raising the bar for native macOS applications, and the entire Swift community. Our hope is that these are helpful tools for Swift developers as they create new applications, or are looking to quick drop in an improved about window.
+
+If you would like a new feature, find a bug, or want to improve these packages in any other way, come be a part of this and contribute!
 
 # Conclusion
 
