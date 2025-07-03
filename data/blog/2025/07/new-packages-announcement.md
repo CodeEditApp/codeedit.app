@@ -12,7 +12,7 @@ author: thecoolwinter
 
 As we build CodeEdit, a natively-built code editor for macOS, we want to share our work with the community. All of our work is open source, and we aim to build our components so they’re reusable, not just in our own app, but in your apps as well. Today we’re introducing two packages that we think will benefit the greater Swift and macOS development community!
 
-Recently @George reached out to us with interest in a few of our UI components to see if he could split them out into their own packages to be reused in his own project, Circuit Pro. We’re excited to say that after collaborating with George over the last few months he’s been able to create two packages based on existing components in CodeEdit that we’re both happy with. We’ve integrated both packages into CodeEdit already, replacing the old implementation with the same open source package you can use today.
+Recently [George Tchelidze](https://x.com/x33025) reached out to us with interest in a few of our UI components to see if he could split them out into their own packages to be reused in his own project, Circuit Pro. We’re excited to say that after collaborating with George over the last few months he’s been able to create two packages based on existing components in CodeEdit that we’re both happy with. We’ve integrated both packages into CodeEdit already, replacing the old implementation with the same open source package you can use today.
 
 Let me introduce you to these two new packages.
 
@@ -22,11 +22,9 @@ One of the first things you'll see when opening CodeEdit is our welcome window. 
 
 It’s packaged as a SwiftUI scene with flexible customization options to style the presented actions for your own application. The example app in the repository provides a good introduction to some of the customizations.
 
-[static screenshot]
+
 
 A common feature of document-based apps is a recent projects list. The WelcomeWindow package provides an easy API for registering recent project files, that makes it easy to integrate with NSDocument or however you may handle files in your app. Recent projects are automatically added to the WelcomeWindow’s recents list.
-
-[zoomed in screenshot of the recents list]
 
 # AboutWindow
 
@@ -42,10 +40,9 @@ It comes with some smooth animations as well, continuing a commitment to thought
 
 # Commitment to community
 
-> Talk about continuing to contribute to our community. How we hope these packages are beneficial to anyone building a macOS app, and help raise the standard for application quality in the ecosystem.
+Publishing these packages continues our commitment to raising the bar for native macOS applications, and the entire Swift community.
 
 # Conclusion
 
-A very large shoutout to @George for the work to get these packages split from CodeEdit into reusable SwiftUI components.
+A huge shoutout to [George](https://x.com/x33025) for the work to get these packages split from CodeEdit into reusable SwiftUI components. The work to achieve this was not ne
 
-> Thank and link to packages on Swift Package Index
