@@ -1,7 +1,7 @@
 ---
 title: "Introducing New Packages: WelcomeWindow and AboutWindow"
 headline: "Introducing New Packages: WelcomeWindow and AboutWindow"
-subhead: "Introducing two new SwiftUI packages for macOS: WelcomeWindow and AboutWindow."
+subhead: "We're excited to introduce two new SwiftUI packages to help you build amazing macOS apps: WelcomeWindow and AboutWindow."
 description: "We're excited to introduce two new SwiftUI packages to help you build amazing macOS apps: WelcomeWindow and AboutWindow."
 date: 2025-07-03
 category: update
