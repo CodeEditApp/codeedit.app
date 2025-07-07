@@ -6,6 +6,7 @@ description: "We're excited to introduce two new SwiftUI packages to help you bu
 date: 2025-07-03
 category: update
 author: thecoolwinter
+image: /blog-assets/2025-07-03-header.png
 ---
 
 # Introduction
@@ -32,13 +33,13 @@ A core principle of designing macOS apps is inspiring delight where it makes sen
 
 Our new AboutWindow package lets you take advantage of the care we have put into our own about window. For our project, being open source, we feature our amazing contributors and maintainers right in the app. More commonly, CodeEdit also has a list of library attributions and a link to our license. The AboutWindow package has been built to allow you to include whatever information you think is relevant to your users.
 
-![](https://github.com/user-attachments/assets/0f9a0c7e-dbc1-4dab-b756-cf930cec60aa)
+<img class="wide" style="max-height: 50vh" src="https://github.com/user-attachments/assets/0f9a0c7e-dbc1-4dab-b756-cf930cec60aa" />
 
 It comes with some smooth animations as well, continuing a commitment to thoughtful and meaningful delight in design.
 
 <figure>
-  <video autoplay playsinline muted loop controls preload="metadata">
-    <source src="https://github.com/user-attachments/assets/e2700e0d-7b08-46c7-aec5-cc6ddd93fcb4" type="video/mp4">
+  <video class="wide ratio-16-9" autoplay playsinline muted loop controls preload="metadata">
+    <source src="/blog-assets/2025-07-03-example-app-wide.mp4" type="video/mp4">
   </video>
 </figure>
 
@@ -51,4 +52,3 @@ If you would like a new feature, find a bug, or want to improve these packages i
 # Conclusion
 
 A huge shoutout to [George](https://x.com/x33025) for the work to get these packages split from CodeEdit into reusable SwiftUI components. The work to achieve this was not ne
-

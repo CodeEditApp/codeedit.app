@@ -40,6 +40,13 @@ const nextConfig = {
       use: 'raw-loader',
     });
 
+
+    config.module.rules.push({
+      test: /\.mp4$/,
+      use: "file-loader?name=videos/[name].[ext]"
+    });
+
+
     // Ignore XML files in the public directory
     config.module.rules.push({
       test: /\.xml$/,

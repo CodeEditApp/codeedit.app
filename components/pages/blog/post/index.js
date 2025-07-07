@@ -45,9 +45,6 @@ const BlogPost = ({ frontmatter, markdownBody, author }) => {
   } Blog`;
   const description = frontmatter.description ?? frontmatter.subhead;
 
-  console.log(frontmatter);
-  console.log(markdownBody);
-
   return (
     <Section gutter={false}>
       <Head>
