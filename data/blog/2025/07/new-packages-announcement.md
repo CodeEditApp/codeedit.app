@@ -25,7 +25,7 @@ It’s packaged as a SwiftUI scene with flexible customization options to style 
 
 ![](https://github.com/user-attachments/assets/ee2fc36a-e4ec-4cb3-bd39-f61fc6f3e8fc)
 
-A common feature of document-based apps is a recent projects list. The WelcomeWindow package provides an easy API for registering recent project files, that makes it easy to integrate with NSDocument or however you may handle files in your app. Recent projects are automatically added to the WelcomeWindow’s recents list.
+A common feature of document-based apps is a recent projects list. The WelcomeWindow package provides an easy API for registering recent project files, that makes it easy to integrate with `NSDocument` or however you may handle files in your app. Recent projects are automatically added to the WelcomeWindow’s recents list.
 
 ## AboutWindow
 
