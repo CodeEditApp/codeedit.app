@@ -31,7 +31,7 @@ A common feature of document-based apps is a recent projects list. The WelcomeWi
 
 A core principle of designing macOS apps is inspiring delight where it makes sense. One of the places we decided it made sense was our About Window. This window can be entirely forgotten on some Mac apps, not necessarily losing out on features but missing out on an opportunity to add some delight to an otherwise utilitarian component of every Mac app.
 
-Our new AboutWindow package lets you take advantage of the care we have put into our own about window. For our project, being open source, we feature our amazing contributors and maintainers right in the app. More commonly, CodeEdit also has a list of library attributions and a link to our license. The AboutWindow package has been built to allow you to include whatever information you think is relevant to your users.
+Our new AboutWindow package lets you take advantage of the care we have put into our own about window. For our project, being open source, we feature our amazing contributors and maintainers right in the app. CodeEdit also has a list of library attributions and a link to our license. The AboutWindow package has been built to allow you to include whatever information you think is relevant to your users.
 
 <img class="wide" style="max-height: 50vh" src="https://github.com/user-attachments/assets/0f9a0c7e-dbc1-4dab-b756-cf930cec60aa" />
 
@@ -49,6 +49,4 @@ Publishing these packages continues our commitment to raising the bar for native
 
 If you would like a new feature, find a bug, or want to improve these packages in any other way, come be a part of this and contribute!
 
-# Conclusion
-
-A huge shoutout to [George](https://x.com/x33025) for the work to get these packages split from CodeEdit into reusable SwiftUI components. The work to achieve this was not ne
+A huge shoutout to [George](https://x.com/x33025) for the work to get these packages split from CodeEdit into reusable SwiftUI components. This was no small feat, and his dedication has made these tools available to the entire Swift community. We're excited to see what you build with them!
