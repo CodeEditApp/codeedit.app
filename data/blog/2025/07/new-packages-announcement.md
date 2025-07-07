@@ -35,7 +35,7 @@ Our new AboutWindow package lets you take advantage of the care we have put into
 
 <img class="wide" style="max-height: 50vh" src="https://github.com/user-attachments/assets/0f9a0c7e-dbc1-4dab-b756-cf930cec60aa" />
 
-It comes with some smooth animations as well, continuing a commitment to thoughtful and meaningful delight in design.
+It comes with some smooth animations as well, continuing a commitment to thoughtful and meaningful delight in design. These animations are built using SwiftUI's `matchedGeometryEffect` so your components can make use of the same header-fade-and-move transition exactly like the built-in transitions.
 
 <figure>
   <video class="wide ratio-16-9" autoplay playsinline muted loop controls preload="metadata">
