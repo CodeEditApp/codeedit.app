@@ -1,10 +1,50 @@
-import React, { useEffect, useRef } from 'react';
-import styled from 'styled-components';
+/**
+ * Download Page + Beta Warning Banner
+ * Adds a friendly but noticeable warning so users understand
+ * that CodeEdit is still in development and some features may be incomplete.
+ */
+
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
 import { Column, Row, Section, Stack } from '@/components/common/layout';
 import Typography from '@/components/common/Typography';
 import Image from 'next/image';
 import Tile from '@/components/common/Tile';
 import { mediaQueries } from '@/styles/breakpoints';
+import config from '@/data/config';
+
+/* Warning banner flash animation */
+const flash = keyframes`
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.18); }
+  100% { filter: brightness(1); }
+`;
+
+/* Friendly, noticeable beta warning */
+const BetaWarning = styled.div`
+  background: linear-gradient(
+    90deg,
+    #0a84ff 0%,
+    #1d4ed8 50%,
+    #2563eb 100%
+  );
+  padding: 1rem 1.2rem;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1.8rem;
+
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+  box-shadow: 0 4px 18px rgba(30, 100, 255, 0.35);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.35);
+
+  animation: ${flash} 2.4s ease-in-out infinite;
+`;
 
 const StepTile = styled(Tile)`
   overflow: hidden;
@@ -28,11 +68,13 @@ const StepTile = styled(Tile)`
     }
   }
 `;
+
 const ProductIconWrap = styled.div`
   width: 128px;
   margin-left: auto;
   margin-right: auto;
 `;
+
 const StepNumber = styled.div`
   width: 1.75em;
   height: 1.75em;
@@ -43,6 +85,7 @@ const StepNumber = styled.div`
   font-size: 18px;
   border: 2.5px solid;
 `;
+
 const Download = styled.iframe`
   width: 0;
   height: 0;
@@ -58,10 +101,12 @@ export default function DownloadPage({ downloadUrl }) {
   return (
     <>
       <Download src={downloadUrl} />
+
       <Section contained gutterTop>
         <Row align="center" style={{ position: 'relative', zIndex: 1 }}>
           <Column width={{ md: 12, lg: 12 }}>
             <Stack gap={2} align="center">
+
               <ProductIconWrap>
                 <Image
                   width={128}
@@ -70,9 +115,16 @@ export default function DownloadPage({ downloadUrl }) {
                   alt="CodeEdit product icon"
                 />
               </ProductIconWrap>
+
               <Typography variant="headline-elevated">
                 Thanks for downloading CodeEdit!
               </Typography>
+
+              {/* NEW: Beta warning banner */}
+              <BetaWarning>
+                🚧 CodeEdit is still in development, some features may be incomplete or not final.
+              </BetaWarning>
+
               <Typography
                 variant="intro-elevated"
                 color="tertiary"
@@ -93,14 +145,17 @@ export default function DownloadPage({ downloadUrl }) {
           </Column>
         </Row>
       </Section>
+
       <Section contained gutterY>
         <Row gap>
+
+          {/* Step 1 */}
           <Column width={{ md: 12, lg: 4 }}>
             <StepTile>
               <Stack gap>
                 <StepNumber>1</StepNumber>
                 <Typography variant="eyebrow">
-                  Open CodeEdit disk image in Downloads
+                  Open the CodeEdit disk image in Downloads
                 </Typography>
                 <Image
                   width={200}
@@ -116,6 +171,8 @@ export default function DownloadPage({ downloadUrl }) {
               </Stack>
             </StepTile>
           </Column>
+
+          {/* Step 2 */}
           <Column width={{ md: 12, lg: 4 }}>
             <StepTile gap>
               <Stack gap>
@@ -127,7 +184,7 @@ export default function DownloadPage({ downloadUrl }) {
                   width={256}
                   height={149}
                   src="/drag-to-applications-folder.png"
-                  alt="Downloads folder"
+                  alt="Applications folder"
                   style={{
                     position: 'absolute',
                     left: '50%',
@@ -137,18 +194,20 @@ export default function DownloadPage({ downloadUrl }) {
               </Stack>
             </StepTile>
           </Column>
+
+          {/* Step 3 */}
           <Column width={{ md: 12, lg: 4 }}>
             <StepTile>
               <Stack gap>
                 <StepNumber>3</StepNumber>
                 <Typography variant="eyebrow">
-                  Add to dock, click to launch!
+                  Add to Dock, then click to launch!
                 </Typography>
                 <Image
                   width={400}
                   height={120}
                   src="/drag-to-dock.png"
-                  alt="Downloads folder"
+                  alt="macOS Dock"
                   style={{
                     position: 'absolute',
                     left: '50%',
@@ -158,6 +217,7 @@ export default function DownloadPage({ downloadUrl }) {
               </Stack>
             </StepTile>
           </Column>
+
         </Row>
       </Section>
     </>

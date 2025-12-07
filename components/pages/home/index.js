@@ -16,8 +16,10 @@ import Head from 'next/head';
 export default function HomePage(props) {
   return (
     <>
-      <Ribbon onClick={() => window.open(config.links.githubProject)}>
-        CodeEdit is currently in development. Check out the roadmap.
+      <Ribbon
+        onClick={() => window.open(config.links.githubProject)}
+      >
+        ✨ CodeEdit is still growing, Some features are in development. Check the roadmap →
       </Ribbon>
       <HeroSection {...props} />
       <IntroFeaturesSection />
